@@ -1,0 +1,147 @@
+no computador 10.32.168.11 (jose)
+ 
+i patricia 10.32.168.12
+i carla 10.32.168.13
+
+no computador 10.32.168.14 (renata)
+
+i jose 10.32.168.11
+l jose
+
+s jose olá josé, tudo bem por ai?
+l jose
+*olá josé, tudo bem por ai?
+
+no computador 10.32.168.11 (josé)
+ 
+l renata
+-olá josé, tudo bem por ai
+
+no computador 10.32.168.14 (renata)
+
+l jose
+olá josé, tudo bem por ai
+
+no computador 10.32.168.12 (patricia)
+
+s jose #sqn
+
+no computador 10.32.168.11 (josé)
+
+l patricia
+-#sqn
+s patricia por que não?
+
+no computador 10.32.168.12 (patricia)
+
+l jose
+#sqn
+-por que não?
+
+no computador 10.32.168.12 (josé)
+
+g turma renata patricia carla
+
+s turma funciona?
+
+em todos os computadores
+
+c
+l turma
+-funciona?
+
+no computador 10.32.12 (patricia)
+
+s carla estou nos teus contatos?
+l carla
+*estou nos teus contatos?
+
+no computador 10.32.168.13 (carla)
+
+l patricia
+-estou nos teus contatos?
+s patricia sim
+
+no computador 10.32.168.12 (patricia)
+
+l carla
+estou nos teus contatos?
+-sim
+
+patricia sai do ar
+
+no computador do josé
+
+s turma quem recebe?
+
+no computador da carla e da renata
+
+l turma
+-funciona?
+*quem recebe?
+
+patricia volta
+
+no computador da patricia
+
+l turma
+-funciona?
+-quem recebe?
+
+nos demais computadores
+
+l turma
+-funciona?
+-quem recebe?
+
+em qualquer computador
+
+s turma ultima
+
+nos demais computadores
+
+l turma
+-funciona?
+-quem recebe?
+-ultima
+l turma
+-funciona?
+-quem recebe?
+
+nos demais computadores
+
+l turma
+-funciona?
+-quem recebe?
+
+em qualquer computador
+
+s turma ultima
+
+nos demais computadores
+
+l turma
+-funciona?
+-quem recebe?
+-ultima
+l turma
+-funciona?
+-quem recebe?
+
+nos demais computadores
+
+l turma
+-funciona?
+-quem recebe?
+
+em qualquer computador
+
+s turma ultima
+
+nos demais computadores
+
+l turma
+-funciona?
+-quem recebe?
+-ultima
+
