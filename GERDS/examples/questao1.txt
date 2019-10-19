@@ -1,0 +1,61 @@
+1)
+
+a) snmpbulkget -v2c -c public -Cn2 -Cr3 localhost sysUpTime ifNumber ifDescr ifSpeed ifPhysAddress
+
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (26506617) 3 days, 1:37:46.17
+IF-MIB::ifNumber.0 = INTEGER: 3
+IF-MIB::ifDescr.1 = STRING: lo
+IF-MIB::ifSpeed.1 = Gauge32: 10000000
+IF-MIB::ifPhysAddress.1 = STRING:
+
+b) snmpbulkget -v2c -c public -Cn4 -Cr4 localhost ipInReceives ipOutRequests tcpInSegs tcpOutSegs ipNetToMediaTable.0 ipNetToMediaTable.1 ipNetToMediaTable.2 ipNetToMediaTable.4
+
+IP-MIB::ipInReceives.0 = Counter32: 62830
+IP-MIB::ipOutRequests.0 = Counter32: 28869
+TCP-MIB::tcpInSegs.0 = Counter32: 34441
+TCP-MIB::tcpOutSegs.0 = Counter32: 26564
+IP-MIB::ipNetToMediaIfIndex.2.10.32.143.1 = INTEGER: 2
+IP-MIB::ipNetToMediaIfIndex.2.10.32.143.1 = INTEGER: 2
+IP-MIB::ipRoutingDiscards.0 = Counter32: 0
+IP-MIB::ipRoutingDiscards.0 = Counter32: 0
+IP-MIB::ipNetToMediaIfIndex.2.10.32.143.202 = INTEGER: 2
+IP-MIB::ipNetToMediaIfIndex.2.10.32.143.202 = INTEGER: 2
+IP-FORWARD-MIB::ipCidrRouteDest.0.0.0.0.0.0.0.0.0.10.32.143.1 = IpAddress: 0.0.0.0
+IP-FORWARD-MIB::ipCidrRouteDest.0.0.0.0.0.0.0.0.0.10.32.143.1 = IpAddress: 0.0.0.0
+IP-MIB::ipNetToMediaPhysAddress.2.10.32.143.1 = STRING: 0:1:2:23:ea:a6
+IP-MIB::ipNetToMediaPhysAddress.2.10.32.143.1 = STRING: 0:1:2:23:ea:a6
+IP-FORWARD-MIB::ipCidrRouteDest.10.32.143.0.255.255.255.0.0.0.0.0.0 = IpAddress: 10.32.143.0
+IP-FORWARD-MIB::ipCidrRouteDest.10.32.143.0.255.255.255.0.0.0.0.0.0 = IpAddress: 10.32.143.0
+IP-MIB::ipNetToMediaPhysAddress.2.10.32.143.202 = STRING: 98:83:89:6f:99:95
+IP-MIB::ipNetToMediaPhysAddress.2.10.32.143.202 = STRING: 98:83:89:6f:99:95
+IP-FORWARD-MIB::ipCidrRouteMask.0.0.0.0.0.0.0.0.0.10.32.143.1 = IpAddress: 0.0.0.0
+IP-FORWARD-MIB::ipCidrRouteMask.0.0.0.0.0.0.0.0.0.10.32.143.1 = IpAddress: 0.0.0.0
+
+
+c) snmpbulkget -v2c -c public -Cr5 localhost tcpConnState.0 tcpConnState.1 tcpConnState.2 tcpConnState.3 tcpConnState.4
+
+TCP-MIB::tcpConnState.0.0.0.0.22.0.0.0.0.0 = INTEGER: listen(2)
+TCP-MIB::tcpConnState.10.32.143.187.43012.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43012.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43012.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43012.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43012.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43016.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43016.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43016.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43016.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43016.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43020.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43020.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43020.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43020.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.43020.172.217.29.163.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.52436.172.217.29.174.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.52436.172.217.29.174.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.52436.172.217.29.174.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.52436.172.217.29.174.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.52436.172.217.29.174.443 = INTEGER: established(5)
+TCP-MIB::tcpConnState.10.32.143.187.55854.45.55.41.223.80 = INTEGER: closeWait(8)
+TCP-MIB::tcpConnState.10.32.143.187.55854.45.55.41.223.80 = INTEGER: closeWait(8)
+TCP-MIB::tcpConnState.10.32.143.187.55854.45.55.41.223.80 = INTEGER: closeWait(8)
+TCP-MIB::tcpConnState.10.32.143.187.55854.45.55.41.223.80 = INTEGER: closeWait(8)

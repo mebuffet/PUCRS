@@ -1,0 +1,90 @@
+1
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (115074567) 13 days, 7:39:05.67
+IP-MIB::ipInReceives.0 = Counter32: 954734
+SNMPv2-MIB::snmpOutPkts.0 = Counter32: 293
+IF-MIB::ifInOctets.2 = Counter32: 626182406
+IF-MIB::ifOutOctets.2 = Counter32: 46940271
+IF-MIB::ifSpeed.2 = Gauge32: 100000000
+IF-MIB::ifInUcastPkts.2 = Counter32: 722846
+IF-MIB::ifInNUcastPkts.2 = Counter32: 111181
+2
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (115077585) 13 days, 7:39:35.85
+IP-MIB::ipInReceives.0 = Counter32: 954756
+SNMPv2-MIB::snmpOutPkts.0 = Counter32: 301
+IF-MIB::ifInOctets.2 = Counter32: 626182934
+IF-MIB::ifOutOctets.2 = Counter32: 46940271
+IF-MIB::ifSpeed.2 = Gauge32: 100000000
+IF-MIB::ifInUcastPkts.2 = Counter32: 722849
+IF-MIB::ifInNUcastPkts.2 = Counter32: 111184
+3
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (115080601) 13 days, 7:40:06.01
+IP-MIB::ipInReceives.0 = Counter32: 954777
+SNMPv2-MIB::snmpOutPkts.0 = Counter32: 309
+IF-MIB::ifInOctets.2 = Counter32: 626183456
+IF-MIB::ifOutOctets.2 = Counter32: 46940271
+IF-MIB::ifSpeed.2 = Gauge32: 100000000
+IF-MIB::ifInUcastPkts.2 = Counter32: 722852
+IF-MIB::ifInNUcastPkts.2 = Counter32: 111187
+4
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (115083619) 13 days, 7:40:36.19
+IP-MIB::ipInReceives.0 = Counter32: 954798
+SNMPv2-MIB::snmpOutPkts.0 = Counter32: 317
+IF-MIB::ifInOctets.2 = Counter32: 626183978
+IF-MIB::ifOutOctets.2 = Counter32: 46940271
+IF-MIB::ifSpeed.2 = Gauge32: 100000000
+IF-MIB::ifInUcastPkts.2 = Counter32: 722855
+IF-MIB::ifInNUcastPkts.2 = Counter32: 111190
+5
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (115086635) 13 days, 7:41:06.35
+IP-MIB::ipInReceives.0 = Counter32: 954822
+SNMPv2-MIB::snmpOutPkts.0 = Counter32: 325
+IF-MIB::ifInOctets.2 = Counter32: 626184678
+IF-MIB::ifOutOctets.2 = Counter32: 46940271
+IF-MIB::ifSpeed.2 = Gauge32: 100000000
+IF-MIB::ifInUcastPkts.2 = Counter32: 722857
+IF-MIB::ifInNUcastPkts.2 = Counter32: 111196
+6
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (115089652) 13 days, 7:41:36.52
+IP-MIB::ipInReceives.0 = Counter32: 954844
+SNMPv2-MIB::snmpOutPkts.0 = Counter32: 333
+IF-MIB::ifInOctets.2 = Counter32: 626185290
+IF-MIB::ifOutOctets.2 = Counter32: 46940271
+IF-MIB::ifSpeed.2 = Gauge32: 100000000
+IF-MIB::ifInUcastPkts.2 = Counter32: 722860
+IF-MIB::ifInNUcastPkts.2 = Counter32: 111200
+7
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (115092669) 13 days, 7:42:06.69
+IP-MIB::ipInReceives.0 = Counter32: 954865
+SNMPv2-MIB::snmpOutPkts.0 = Counter32: 341
+IF-MIB::ifInOctets.2 = Counter32: 626185878
+IF-MIB::ifOutOctets.2 = Counter32: 46940271
+IF-MIB::ifSpeed.2 = Gauge32: 100000000
+IF-MIB::ifInUcastPkts.2 = Counter32: 722863
+IF-MIB::ifInNUcastPkts.2 = Counter32: 111203
+8
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (115095686) 13 days, 7:42:36.86
+IP-MIB::ipInReceives.0 = Counter32: 954886
+SNMPv2-MIB::snmpOutPkts.0 = Counter32: 349
+IF-MIB::ifInOctets.2 = Counter32: 626186400
+IF-MIB::ifOutOctets.2 = Counter32: 46940271
+IF-MIB::ifSpeed.2 = Gauge32: 100000000
+IF-MIB::ifInUcastPkts.2 = Counter32: 722866
+IF-MIB::ifInNUcastPkts.2 = Counter32: 111206
+9
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (115098703) 13 days, 7:43:07.03
+IP-MIB::ipInReceives.0 = Counter32: 954909
+SNMPv2-MIB::snmpOutPkts.0 = Counter32: 357
+IF-MIB::ifInOctets.2 = Counter32: 626186982
+IF-MIB::ifOutOctets.2 = Counter32: 46940271
+IF-MIB::ifSpeed.2 = Gauge32: 100000000
+IF-MIB::ifInUcastPkts.2 = Counter32: 722868
+IF-MIB::ifInNUcastPkts.2 = Counter32: 111211
+10
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (115101719) 13 days, 7:43:37.19
+IP-MIB::ipInReceives.0 = Counter32: 954930
+SNMPv2-MIB::snmpOutPkts.0 = Counter32: 365
+IF-MIB::ifInOctets.2 = Counter32: 626187562
+IF-MIB::ifOutOctets.2 = Counter32: 46940271
+IF-MIB::ifSpeed.2 = Gauge32: 100000000
+IF-MIB::ifInUcastPkts.2 = Counter32: 722870
+IF-MIB::ifInNUcastPkts.2 = Counter32: 111215
