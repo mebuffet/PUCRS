@@ -1,0 +1,45 @@
+{
+{ "LIMP", « CLEAR »} ,
+{ "FACTR", « FACTOR »} ,
+{ "SIMPL", « SIMPLIFY »} ,
+{ "COLLECT", « COLLECT »} ,
+{ "AGRUP", « DISTRIB »} ,
+{ "DAGRU", « FDISTRIB »} ,
+
+{ "EXPAN", « EXPAND »} ,
+{ "PFRAC", « PROPFRAC »} ,
+{ "PARTF", « PARTFRAC »} ,
+{ "EQCW", « EQW »} ,
+{ "PLOT", « PLOT »} ,
+{ "SOLV", « SOLVEVX »} ,
+
+{ "LIMIT", lim } ,
+{ "dy/dx", « DERVX »} ,
+{ "„dx", « INTVX »} ,
+{ "dy=dx", DESOLVE } ,
+{ "Y=Ila", LDEC } ,
+{ "TAYLR", TAYLR } ,
+
+{ "Lapla", « LAP »} ,
+{ "Ilapl", « ILAP »} ,
+{ "‚V", DERIV } ,
+{ "„‚Edl", POTENTIAL } ,
+{ "‚·D", DIV } ,
+{ "‚xH", CURL } ,
+
+{ "‚²V", LAPL } ,
+{ "A·B", DOT } ,
+{ "AXB", CROSS } ,
+{ "ABS", « ABS »} ,
+{ "DET", « DET »} ,
+{ "TRANS", « TRAN »} ,
+
+{ "ESCAL", « RREF »} ,
+{ "SymLy", LINSOLVE } ,
+{ "SyNLy", MSLV } ,
+{ "RACIO", « -105 CF XQ »} ,
+{ "APROX", « -105 SF »}
+}
+
+
+

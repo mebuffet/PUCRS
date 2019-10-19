@@ -1,0 +1,61 @@
+******************** MATE7: *********************
+Autor: 		Pablo Montes
+E-mail:		pc_montes@yahoo.com
+Ultima version:	4 de febrero de 2004
+Plataforma: 	HP49G ver 1.18
+TAMAÑO:		23728.5 BYTES
+CHECKSUM: 	# 10797d
+LIB#:		777
+LENGUAJE: 	USER-RPL
+IDIOMA: 	ESPAÑOL
+
+
+	Mate7Civil: Metodos Numericos, programa para el curso de
+analisis numerico, cuenta con 14 metodos numericos utilizados para
+la resolucion de ecuaciones no reducibles, y para sistemas de ecuaciones
+lineales y no lineales.
+
+	Al correr el programa se abre un menu, donde se ejige el metodo
+a utilizar pero antes de utilizar algun metodo, es necesario entrar en
+[Definir Parametros], que es la primera opcion del menu, esta opcion puede
+ser llamada tambien desde los botones.
+
+	En esta opcion se definen las funciones a utilizar, esto se ingresa
+en el campo [f(x)], unicamente para los metodos de punto fijo y de steffensen
+se introduce la ecuacion en [p(x)] esta ecuacion no es presisamente la original
+sino que una de la forma de iteracion de punto fijo, x=p(x), por lo que
+cada funcion tiene varias formas de despeje, aqui deben de introducir la mas
+adecuada.
+
+	Ademas se establece el numero de decimales mostrados y la cantidad maxima
+de iteraciones para un metodo, esto regularmente se utiliza, cuando introducimos
+una aproximacion inicial muy mala, entonces el metodo no converga sino fluctue
+demasiado y puesto que el metodo se detiene hasta que el error sea menor
+que la tolerancia establecida, el programa podria enciclarse, puesto que
+50 son las iteraciones maximas, el programa se detendra aunque no haya alcanzado
+la presicion deseada, aunque esto lo hice inicialmente con ese proposito, creo
+que ya no es nesesario, puesto que al utilizar algun metodo iterativo, en la
+esquina inferior izquierda, aparecen tanto el numero de iteracion como el error
+encontrado para cada iteracion, de esta forma se controla el progreso y no es
+necesario esperar mucho para que al final nos muestre una tabla con tantas 
+iteraciones que al final no convergen, si el metodo no converge, es decir que
+el error mostrado [Err] no tiende a cero es preciso detener el metodo con [ON]
+y cambiar las aproximaciones iniciales.
+
+	Tambien cuenta con la tecla [?] para una pequeña descripcion de las
+funciones de las demas.
+
+	No incluyo el manejo o procedimiento para cada metodo ya que son 14
+este documento seria muy extenso, si ya de por si lo es, pero el programa
+indica que valores hay que introducir, asi que creo que no estaran tan
+a ciegas, como otros que he visto.
+
+	Espero que el programa les ayude mucho, no encontre ningun fallo,
+o algo por el estilo pero si tienen algun problema, o sugerencias para 
+mejorarlo hacermelo saber:
+
+		PABLO MONTES
+		pc_montes@yahoo.com
+		UNIVERSIDAD DE SAN CARLOS DE GUATEMALA
+		FACULTAD DE INGENIERIA
+		INGENIERIA CIVIL
