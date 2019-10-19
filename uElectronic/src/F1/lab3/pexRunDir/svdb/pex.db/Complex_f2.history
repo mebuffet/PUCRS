@@ -1,0 +1,8 @@
+//OK 
+//NUMBER_OF_HEADER_LINES: 6
+//VERSION: 1
+//TOKEN_DELIMITER: "
+//TOKEN_SEPARATOR: " "
+//FORMAT: "time" "calibre version" "command line"
+"Tue Nov 29 22:47:35 2016 " "v2011.3_29.20" "-xrc -pdb -rc -turbo 1 /home/micro2/lab3/pexRunDir/_calibrexrclvs_cgi_"
+"Tue Nov 29 22:47:41 2016 " "v2011.3_29.20" "-xrc -fmt -all /home/micro2/lab3/pexRunDir/_calibrexrclvs_cgi_"

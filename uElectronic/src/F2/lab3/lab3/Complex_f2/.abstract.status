@@ -1,0 +1,7 @@
+cUiSelectCellP {Complex_f2}
+cUiSetViewStatus {Complex_f2} {layout} {1}
+cUiSetViewStatus {Complex_f2} {schematic} {1}
+cUiSetViewStatus {Complex_f2} {abstract.pin} {35}
+cUiSetViewStatus {Complex_f2} {abstract.ext} {49}
+cUiSetViewStatus {Complex_f2} {abstract} {51}
+cUiSetViewStatus {Complex_f2} {abstract.ver} {53}

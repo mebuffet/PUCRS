@@ -1,0 +1,1507 @@
+[11/29 23:40:06      0] 
+[11/29 23:40:06      0] Cadence Innovus(TM) Implementation System.
+[11/29 23:40:06      0] Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/29 23:40:06      0] 
+[11/29 23:40:06      0] Version:	v16.10-p004_1, built Thu May 12 14:48:49 PDT 2016
+[11/29 23:40:06      0] Options:	-common_ui 
+[11/29 23:40:06      0] Date:		Tue Nov 29 23:40:06 2016
+[11/29 23:40:06      0] Host:		kriti (x86_64 w/Linux 2.6.18-416.el5) (4cores*8cpus*Intel(R) Xeon(R) CPU W5580 @ 3.20GHz 8192KB)
+[11/29 23:40:06      0] OS:		CentOS release 5.11 (Final)
+[11/29 23:40:06      0] 
+[11/29 23:40:06      0] License:
+[11/29 23:40:06      0] 		invs	Innovus Implementation System	16.1	checkout succeeded
+[11/29 23:40:06      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/29 23:40:16      3] 
+[11/29 23:40:16      3] ***************************************************************************************
+[11/29 23:40:16      3] INFO:    You have enabled the Common UI that has been internally qualified at Cadence but
+[11/29 23:40:16      3]          has only limited customer testing. You are encouraged to work with Cadence directly
+[11/29 23:40:16      3]          to qualify your usage and make sure it meets your needs before deploying it widely.
+[11/29 23:40:16      3] ***************************************************************************************
+[11/29 23:40:16      3] 
+[11/29 23:40:56      8] @(#)CDS: Innovus v16.10-p004_1 (64bit) 05/12/2016 14:48 (Linux 2.6.18-194.el5)
+[11/29 23:40:56      8] @(#)CDS: NanoRoute 16.10-p004_1 NR160506-1445/16_10-UB (database version 2.30, 325.6.1) {superthreading v1.28}
+[11/29 23:40:56      8] @(#)CDS: AAE 16.10-p003 (64bit) 05/12/2016 (Linux 2.6.18-194.el5)
+[11/29 23:40:56      8] @(#)CDS: CTE 16.10-p002_1 () May  3 2016 03:35:25 ( )
+[11/29 23:40:56      8] @(#)CDS: SYNTECH 16.10-d040_1 () Apr 22 2016 00:57:16 ( )
+[11/29 23:40:56      8] @(#)CDS: CPE v16.10-p007
+[11/29 23:40:56      8] @(#)CDS: IQRC/TQRC 15.2.1-s073 (64bit) Tue May  3 11:39:50 PDT 2016 (Linux 2.6.18-194.el5)
+[11/29 23:40:56      8] @(#)CDS: OA 22.50-p043 Tue Feb  9 16:29:38 2016
+[11/29 23:40:56      8] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[11/29 23:40:56      8] @(#)CDS: RCDB 11.8
+[11/29 23:40:56      8] --- Running on kriti (x86_64 w/Linux 2.6.18-416.el5) (4cores*8cpus*Intel(R) Xeon(R) CPU W5580 @ 3.20GHz 8192KB) ---
+[11/29 23:40:56      8] Create and set the environment variable TMPDIR to /tmp/innovus_temp_28248_kriti_micro2_s5CPcL.
+
+[11/29 23:40:56      8] Create and set the environment variable TMPDIR to /tmp/innovus_temp_28248_kriti_micro2_s5CPcL.
+[11/29 23:40:56      8] 
+[11/29 23:40:57      8] 
+[11/29 23:40:57      8] **INFO:  MMMC transition support version v31-84 
+[11/29 23:40:57      8] 
+[11/29 23:41:03      9] [DEV]innovus 1> source cmd_innovus
+Starting library reading in 'Multi-threaded flow' (with '8' threads)
+[11/29 23:41:11      9] 
+[11/29 23:41:11      9] Threads Configured:8
+[11/29 23:41:11      9] Reading default_emulate_libset_max timing library /home/micro2/lab3/characterization/inv.lib.
+[11/29 23:41:11      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'inv' is not defined in the library. (File /home/micro2/lab3/characterization/inv.lib)
+[11/29 23:41:11      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'Complex_f2' is not defined in the library. (File /home/micro2/lab3/characterization/inv.lib)
+[11/29 23:41:11      9] Read 2 cells in inv.
+[11/29 23:41:12     16] Reading default_emulate_libset_max timing library /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib.
+[11/29 23:41:12     16] Read 866 cells in CORE65GPSVT.
+[11/29 23:41:12     16] Library reading multithread flow ended. (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib)
+[11/29 23:41:12     17] 
+[11/29 23:41:12     17] Loading LEF file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef ...
+[11/29 23:41:12     17] 
+[11/29 23:41:12     17] Loading LEF file /home/micro2/lab3/synthesis/../Complex_f2.lef ...
+[11/29 23:41:12     17] Set DBUPerIGU to M2 pitch 200.
+[11/29 23:41:12     17] 
+[11/29 23:41:12     17] Loading LEF file /home/micro2/lab3/synthesis/../inv.lef ...
+[11/29 23:41:12     17] 
+[11/29 23:41:12     17] Loading LEF file /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/LEF/CORE65GPSVT.lef ...
+[11/29 23:41:12     17] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[11/29 23:41:12     17] The LEF parser will ignore this statement.
+[11/29 23:41:12     17] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/LEF/CORE65GPSVT.lef at line 1.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS1_FA1X21' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS1_FA1X35' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS1_FA1X9' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS1_HA1X8' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS2_FA1X18' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQNX18' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQNX27' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQNX35' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQX18' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQX27' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQX35' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQNX18' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQNX27' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQNX35' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQX18' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQX27' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQX35' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPRQNX18' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPRQNX27' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPRQNX35' has no SITE statement and it is a class
+[11/29 23:41:12     17] CORE macro that requires a SITE statement. The SITE CORE is
+[11/29 23:41:12     17] chosen because it is a core site with height 2.6000 that matches the macro
+[11/29 23:41:12     17] SIZE height.
+[11/29 23:41:12     17] **WARN: (EMS-27):	Message (IMPLF-45) has exceeded the current message display limit of 20.
+[11/29 23:41:12     17] To increase the message display limit, refer to the product command reference manual.
+[11/29 23:41:12     17] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/LEF/CORE65GPSVT.lef at line 75302.
+[11/29 23:41:12     17] 
+[11/29 23:41:12     17] Loading LEF file /soft64/design-kits/stm/65nm-cmos065_536/PRHS65_7.0.a/CADENCE/LEF/PRHS65_soc.lef ...
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LS_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LS_ANTPROT1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LL_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LL_ANTPROT1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LH_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LH_ANTPROT1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_GS_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_GL_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_GH_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'A' in macro 'CLOCKTREE' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'CLOCKTREE' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'A' in macro 'HS65_GS_XOR3X9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'B' in macro 'HS65_GS_XOR3X9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'C' in macro 'HS65_GS_XOR3X9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR3X9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'A' in macro 'HS65_GS_XOR3X4' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'B' in macro 'HS65_GS_XOR3X4' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'C' in macro 'HS65_GS_XOR3X4' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR3X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'A' in macro 'HS65_GS_XOR3X27' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'B' in macro 'HS65_GS_XOR3X27' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'C' in macro 'HS65_GS_XOR3X27' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR3X27' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-200):	Pin 'A' in macro 'HS65_GS_XOR3X18' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-200' for more detail.
+[11/29 23:41:12     17] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[11/29 23:41:12     17] To increase the message display limit, refer to the product command reference manual.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR3X18' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR2X9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR2X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR2X35' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR2X27' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR2X18' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR3X9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR3X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR3X27' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR3X18' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR2X9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR2X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR2X35' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR2X27' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR2X18' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (IMPLF-201):	Pin 'Q' in macro 'HS65_GS_SDFPSQX9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/29 23:41:12     17] Type 'man IMPLF-201' for more detail.
+[11/29 23:41:12     17] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[11/29 23:41:12     17] To increase the message display limit, refer to the product command reference manual.
+[11/29 23:41:12     17] 
+[11/29 23:41:12     17] viaInitial starts at Tue Nov 29 23:41:12 2016
+[11/29 23:41:12     17] viaInitial ends at Tue Nov 29 23:41:12 2016
+[11/29 23:41:12     17] #- Begin Load netlist data ... (date=11/29 23:41:12, mem=623.9M)
+[11/29 23:41:12     17] *** Begin netlist parsing (mem=623.9M) ***
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR3X9' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR3X9' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR3X4' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR3X4' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR3X27' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR3X27' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR3X18' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR3X18' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR2X9' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR2X9' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR2X4' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR2X4' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR2X35' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR2X35' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR2X27' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR2X27' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR2X18' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR2X18' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XNOR3X9' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XNOR3X9' is defined in LEF but not in the timing library.
+[11/29 23:41:12     17] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[11/29 23:41:12     17] To increase the message display limit, refer to the product command reference manual.
+[11/29 23:41:12     17] Created 868 new cells from 2 timing libraries.
+[11/29 23:41:12     17] Reading netlist ...
+[11/29 23:41:12     17] Backslashed names will retain backslash and a trailing blank character.
+[11/29 23:41:12     17] Reading verilog netlist 'layout/TF.v'
+[11/29 23:41:12     17] 
+[11/29 23:41:12     17] *** Memory Usage v#1 (Current mem = 623.906M, initial mem = 175.422M) ***
+[11/29 23:41:12     17] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=623.9M) ***
+[11/29 23:41:12     17] #- End Load netlist data ... (date=11/29 23:41:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=623.9M, current mem=623.9M)
+[11/29 23:41:12     17] Top level cell is TF.
+[11/29 23:41:13     17] Hooked 868 DB cells to tlib cells.
+[11/29 23:41:13     17] Starting recursive module instantiation check.
+[11/29 23:41:13     17] No recursion found.
+[11/29 23:41:13     17] Building hierarchical netlist for Cell TF ...
+[11/29 23:41:13     17] *** Netlist is unique.
+[11/29 23:41:13     17] ** info: there are 1022 modules.
+[11/29 23:41:13     17] ** info: there are 6 stdCell insts.
+[11/29 23:41:13     17] 
+[11/29 23:41:13     17] *** Memory Usage v#1 (Current mem = 645.656M, initial mem = 175.422M) ***
+[11/29 23:41:13     17] Set Default Net Delay as 1000 ps.
+[11/29 23:41:13     17] Set Default Net Load as 0.5 pF. 
+[11/29 23:41:13     17] Set Default Input Pin Transition as 0.1 ps.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'IOPADSITE_SF_TF_2ROWS' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'IOPADSITE_SF_2ROWS' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'IOPADSITE_TF_2ROWS' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'IOPADSITE_SF_LIN' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'IOPADSITE_TF_LIN' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHD_QG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHD_QV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHV_QG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHV_QV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'CORE_QG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'CORE_QV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHD_TG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHD_TV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHV_TG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHV_TV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'CORE_TG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'CORE_TV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHD_DG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHD_DV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (IMPFP-3961):	The techSite 'COREHD' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/29 23:41:13     17] Type 'man IMPFP-3961' for more detail.
+[11/29 23:41:13     17] **WARN: (EMS-27):	Message (IMPFP-3961) has exceeded the current message display limit of 20.
+[11/29 23:41:13     17] To increase the message display limit, refer to the product command reference manual.
+[11/29 23:41:13     17] Extraction setup Started 
+[11/29 23:41:13     17] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[11/29 23:41:13     17] Reading Capacitance Table File /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.captable ...
+[11/29 23:41:13     17] Cap table was created using Encounter 08.10-s338_1.
+[11/29 23:41:13     17] Process name: cmos065_7m4x0y2z_GL_RCMAX.
+[11/29 23:41:13     17] Allocated an empty WireEdgeEnlargement table in default_emulate_rc_corner [6].
+[11/29 23:41:13     17] Allocated an empty WireEdgeEnlargement table in default_emulate_rc_corner [7].
+[11/29 23:41:13     17] Allocated an empty WireEdgeEnlargement table in default_emulate_rc_corner [8].
+[11/29 23:41:13     17] Importing multi-corner RC tables ... 
+[11/29 23:41:13     17] Summary of Active RC-Corners : 
+[11/29 23:41:13     17]  
+[11/29 23:41:13     17]  Analysis View: default_emulate_view
+[11/29 23:41:13     17]     RC-Corner Name        : default_emulate_rc_corner
+[11/29 23:41:13     17]     RC-Corner Index       : 0
+[11/29 23:41:13     17]     RC-Corner Temperature : 25 Celsius
+[11/29 23:41:13     17]     RC-Corner Cap Table   : '/soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.captable'
+[11/29 23:41:13     17]     RC-Corner PreRoute Res Factor         : 1
+[11/29 23:41:13     17]     RC-Corner PreRoute Cap Factor         : 1
+[11/29 23:41:13     17]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[11/29 23:41:13     17]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[11/29 23:41:13     17]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[11/29 23:41:13     17]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[11/29 23:41:13     17]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[11/29 23:41:13     17]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[11/29 23:41:13     17]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[11/29 23:41:13     17] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:13     17] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:13     17] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:13     17] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:13     17] *Info: initialize multi-corner CTS.
+[11/29 23:41:13     17] Reading timing constraints file 'layout//TF.default_emulate_constraint_mode.sdc' ...
+[11/29 23:41:13     17] Current (total cpu=0:00:17.9, real=0:01:07, peak res=269.2M, current mem=738.5M)
+[11/29 23:41:13     17] TF
+[11/29 23:41:13     17] INFO (CTE): Constraints read successfully.
+[11/29 23:41:13     17] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=276.9M, current mem=740.5M)
+[11/29 23:41:13     17] Current (total cpu=0:00:18.0, real=0:01:07, peak res=276.9M, current mem=740.5M)
+[11/29 23:41:13     18] Summary for sequential cells idenfication: 
+[11/29 23:41:13     18] Identified SBFF number: 208
+[11/29 23:41:13     18] Identified MBFF number: 0
+[11/29 23:41:13     18] Not identified SBFF number: 0
+[11/29 23:41:13     18] Not identified MBFF number: 0
+[11/29 23:41:13     18] Number of sequential cells which are not FFs: 31
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18] Total number of combinational cells: 619
+[11/29 23:41:13     18] Total number of sequential cells: 239
+[11/29 23:41:13     18] Total number of tristate cells: 10
+[11/29 23:41:13     18] Total number of level shifter cells: 0
+[11/29 23:41:13     18] Total number of power gating cells: 0
+[11/29 23:41:13     18] Total number of isolation cells: 0
+[11/29 23:41:13     18] Total number of power switch cells: 0
+[11/29 23:41:13     18] Total number of pulse generator cells: 0
+[11/29 23:41:13     18] Total number of always on buffers: 0
+[11/29 23:41:13     18] Total number of retention cells: 0
+[11/29 23:41:13     18] List of usable buffers: HS65_GS_BFX13 HS65_GS_BFX106 HS65_GS_BFX142 HS65_GS_BFX2 HS65_GS_BFX18 HS65_GS_BFX213 HS65_GS_BFX27 HS65_GS_BFX22 HS65_GS_BFX284 HS65_GS_BFX31 HS65_GS_BFX4 HS65_GS_BFX35 HS65_GS_BFX44 HS65_GS_BFX40 HS65_GS_BFX53 HS65_GS_BFX49 HS65_GS_BFX62 HS65_GS_BFX9 HS65_GS_BFX7 HS65_GS_BFX71
+[11/29 23:41:13     18] Total number of usable buffers: 20
+[11/29 23:41:13     18] List of unusable buffers:
+[11/29 23:41:13     18] Total number of unusable buffers: 0
+[11/29 23:41:13     18] List of usable inverters: inv HS65_GS_IVX13 HS65_GS_IVX106 HS65_GS_IVX142 HS65_GS_IVX2 HS65_GS_IVX18 HS65_GS_IVX213 HS65_GS_IVX27 HS65_GS_IVX22 HS65_GS_IVX284 HS65_GS_IVX31 HS65_GS_IVX4 HS65_GS_IVX35 HS65_GS_IVX44 HS65_GS_IVX40 HS65_GS_IVX53 HS65_GS_IVX49 HS65_GS_IVX62 HS65_GS_IVX9 HS65_GS_IVX7 HS65_GS_IVX71
+[11/29 23:41:13     18] Total number of usable inverters: 21
+[11/29 23:41:13     18] List of unusable inverters:
+[11/29 23:41:13     18] Total number of unusable inverters: 0
+[11/29 23:41:13     18] List of identified usable delay cells:
+[11/29 23:41:13     18] Total number of identified usable delay cells: 0
+[11/29 23:41:13     18] List of identified unusable delay cells:
+[11/29 23:41:13     18] Total number of identified unusable delay cells: 0
+[11/29 23:41:13     18] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[11/29 23:41:13     18] Adjusting core size to PlacementGrid : width :3.4 height : 5.2
+[11/29 23:41:13     18] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current create_floorplan objects are automatically derived based on specified new create_floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[11/29 23:41:13     18] #- Begin addRing (date=11/29 23:41:13, mem=744.5M)
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18] **WARN: (IMPPP-193):	The currently specified top spacing 0.2500  might create min enclosed area violation. The required min enclosed area for layer M1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+[11/29 23:41:13     18] **WARN: (IMPPP-193):	The currently specified bottom spacing 0.2500  might create min enclosed area violation. The required min enclosed area for layer M1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+[11/29 23:41:13     18] **WARN: (IMPPP-193):	The currently specified left spacing 0.2500  might create min enclosed area violation. The required min enclosed area for layer M2 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+[11/29 23:41:13     18] **WARN: (IMPPP-193):	The currently specified right spacing 0.2500  might create min enclosed area violation. The required min enclosed area for layer M2 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+[11/29 23:41:13     18] Ring generation is complete; vias are now being generated.
+[11/29 23:41:13     18] The power planner created 8 wires.
+[11/29 23:41:13     18] #- End addRing (date=11/29 23:41:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=744.5M, current mem=744.5M)
+[11/29 23:41:13     18] #- Begin sroute (date=11/29 23:41:13, mem=744.5M)
+[11/29 23:41:13     18] *** Begin SPECIAL ROUTE on Tue Nov 29 23:41:13 2016 ***
+[11/29 23:41:13     18] SPECIAL ROUTE ran on directory: /home/micro2/lab3/synthesis
+[11/29 23:41:13     18] SPECIAL ROUTE ran on machine: kriti (Linux 2.6.18-416.el5 Xeon 1.60Ghz)
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18] Begin option processing ...
+[11/29 23:41:13     18] srouteConnectPowerBump set to false
+[11/29 23:41:13     18] routeSelectNet set to "gnd vdd"
+[11/29 23:41:13     18] routeSpecial set to true
+[11/29 23:41:13     18] srouteBlockPin set to "useLef"
+[11/29 23:41:13     18] srouteBottomLayerLimit set to 1
+[11/29 23:41:13     18] srouteBottomTargetLayerLimit set to 1
+[11/29 23:41:13     18] srouteConnectConverterPin set to false
+[11/29 23:41:13     18] srouteCrossoverViaBottomLayer set to 1
+[11/29 23:41:13     18] srouteCrossoverViaTopLayer set to 8
+[11/29 23:41:13     18] srouteFollowCorePinEnd set to 3
+[11/29 23:41:13     18] srouteJogControl set to "preferWithChanges differentLayer"
+[11/29 23:41:13     18] sroutePadPinAllPorts set to true
+[11/29 23:41:13     18] sroutePreserveExistingRoutes set to true
+[11/29 23:41:13     18] srouteRoutePowerBarPortOnBothDir set to true
+[11/29 23:41:13     18] srouteStopBlockPin set to "nearestTarget"
+[11/29 23:41:13     18] srouteTopLayerLimit set to 8
+[11/29 23:41:13     18] srouteTopTargetLayerLimit set to 8
+[11/29 23:41:13     18] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1505.00 megs.
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18] Reading DB technology information...
+[11/29 23:41:13     18] Finished reading DB technology information.
+[11/29 23:41:13     18] Reading floorplan and netlist information...
+[11/29 23:41:13     18] Finished reading floorplan and netlist information.
+[11/29 23:41:13     18] **WARN: (IMPSR-4302):	Cap-table is found in the design, so the same information from the technology file will be ignored.
+[11/29 23:41:13     18] Read in 17 layers, 8 routing layers, 1 overlap layer
+[11/29 23:41:13     18] Read in 1021 macros, 2 used
+[11/29 23:41:13     18] Read in 2 components
+[11/29 23:41:13     18]   2 core components: 2 unplaced, 0 placed, 0 fixed
+[11/29 23:41:13     18] Read in 5 logical pins
+[11/29 23:41:13     18] Read in 5 nets
+[11/29 23:41:13     18] Read in 7 special nets, 2 routed
+[11/29 23:41:13     18] Read in 4 terminals
+[11/29 23:41:13     18] 2 nets selected.
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18] Begin power routing ...
+[11/29 23:41:13     18] Bad via found: CONT1
+[11/29 23:41:13     18] **WARN: (IMPSR-1235):	Find 1 via whose layer definition is incorrect before power routing.
+[11/29 23:41:13     18] **WARN: (IMPSR-1254):	Cannot find any block pin of net vdd. Check netlist, or change option to include the pin.
+[11/29 23:41:13     18] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[11/29 23:41:13     18] Type 'man IMPSR-1256' for more detail.
+[11/29 23:41:13     18] Cannot find any AREAIO class pad pin of net vdd. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[11/29 23:41:13     18] **WARN: (IMPSR-1254):	Cannot find any block pin of net gnd. Check netlist, or change option to include the pin.
+[11/29 23:41:13     18] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[11/29 23:41:13     18] Type 'man IMPSR-1256' for more detail.
+[11/29 23:41:13     18] Cannot find any AREAIO class pad pin of net gnd. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[11/29 23:41:13     18] CPU time for FollowPin 0 seconds
+[11/29 23:41:13     18] CPU time for FollowPin 0 seconds
+[11/29 23:41:13     18] Bad via found: CONT1
+[11/29 23:41:13     18] **WARN: (IMPSR-1235):	Find 1 via whose layer definition is incorrect after power routing.
+[11/29 23:41:13     18]   Number of IO ports routed: 0
+[11/29 23:41:13     18]   Number of Block ports routed: 0
+[11/29 23:41:13     18]   Number of Stripe ports routed: 0
+[11/29 23:41:13     18]   Number of Core ports routed: 6
+[11/29 23:41:13     18]   Number of Pad ports routed: 0
+[11/29 23:41:13     18]   Number of Power Bump ports routed: 0
+[11/29 23:41:13     18]   Number of Followpin connections: 3
+[11/29 23:41:13     18] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1508.00 megs.
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18]  Begin updating DB with routing results ...
+[11/29 23:41:13     18]  Updating DB with 84 via definition ...Extracting standard cell pins and blockage ...... 
+[11/29 23:41:13     18] Pin and blockage extraction finished
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18] sroute post-processing starts at Tue Nov 29 23:41:13 2016
+[11/29 23:41:13     18] The viaGen is rebuilding shadow vias for net gnd.
+[11/29 23:41:13     18] sroute post-processing ends at Tue Nov 29 23:41:13 2016
+[11/29 23:41:13     18] 
+[11/29 23:41:13     18] sroute post-processing starts at Tue Nov 29 23:41:13 2016
+[11/29 23:41:13     18] The viaGen is rebuilding shadow vias for net vdd.
+[11/29 23:41:13     18] sroute post-processing ends at Tue Nov 29 23:41:13 2016
+[11/29 23:41:13     18] #- End sroute (date=11/29 23:41:13, total cpu=0:00:00.3, real=0:00:00.0, peak res=743.8M, current mem=743.8M)
+[11/29 23:41:15     18] *** Starting place_design default flow ***
+[11/29 23:41:15     18] **INFO: Enable pre-place timing setting for timing analysis
+[11/29 23:41:15     18] Set Using Default Delay Limit as 101.
+[11/29 23:41:15     18] **WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+[11/29 23:41:15     18] Set Default Net Delay as 0 ps.
+[11/29 23:41:15     18] Set Default Net Load as 0 pF. 
+[11/29 23:41:15     18] **INFO: Analyzing IO path groups for slack adjustment
+[11/29 23:41:15     18] **INFO: Disable pre-place timing setting for timing analysis
+[11/29 23:41:15     18] Set Using Default Delay Limit as 1000.
+[11/29 23:41:15     18] Set Default Net Delay as 1000 ps.
+[11/29 23:41:15     18] Set Default Net Load as 0.5 pF. 
+[11/29 23:41:15     18] Deleted 0 physical inst  (cell - / prefix -).
+[11/29 23:41:15     18] Multithreaded Timing Analysis is initialized with 8 threads
+[11/29 23:41:15     18] 
+[11/29 23:41:15     18] *** Starting "NanoPlace(TM) placement v#1 (mem=843.3M)" ...
+[11/29 23:41:15     18] Summary for sequential cells idenfication: 
+[11/29 23:41:15     18] Identified SBFF number: 208
+[11/29 23:41:15     18] Identified MBFF number: 0
+[11/29 23:41:15     18] Not identified SBFF number: 0
+[11/29 23:41:15     18] Not identified MBFF number: 0
+[11/29 23:41:15     18] Number of sequential cells which are not FFs: 31
+[11/29 23:41:15     18] 
+[11/29 23:41:16     20] *** Build Buffered Sizing Timing Model (Used Compact Buffer Set) ...(cpu=0:00:01.5 mem=898.3M) ***
+[11/29 23:41:18     22] *** Build Virtual Sizing Timing Model
+[11/29 23:41:18     22] (cpu=0:00:03.3 mem=951.3M) ***
+[11/29 23:41:18     22] Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+[11/29 23:41:18     22] Scan chains were not defined.
+[11/29 23:41:18     22] #std cell=6 (0 fixed + 6 movable) #block=0 (0 floating + 0 preplaced)
+[11/29 23:41:18     22] #ioInst=0 #net=10 #term=20 #term/net=2.00, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=5
+[11/29 23:41:18     22] stdCell: 6 single + 0 double + 0 multi
+[11/29 23:41:18     22] Total standard cell length = 0.0052 (mm), area = 0.0000 (mm^2)
+[11/29 23:41:18     22] Core basic site is CORE
+[11/29 23:41:18     22] **WARN: (IMPSP-362):	Site 'CORE' has one std.Cell height, so ignoring its X-symmetry.
+[11/29 23:41:18     22] Type 'man IMPSP-362' for more detail.
+[11/29 23:41:18     22] Estimated cell power/ground rail width = 0.568 um
+[11/29 23:41:18     22] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/29 23:41:18     22] Apply auto density screen in pre-place stage.
+[11/29 23:41:18     22] Auto density screen increases utilization from 0.765 to 0.765
+[11/29 23:41:18     22] Auto density screen runtime: cpu = 0:00:00.0 real = 0:00:00.0 mem = 953.3M
+[11/29 23:41:18     22] Average module density = 0.765.
+[11/29 23:41:18     22] Density for the design = 0.765.
+[11/29 23:41:18     22]        = stdcell_area 26 sites (14 um^2) / alloc_area 34 sites (18 um^2).
+[11/29 23:41:18     22] Pin Density = 0.3922.
+[11/29 23:41:18     22]             = total # of pins 20 / total area 51.
+[11/29 23:41:18     22] Initial padding reaches pin density 0.667 for top
+[11/29 23:41:18     22] Initial padding increases density from 0.765 to 0.853 for top
+[11/29 23:41:18     22] Enabling multi-CPU acceleration with 8 CPU(s) for placement
+[11/29 23:41:18     22] === lastAutoLevel = 3 
+[11/29 23:41:18     22] Clock gating cells determined by native netlist tracing.
+[11/29 23:41:19     22] Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+[11/29 23:41:19     22]               Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+[11/29 23:41:19     22]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1146.3M
+[11/29 23:41:19     22] Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+[11/29 23:41:19     22]               Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+[11/29 23:41:19     22]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1146.3M
+[11/29 23:41:19     22] exp_mt_sequential is set from setPlaceMode option to 1
+[11/29 23:41:19     22] Setting dotProdMode from setPlaceMode option to Single-thread sequential mode
+[11/29 23:41:19     22] place_exp_mt_interval set to default 32
+[11/29 23:41:19     22] place_exp_mt_interval_bias (first half) set to default 0.750000
+[11/29 23:41:19     22] Iteration  3: Total net bbox = 2.015e-09 (0.00e+00 2.02e-09)
+[11/29 23:41:19     22]               Est.  stn bbox = 2.015e-09 (0.00e+00 2.02e-09)
+[11/29 23:41:19     22]               cpu = 0:00:00.0 real = 0:00:00.0 mem = [11/29 23:41:19     22] Total number of setup views is 1.
+1146.3M
+[11/29 23:41:19     22] Total number of active setup views is 1.
+[11/29 23:41:19     22] Iteration  4: Total net bbox = 2.022e-07 (0.00e+00 2.02e-07)
+[11/29 23:41:19     22]               Est.  stn bbox = 2.022e-07 (0.00e+00 2.02e-07)
+[11/29 23:41:19     22]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1146.3M
+[11/29 23:41:19     22] Iteration  5: Total net bbox = 9.736e-08 (0.00e+00 9.74e-08)
+[11/29 23:41:19     22]               Est.  stn bbox = 9.736e-08 (0.00e+00 9.74e-08)
+[11/29 23:41:19     22]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1146.3M
+[11/29 23:41:19     22] Iteration  6: Total net bbox = 6.700e+01 (3.07e+01 3.63e+01)
+[11/29 23:41:19     22]               Est.  stn bbox = 6.700e+01 (3.07e+01 3.63e+01)
+[11/29 23:41:19     22]               cpu = 0:00:00.0 real = 0:00:01.0 mem = 1146.3M
+[11/29 23:41:19     22] *** cost = 6.700e+01 (3.07e+01 3.63e+01) (cpu for global=0:00:00.0) real=0:00:01.0***
+[11/29 23:41:19     22] Placement multithread real runtime: 0:00:01.0 with 8 threads.
+[11/29 23:41:19     22] Info: 0 clock gating cells identified, 0 (on average) moved
+[11/29 23:41:19     22] TF
+[11/29 23:41:19     22] Core Placement runtime cpu: 0:00:00.0 real: 0:00:01.0
+[11/29 23:41:19     22] #spOpts: mergeVia=F 
+[11/29 23:41:19     22] Core basic site is CORE
+[11/29 23:41:19     22] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/29 23:41:19     22] *** Starting place_detail (0:00:22.5 mem=1030.1M) ***
+[11/29 23:41:19     22] Total net bbox length = 6.700e+01 (3.070e+01 3.630e+01) (ext = 6.191e+01)
+[11/29 23:41:19     22] Starting refinePlace ...
+[11/29 23:41:19     22] Move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+[11/29 23:41:19     22] default core: bins with density >  0.75 =    0 % ( 0 / 1 )
+[11/29 23:41:19     22] Density distribution unevenness ratio = 0.000%
+[11/29 23:41:19     22]   Spread Effort: high, standalone mode, useDDP on.
+[11/29 23:41:19     22] [CPU] RefinePlace/preRPlace (cpu=0:00:00.0, real=0:00:00.0, mem=1062.1MB) @(0:00:22.5 - 0:00:22.5).
+[11/29 23:41:19     22] Move report: preRPlace moves 6 insts, mean move: 1.59 um, max move: 2.18 um
+[11/29 23:41:19     22] 	Max move on inst (inv5): (5.40, 5.82) --> (6.80, 6.60)
+[11/29 23:41:19     22] 	Length: 3 sites, height: 1 rows, site name: CORE, cell type: inv
+[11/29 23:41:19     22] wireLenOptFixPriorityInst 0 inst fixed
+[11/29 23:41:19     22] tweakage running in 8 threads.
+[11/29 23:41:19     22] Placement tweakage begins.
+[11/29 23:41:19     22] wire length = 1.349e+01
+[11/29 23:41:19     22] wire length = 1.269e+01
+[11/29 23:41:19     22] Placement tweakage ends.
+[11/29 23:41:19     22] Move report: tweak moves 2 insts, mean move: 1.80 um, max move: 1.80 um
+[11/29 23:41:19     22] 	Max move on inst (inv2): (5.00, 6.60) --> (6.80, 6.60)
+[11/29 23:41:19     22] Move report: legalization moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+[11/29 23:41:19     22] [CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=1062.1MB) @(0:00:22.5 - 0:00:22.5).
+[11/29 23:41:19     22] Move report: Detail placement moves 6 insts, mean move: 1.59 um, max move: 2.18 um
+[11/29 23:41:19     22] 	Max move on inst (inv2): (5.40, 5.82) --> (6.80, 6.60)
+[11/29 23:41:19     22] 	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1062.1MB
+[11/29 23:41:19     22] Statistics of distance of Instance movement in refine placement:
+[11/29 23:41:19     22]   maximum (X+Y) =         2.18 um
+[11/29 23:41:19     22]   inst (inv2) with max move: (5.4, 5.821) -> (6.8, 6.6)
+[11/29 23:41:19     22]   mean    (X+Y) =         1.59 um
+[11/29 23:41:19     22] Summary Report:
+[11/29 23:41:19     22] Instances move: 6 (out of 6 movable)
+[11/29 23:41:19     22] Instances flipped: 0
+[11/29 23:41:19     22] Mean displacement: 1.59 um
+[11/29 23:41:19     22] Max displacement: 2.18 um (Instance: inv2) (5.4, 5.821) -> (6.8, 6.6)
+[11/29 23:41:19     22] 	Length: 3 sites, height: 1 rows, site name: CORE, cell type: inv
+[11/29 23:41:19     22] Total net bbox length = 7.810e+01 (3.150e+01 4.661e+01) (ext = 6.720e+01)
+[11/29 23:41:19     22] [CPU] RefinePlace/total (cpu=0:00:00.0, real=0:00:00.0, mem=1062.1MB) @(0:00:22.5 - 0:00:22.5).
+[11/29 23:41:19     22] Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1062.1MB
+[11/29 23:41:19     22] *** Finished place_detail (0:00:22.5 mem=1062.1M) ***
+[11/29 23:41:19     22] *** End of Placement (cpu=0:00:03.9, real=0:00:04.0, mem=1062.1M) ***
+[11/29 23:41:19     22] #spOpts: mergeVia=F 
+[11/29 23:41:19     22] Core basic site is CORE
+[11/29 23:41:19     22] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/29 23:41:19     22] default core: bins with density >  0.75 =    0 % ( 0 / 1 )
+[11/29 23:41:19     22] Density distribution unevenness ratio = 0.000%
+[11/29 23:41:19     22] *** Free Virtual Timing Model ...(mem=1062.1M)
+[11/29 23:41:19     22] UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[11/29 23:41:19     22] UM:                                                                   final
+[11/29 23:41:19     22]      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[11/29 23:41:19     22] UM:                                                                   global_place
+[11/29 23:41:20     22] congRepair running 8 threads
+[11/29 23:41:20     22] Starting congestion repair ...
+[11/29 23:41:20     22] congRepair options: -clkGateAware 1 -rplaceIncrNPClkGateAwareMode 4.
+[11/29 23:41:20     22] (I)       Reading DB...
+[11/29 23:41:20     22] (I)       congestionReportName   : 
+[11/29 23:41:20     22] (I)       buildTerm2TermWires    : 1
+[11/29 23:41:20     22] (I)       doTrackAssignment      : 1
+[11/29 23:41:20     22] (I)       dumpBookshelfFiles     : 0
+[11/29 23:41:20     22] (I)       numThreads             : 0
+[11/29 23:41:20     22] (I)       honorPin               : false
+[11/29 23:41:20     22] (I)       honorPinGuide          : true
+[11/29 23:41:20     22] (I)       honorPartition         : false
+[11/29 23:41:20     22] (I)       allowPartitionCrossover: false
+[11/29 23:41:20     22] (I)       honorSingleEntry       : true
+[11/29 23:41:20     22] (I)       honorSingleEntryStrong : true
+[11/29 23:41:20     22] (I)       handleViaSpacingRule   : false
+[11/29 23:41:20     22] (I)       PDConstraint           : none
+[11/29 23:41:20     22] (I)       expBetterNDRHandling   : false
+[11/29 23:41:20     22] (I)       routingEffortLevel     : 3
+[11/29 23:41:20     22] (I)       numRowsPerGCell        : 1
+[11/29 23:41:20     22] (I)       [11/29 23:41:20     22] [NR-eGR] honorClockSpecNDR      : 0
+speedUpLargeDesign     : 0
+[11/29 23:41:20     22] (I)       speedUpBlkViolationClean: 1
+[11/29 23:41:20     22] (I)       multiThreadingTA       : 1
+[11/29 23:41:20     22] (I)       blockedPinEscape       : 1
+[11/29 23:41:20     22] (I)       [11/29 23:41:20     22] [NR-eGR] minRouteLayer          : 2
+[11/29 23:41:20     22] [NR-eGR] maxRouteLayer          : 2147483647
+blkAwareLayerSwitching : 1
+[11/29 23:41:20     22] (I)       betterClockWireModeling: 1
+[11/29 23:41:20     22] (I)       congestionCleanMode    : 0
+[11/29 23:41:20     22] (I)       optimizationMode       : false
+[11/29 23:41:20     22] (I)       punchThroughDistance   : 500.00
+[11/29 23:41:20     22] (I)       scenicBound            : 1.15
+[11/29 23:41:20     22] (I)       maxScenicToAvoidBlk    : 100.00
+[11/29 23:41:20     22] (I)       source-to-sink ratio   : 0.00
+[11/29 23:41:20     22] (I)       targetCongestionRatioH : 1.00
+[11/29 23:41:20     22] (I)       targetCongestionRatioV : 1.00
+[11/29 23:41:20     22] (I)       layerCongestionRatio   : 0.70
+[11/29 23:41:20     22] (I)       m1CongestionRatio      : 0.10
+[11/29 23:41:20     22] (I)       m2m3CongestionRatio    : 0.70
+[11/29 23:41:20     22] (I)       localRouteEffort       : 1.00
+[11/29 23:41:20     22] (I)       numSitesBlockedByOneVia: 8.00
+[11/29 23:41:20     22] (I)       supplyScaleFactorH     : 1.00
+[11/29 23:41:20     22] (I)       supplyScaleFactorV     : 1.00
+[11/29 23:41:20     22] (I)       highlight3DOverflowFactor: 0.00
+[11/29 23:41:20     22] (I)       doubleCutViaModelingRatio: 0.00
+[11/29 23:41:20     22] (I)       blockTrack             : 
+[11/29 23:41:20     22] (I)       routeVias              : 
+[11/29 23:41:20     22] (I)       readTROption           : true
+[11/29 23:41:20     22] (I)       extraSpacingFactor     : 1.00
+[11/29 23:41:20     22] (I)       routeSelectedNetsOnly  : false
+[11/29 23:41:20     22] [NR-eGR] numTracksPerClockWire  : 0
+[11/29 23:41:20     22] (I)       before initializing RouteDB syMemory usage = 1062.1 MB
+[11/29 23:41:20     22] (I)       starting read tracks
+[11/29 23:41:20     22] (I)       build grid graph
+[11/29 23:41:20     22] (I)       build grid graph start
+[11/29 23:41:20     22] (I)       build grid graph end
+[11/29 23:41:20     22] [NR-eGR] Layer1 has no routable track
+[11/29 23:41:20     22] [NR-eGR] Layer2 has single uniform track structure
+[11/29 23:41:20     22] (I)       numViaLayers=7
+[11/29 23:41:20     22] (I)       Reading via CDS_via1_HV for layer: 0 
+[11/29 23:41:20     22] (I)       Reading via CDS_via2 for layer: 1 
+[11/29 23:41:20     22] (I)       Reading via CDS_via3 for layer: 2 
+[11/29 23:41:20     22] [NR-eGR] Layer3 has single uniform track structure
+[11/29 23:41:20     22] [NR-eGR] Layer4 has single uniform track structure
+[11/29 23:41:20     22] [NR-eGR] Layer5 has single uniform track structure
+[11/29 23:41:20     22] [NR-eGR] Layer6 has single uniform track structure
+[11/29 23:41:20     22] [NR-eGR] Layer7 has single uniform track structure
+[11/29 23:41:20     22] [NR-eGR] Layer8 has single uniform track structure
+Reading via CDS_via4 for layer: 3 
+[11/29 23:41:20     22] (I)       Reading via CDS_via5 for layer: 4 
+[11/29 23:41:20     22] (I)       Reading via CDS_via6 for layer: 5 
+[11/29 23:41:20     22] (I)       Reading via CDS_CB for layer: 6 
+[11/29 23:41:20     22] (I)       end build via table
+[11/29 23:41:20     22] [NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=18 numBumpBlks=0 numBoundaryFakeBlks=0
+[11/29 23:41:20     22] (I)       readDataFromPlaceDB
+[11/29 23:41:20     22] (I)       Read net information..
+[11/29 23:41:20     22] (I)       Read testcase time = 0.000 seconds
+[11/29 23:41:20     22] 
+[11/29 23:41:20     22] [NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[11/29 23:41:20     22] [NR-eGR] Read numTotalNets=5  numIgnoredNets=0
+[11/29 23:41:20     22] (I)       totalPins=10  totalGlobalPin=10 (100.00%)
+[11/29 23:41:20     22] (I)       Model blockage into capacity
+[11/29 23:41:20     22] (I)       Read numBlocks=18  numPreroutedWires=0  numCapScreens=0
+[11/29 23:41:20     22] (I)       blocked area on Layer1 : 0  (0.00%)
+[11/29 23:41:20     22] (I)       blocked area on Layer2 : 46993600  (31.23%)
+[11/29 23:41:20     22] (I)       blocked area on Layer3 : 0  (0.00%)
+[11/29 23:41:20     22] (I)       blocked area on Layer4 : 0  (0.00%)
+[11/29 23:41:20     22] (I)       blocked area on Layer5 : 0  (0.00%)
+[11/29 23:41:20     22] (I)       blocked area on Layer6 : 0  (0.00%)
+[11/29 23:41:20     22] (I)       blocked area on Layer7 : 0  (0.00%)
+[11/29 23:41:20     22] (I)       blocked area on Layer8 : 0  (0.00%)
+[11/29 23:41:20     22] (I)       Modeling time = 0.000 seconds
+[11/29 23:41:20     22] 
+[11/29 23:41:20     22] (I)       Number of ignored nets = 0
+[11/29 23:41:20     22] (I)       Number of fixed nets = 0.  Ignored: Yes
+[11/29 23:41:20     22] (I)       Number of clock nets = 0.  Ignored: No
+[11/29 23:41:20     22] (I)       Number of analog nets = 0.  Ignored: Yes
+[11/29 23:41:20     22] (I)       Number of special nets = 0.  Ignored: Yes
+[11/29 23:41:20     22] (I)       Number of mixed signal nets = 0.  Ignored: Yes
+[11/29 23:41:20     22] (I)       Number of skip routing nets = 0.  Ignored: Yes
+[11/29 23:41:20     22] (I)       Number of nets with ignore route flag = 0.  Ignored: No
+[11/29 23:41:20     22] (I)       Number of nets with one or no pins = 0.  Ignored: Yes
+[11/29 23:41:20     22] (I)       Number of two pin nets which has pins at the same location = 0.  Ignored: Yes
+[11/29 23:41:20     22] (I)       Before initializing earlyGlobalRoute syMemory usage = 1062.1 MB
+[11/29 23:41:20     22] (I)       Layer1  viaCost=300.00
+[11/29 23:41:20     22] (I)       Layer2  viaCost=100.00
+[11/29 23:41:20     22] (I)       Layer3  viaCost=100.00
+[11/29 23:41:20     22] (I)       Layer4  viaCost=100.00
+[11/29 23:41:20     22] (I)       Layer5  viaCost=200.00
+[11/29 23:41:20     22] (I)       Layer6  viaCost=100.00
+[11/29 23:41:20     22] (I)       Layer7  viaCost=500.00
+[11/29 23:41:20     22] (I)       ---------------------Grid Graph Info--------------------
+[11/29 23:41:20     22] (I)       routing area        :  (0, 0) - (11400, 13200)
+[11/29 23:41:20     22] (I)       core area           :  (4000, 4000) - (7400, 9200)
+[11/29 23:41:20     22] (I)       Site Width          :   200  (dbu)
+[11/29 23:41:20     22] (I)       Row Height          :  2600  (dbu)
+[11/29 23:41:20     22] (I)       GCell Width         :  2600  (dbu)
+[11/29 23:41:20     22] (I)       GCell Height        :  2600  (dbu)
+[11/29 23:41:20     22] (I)       grid                :     4     5     8
+[11/29 23:41:20     22] (I)       vertical capacity   :     0  2600     0  2600     0  2600     0  2600
+[11/29 23:41:20     22] (I)       horizontal capacity :     0     0  2600     0  2600     0  2600     0
+[11/29 23:41:20     22] (I)       Default wire width  :   100   100   100   100   100   400   400  3000
+[11/29 23:41:20     22] (I)       Default wire space  :    90   100   100   100   100   400   400  2000
+[11/29 23:41:20     22] (I)       Default pitch size  :   190   200   200   200   200   800   800  5000
+[11/29 23:41:20     22] (I)       First Track Coord   :     0   200   200   200   200   800   800  4000
+[11/29 23:41:20     22] (I)       Num tracks per GCell:  0.00 13.00 13.00 13.00 13.00  3.25  3.25  0.52
+[11/29 23:41:20     22] (I)       Total num of tracks :     0    56    65    56    65    14    16     2
+[11/29 23:41:20     22] (I)       Num of masks        :     1     1     1     1     1     1     1     1
+[11/29 23:41:20     22] (I)       Num of trim masks   :     0     0     0     0     0     0     0     0
+[11/29 23:41:20     22] (I)       --------------------------------------------------------
+[11/29 23:41:20     22] 
+[11/29 23:41:20     22] [NR-eGR] ============ Routing rule table ============
+[11/29 23:41:20     22] [NR-eGR] Rule id 0. Nets 5 
+[11/29 23:41:20     22] (I)       After initializing earlyGlobalRoute syMemory usage = 1062.1 MB
+[11/29 23:41:20     22] (I)       Loading and dumping file time : 0.01 seconds
+[11/29 23:41:20     22] (I)       ============= Initialization =============
+[11/29 23:41:20     22] [NR-eGR] id=0  routeTrackId=0  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[11/29 23:41:20     22] [NR-eGR] Pitch:  L1=190  L2=200  L3=200  L4=200  L5=200  L6=800  L7=800  L8=5000
+[11/29 23:41:20     22] [NR-eGR] ========================================
+[11/29 23:41:20     22] [NR-eGR] 
+[11/29 23:41:20     22] (I)       total 2D Cap : 1158 = (584 H, 574 V)
+[11/29 23:41:20     22] (I)       [11/29 23:41:20     22] [NR-eGR] Layer group 1: route 5 net(s) in layer range [2, 8]
+============  Phase 1a Route ============
+[11/29 23:41:20     22] (I)       Phase 1a runs 0.00 seconds
+[11/29 23:41:20     22] (I)       Usage: 6 = (1 H, 5 V) = (0.17% H, 0.87% V) = (2.600e+00um H, 1.300e+01um V)
+[11/29 23:41:20     22] (I)       
+[11/29 23:41:20     22] (I)       ============  Phase 1b Route ============
+[11/29 23:41:20     22] (I)       Usage: 6 = (1 H, 5 V) = (0.17% H, 0.87% V) = (2.600e+00um H, 1.300e+01um V)
+[11/29 23:41:20     22] (I)       
+[11/29 23:41:20     22] (I)       earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.560000e+01um
+[11/29 23:41:20     22] (I)       ============  Phase 1c Route ============
+[11/29 23:41:20     22] (I)       Usage: 6 = (1 H, 5 V) = (0.17% H, 0.87% V) = (2.600e+00um H, 1.300e+01um V)
+[11/29 23:41:20     22] (I)       
+[11/29 23:41:20     22] (I)       ============  Phase 1d Route ============
+[11/29 23:41:20     22] (I)       Usage: 6 = (1 H, 5 V) = (0.17% H, 0.87% V) = (2.600e+00um H, 1.300e+01um V)
+[11/29 23:41:20     22] (I)       
+[11/29 23:41:20     22] (I)       ============  Phase 1e Route ============
+[11/29 23:41:20     22] (I)       Phase 1e runs 0.00 seconds
+[11/29 23:41:20     22] (I)       Usage: 6 = (1 H, 5 V) = (0.17% H, 0.87% V) = (2.600e+00um H, 1.300e+01um V)
+[11/29 23:41:20     22] (I)       
+[11/29 23:41:20     22] (I)       ============  Phase 1l Route ============
+[11/29 23:41:20     22] (I)       Phase 1l runs 0.00 seconds
+[11/29 23:41:20     22] (I)       [11/29 23:41:20     22] [NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.560000e+01um
+[11/29 23:41:20     22] [NR-eGR] 
+Total Global Routing Runtime: 0.00 seconds
+[11/29 23:41:20     22] [NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[11/29 23:41:20     22] [NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[11/29 23:41:20     22] Local HotSpot Analysis: normalized congestion hotspot area = 0.00/0.00 (max/total hotspot). One area unit = 1 square bin with side length equal to 4 std-cell rows.
+[11/29 23:41:20     22] 
+[11/29 23:41:20     22] ** np local hotspot detection info verbose **
+[11/29 23:41:20     22] level 0: max group area = 0.00 (0.00%) total group area = 0.00 (0.00%) threshold area = 88.00 (area is in unit of 4 std-cell row bins)
+[11/29 23:41:20     22] 
+[11/29 23:41:20     22] Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = [11/29 23:41:20     22] (I)       ============= track Assignment ============
+0.00 (area is in unit of 4 std-cell row bins)
+[11/29 23:41:20     22] describeCongestion: hCong = [11/29 23:41:20     22] (I)       extract Global 3D Wires
+[11/29 23:41:20     22] (I)       Extract Global WL : time=0.00
+[11/29 23:41:20     22] (I)       0.00 vCong = 0.00
+[11/29 23:41:20     22] Skipped repairing congestion.
+Initialize Greedy Track Assignment (maxPinLayer=Layer9, numCutBoxes=0)
+[11/29 23:41:20     22] (I)       Initialization real time=0.00 seconds
+[11/29 23:41:20     22] (I)       Kernel real time=0.00 seconds
+[11/29 23:41:20     22] (I)       End Greedy Track Assignment
+[11/29 23:41:20     22] [NR-eGR] Layer1(M1)(F) length: 0.000000e+00um, number of vias: 10
+[11/29 23:41:20     22] [NR-eGR] Layer2(M2)(V) length: 9.100000e+00um, number of vias: 6
+[11/29 23:41:20     22] [NR-eGR] Layer3(M3)(H) length: 1.800000e+00um, number of vias: 0
+[11/29 23:41:20     22] [NR-eGR] Layer4(M4)(V) length: 0.000000e+00um, number of vias: 0
+[11/29 23:41:20     22] [NR-eGR] Layer5(M5)(H) length: 0.000000e+00um, number of vias: 0
+[11/29 23:41:20     22] [NR-eGR] Layer6(M6)(V) length: 0.000000e+00um, number of vias: 0
+[11/29 23:41:20     22] [NR-eGR] Layer7(M7)(H) length: 0.000000e+00um, number of vias: 0
+[11/29 23:41:20     22] [NR-eGR] Layer8(AP)(V) length: 0.000000e+00um, number of vias: 0
+[11/29 23:41:20     22] [NR-eGR] Total length: 1.090000e+01um, number of vias: 16
+[11/29 23:41:20     22] End of congRepair (cpu=0:00:00.0, real=0:00:00.0)
+[11/29 23:41:20     22] *** Finishing place_design default flow ***
+[11/29 23:41:20     22] ***** Total cpu  0:0:4
+[11/29 23:41:20     22] ***** Total real time  0:0:7
+[11/29 23:41:20     22] **place_design ... cpu = 0: 0: 4, real = 0: 0: 7, mem = 1023.5M **
+[11/29 23:41:20     22] 
+[11/29 23:41:20     22] *** Summary of all messages that are not suppressed in this session:
+[11/29 23:41:20     22] Severity  ID               Count  Summary                                  
+[11/29 23:41:20     22] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[11/29 23:41:20     22] WARNING   IMPSP-362            1  Site '%s' has %s std.Cell height, so ign...
+[11/29 23:41:20     22] *** Message Summary: 2 warning(s), 0 error(s)
+[11/29 23:41:20     22] 
+[11/29 23:41:20     22]      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[11/29 23:41:20     22] UM:                                                                   final
+[11/29 23:41:20     22]      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[11/29 23:41:20     22] UM:          4.53              7                                      place_design
+[11/29 23:41:20     22] #route_design: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 709.60 (MB), peak = 897.52 (MB)
+[11/29 23:41:20     22] #default_emulate_rc_corner has no qx tech file defined
+[11/29 23:41:20     22] #No active RC corner or QRC tech file is missing.
+[11/29 23:41:20     22] #**INFO: setDesignMode -flowEffort standard
+[11/29 23:41:20     22] #**INFO: mulit-cut via swapping is disabled by user.
+[11/29 23:41:20     22] #**INFO: All auto set options tuned by route_design will be restored to their original settings on command completion.
+[11/29 23:41:20     22] #**INFO: auto set of routeReserveSpaceForMultiCut to true
+[11/29 23:41:20     22] #**INFO: auto set of routeConcurrentMinimizeViaCountEffort to high
+[11/29 23:41:20     22] Core basic site is CORE
+[11/29 23:41:20     22] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/29 23:41:20     22] Begin checking placement ... (start mem=1023.5M, init mem=1023.5M)
+[11/29 23:41:20     22] *info: Placed = 6             
+[11/29 23:41:20     22] *info: Unplaced = 0           
+[11/29 23:41:20     22] Placement Density:76.47%(14/18)
+[11/29 23:41:20     22] Placement Density (including fixed std cells):76.47%(14/18)
+[11/29 23:41:20     22] Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=1023.5M)
+[11/29 23:41:20     22] #**INFO: auto set of routeWithTimingDriven to true
+[11/29 23:41:20     22] #**INFO: auto set of routeWithSiDriven to true
+[11/29 23:41:20     22] 
+[11/29 23:41:20     22] changeUseClockNetStatus Option :  -noFixedNetWires 
+[11/29 23:41:20     22] *** Changed status on (0) nets in Clock.
+[11/29 23:41:20     22] *** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1023.5M) ***
+[11/29 23:41:20     22] 
+[11/29 23:41:20     22] globalRoute
+[11/29 23:41:20     22] 
+[11/29 23:41:20     22] #setNanoRouteMode -routeConcurrentMinimizeViaCountEffort "high"
+[11/29 23:41:20     22] #setNanoRouteMode -routeReserveSpaceForMultiCut true
+[11/29 23:41:20     22] #setNanoRouteMode -routeWithSiDriven true
+[11/29 23:41:20     22] #setNanoRouteMode -routeWithTimingDriven true
+[11/29 23:41:20     22] #Start globalRoute on Tue Nov 29 23:41:20 2016
+[11/29 23:41:20     22] #
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW CLOCKTREE does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR3X9 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR3X4 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR3X27 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR3X18 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR2X9 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR2X4 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR2X35 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR2X27 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR2X18 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR3X9 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR3X4 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR3X27 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR3X18 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR2X9 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR2X4 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR2X35 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR2X27 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR2X18 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (NRDB-728) PIN Q in CELL_VIEW HS65_GS_SDFPSQX9 does not have antenna diff area.
+[11/29 23:41:20     22] #WARNING (EMS-27) Message (NRDB-728) has exceeded the current message display limit of 20.
+[11/29 23:41:20     22] #To increase the message display limit, refer to the product command reference manual.
+[11/29 23:41:20     23] Updating RC grid for preRoute extraction ...
+[11/29 23:41:20     23] Initializing multi-corner capacitance tables ... 
+[11/29 23:41:20     23] Initializing multi-corner resistance tables ...
+[11/29 23:41:20     23] Creating RPSQ from WeeR and WRes ...
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] **WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+[11/29 23:41:20     23] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/A of net A because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[11/29 23:41:20     23] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/B of net B because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[11/29 23:41:20     23] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/C of net C because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[11/29 23:41:20     23] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/D of net D because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[11/29 23:41:20     23] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/F of net F because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[11/29 23:41:20     23] ### Net info: total nets: 17
+[11/29 23:41:20     23] ### Net info: dirty nets: 0
+[11/29 23:41:20     23] ### Net info: marked as disconnected nets: 0
+[11/29 23:41:20     23] ### Net info: fully routed nets: 0
+[11/29 23:41:20     23] ### Net info: trivial (single pin) nets: 0
+[11/29 23:41:20     23] ### Net info: unrouted nets: 17
+[11/29 23:41:20     23] ### Net info: re-extraction nets: 0
+[11/29 23:41:20     23] ### Net info: ignored nets: 0
+[11/29 23:41:20     23] ### Net info: skip routing nets: 0
+[11/29 23:41:20     23] #NanoRoute Version 16.10-p004_1 NR160506-1445/16_10-UB
+[11/29 23:41:20     23] #Using multithreading with 8 threads.
+[11/29 23:41:20     23] #Start routing data preparation.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M1 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M2 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M1 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M2 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M2 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M3 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M2 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M3 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M3 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M4 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M3 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M4 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M4 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M5 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M4 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M5 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M5 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M6 is not specified for width 0.400.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M5 is not specified for width 0.100.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M6 is not specified for width 0.400.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M6 is not specified for width 0.400.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M7 is not specified for width 0.400.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M6 is not specified for width 0.400.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER M7 is not specified for width 0.400.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M7 is not specified for width 0.400.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER AP is not specified for width 3.000.
+[11/29 23:41:20     23] #WARNING (NRDB-2077) The below via enclosure for LAYER M7 is not specified for width 0.400.
+[11/29 23:41:20     23] #WARNING (NRDB-2078) The above via enclosure for LAYER AP is not specified for width 3.000.
+[11/29 23:41:20     23] #Minimum voltage of a net in the design = 0.000.
+[11/29 23:41:20     23] #Maximum voltage of a net in the design = 1.000.
+[11/29 23:41:20     23] #Voltage range [0.000 - 0.000] has 4 nets.
+[11/29 23:41:20     23] #Voltage range [0.000 - 1.000] has 13 nets.
+[11/29 23:41:20     23] # M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.190
+[11/29 23:41:20     23] # M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+[11/29 23:41:20     23] # M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+[11/29 23:41:20     23] # M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+[11/29 23:41:20     23] # M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+[11/29 23:41:20     23] # M6           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+[11/29 23:41:20     23] # M7           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+[11/29 23:41:20     23] # AP           V   Track-Pitch = 5.000    Line-2-Via Pitch = 5.700
+[11/29 23:41:20     23] #WARNING (NRAG-44) Track pitch is too small compared with line-2-via pitch.
+[11/29 23:41:20     23] #Regenerating Ggrids automatically.
+[11/29 23:41:20     23] #Auto generating G-grids with size=15 tracks, using layer M3's pitch = 0.200.
+[11/29 23:41:20     23] #Using automatically generated G-grids.
+[11/29 23:41:20     23] #Done routing data preparation.
+[11/29 23:41:20     23] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 736.80 (MB), peak = 897.52 (MB)
+[11/29 23:41:20     23] #Merging special wires using 8 threads...
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Connectivity extraction summary:
+[11/29 23:41:20     23] #Total number of nets = 0.
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Number of eco nets is 0
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Start data preparation...
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Data preparation is done on Tue Nov 29 23:41:20 2016
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Analyzing routing resource...
+[11/29 23:41:20     23] #Routing resource analysis is done on Tue Nov 29 23:41:20 2016
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #  Resource Analysis:
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #               Routing  #Avail      #Track     #Total     %Gcell
+[11/29 23:41:20     23] #  Layer      Direction   Track     Blocked      Gcell    Blocked
+[11/29 23:41:20     23] #  --------------------------------------------------------------
+[11/29 23:41:20     23] #  Metal 1        H          65           0          16    12.50%
+[11/29 23:41:20     23] #  Metal 2        V          56           0          16     0.00%
+[11/29 23:41:20     23] #  Metal 3        H          65           0          16     0.00%
+[11/29 23:41:20     23] #  Metal 4        V          56           0          16     0.00%
+[11/29 23:41:20     23] #  Metal 5        H          65           0          16     0.00%
+[11/29 23:41:20     23] #  Metal 6        V          14           0          16     0.00%
+[11/29 23:41:20     23] #  Metal 7        H          16           0          16     0.00%
+[11/29 23:41:20     23] #  Metal 8        V           2           0          16    50.00%
+[11/29 23:41:20     23] #  --------------------------------------------------------------
+[11/29 23:41:20     23] #  Total                    339       0.00%         128     7.81%
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 737.19 (MB), peak = 897.52 (MB)
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #start global routing iteration 1...
+[11/29 23:41:20     23] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 737.64 (MB), peak = 897.52 (MB)
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #start global routing iteration 2...
+[11/29 23:41:20     23] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 737.73 (MB), peak = 897.52 (MB)
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Total number of trivial nets (e.g. < 2 pins) = 12 (skipped).
+[11/29 23:41:20     23] #Total number of routable nets = 5.
+[11/29 23:41:20     23] #Total number of nets in the design = 17.
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #5 routable nets have only global wires.
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Routed nets constraints summary:
+[11/29 23:41:20     23] #-----------------------------
+[11/29 23:41:20     23] #        Rules   Unconstrained  
+[11/29 23:41:20     23] #-----------------------------
+[11/29 23:41:20     23] #      Default               5  
+[11/29 23:41:20     23] #-----------------------------
+[11/29 23:41:20     23] #        Total               5  
+[11/29 23:41:20     23] #-----------------------------
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Routing constraints summary of the whole design:
+[11/29 23:41:20     23] #-----------------------------
+[11/29 23:41:20     23] #        Rules   Unconstrained  
+[11/29 23:41:20     23] #-----------------------------
+[11/29 23:41:20     23] #      Default               5  
+[11/29 23:41:20     23] #-----------------------------
+[11/29 23:41:20     23] #        Total               5  
+[11/29 23:41:20     23] #-----------------------------
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #  Congestion Analysis: (blocked Gcells are excluded)
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #                 OverCon          
+[11/29 23:41:20     23] #                  #Gcell    %Gcell
+[11/29 23:41:20     23] #     Layer           (1)   OverCon
+[11/29 23:41:20     23] #  --------------------------------
+[11/29 23:41:20     23] #   Metal 1      0(0.00%)   (0.00%)
+[11/29 23:41:20     23] #   Metal 2      0(0.00%)   (0.00%)
+[11/29 23:41:20     23] #   Metal 3      0(0.00%)   (0.00%)
+[11/29 23:41:20     23] #   Metal 4      0(0.00%)   (0.00%)
+[11/29 23:41:20     23] #   Metal 5      0(0.00%)   (0.00%)
+[11/29 23:41:20     23] #   Metal 6      0(0.00%)   (0.00%)
+[11/29 23:41:20     23] #   Metal 7      0(0.00%)   (0.00%)
+[11/29 23:41:20     23] #   Metal 8      0(0.00%)   (0.00%)
+[11/29 23:41:20     23] #  --------------------------------
+[11/29 23:41:20     23] #     Total      0(0.00%)   (0.00%)
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+[11/29 23:41:20     23] #  Overflow after GR: 0.00% H + 0.00% V
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Complete Global Routing.
+[11/29 23:41:20     23] #Total wire length = 18 um.
+[11/29 23:41:20     23] #Total half perimeter of net bounding box = 20 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M1 = 0 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M2 = 15 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M3 = 3 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M4 = 0 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M5 = 0 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M6 = 0 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M7 = 0 um.
+[11/29 23:41:20     23] #Total wire length on LAYER AP = 0 um.
+[11/29 23:41:20     23] #Total number of vias = 12
+[11/29 23:41:20     23] #Up-Via Summary (total 12):
+[11/29 23:41:20     23] #           
+[11/29 23:41:20     23] #-----------------------
+[11/29 23:41:20     23] #  Metal 1           10
+[11/29 23:41:20     23] #  Metal 2            2
+[11/29 23:41:20     23] #-----------------------
+[11/29 23:41:20     23] #                    12 
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Max overcon = 0 track.
+[11/29 23:41:20     23] #Total overcon = 0.00%.
+[11/29 23:41:20     23] #Worst layer Gcell overcon rate = 0.00%.
+[11/29 23:41:20     23] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 741.59 (MB), peak = 897.52 (MB)
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Connectivity extraction summary:
+[11/29 23:41:20     23] #Total number of nets = 0.
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 737.80 (MB), peak = 897.52 (MB)
+[11/29 23:41:20     23] #Start Track Assignment.
+[11/29 23:41:20     23] #Done with 1 horizontal wires in 1 hboxes and 5 vertical wires in 1 hboxes.
+[11/29 23:41:20     23] #Done with 0 horizontal wires in 1 hboxes and 0 vertical wires in 1 hboxes.
+[11/29 23:41:20     23] #Done with 1 horizontal wires in 1 hboxes and 1 vertical wires in 1 hboxes.
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Track assignment summary:
+[11/29 23:41:20     23] #layer  (wire length)   (overlap)        (long ovlp) 
+[11/29 23:41:20     23] #----------------------------------------------------
+[11/29 23:41:20     23] #M1 	      0.00 	  0.00%  	  0.00%
+[11/29 23:41:20     23] #M2 	     15.70 	  0.00%  	  0.00%
+[11/29 23:41:20     23] #M3 	      2.10 	  0.00%  	  0.00%
+[11/29 23:41:20     23] #M4 	      0.00 	  0.00%  	  0.00%
+[11/29 23:41:20     23] #M5 	      0.00 	  0.00%  	  0.00%
+[11/29 23:41:20     23] #M6 	      0.00 	  0.00%  	  0.00%
+[11/29 23:41:20     23] #M7 	      0.00 	  0.00%  	  0.00%
+[11/29 23:41:20     23] #M8 	      0.00 	  0.00%  	  0.00%
+[11/29 23:41:20     23] #----------------------------------------------------
+[11/29 23:41:20     23] #All 	     17.80  	  0.00% 	  0.00%
+[11/29 23:41:20     23] #Complete Track Assignment.
+[11/29 23:41:20     23] #Total wire length = 17 um.
+[11/29 23:41:20     23] #Total half perimeter of net bounding box = 20 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M1 = 0 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M2 = 15 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M3 = 2 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M4 = 0 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M5 = 0 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M6 = 0 um.
+[11/29 23:41:20     23] #Total wire length on LAYER M7 = 0 um.
+[11/29 23:41:20     23] #Total wire length on LAYER AP = 0 um.
+[11/29 23:41:20     23] #Total number of vias = 12
+[11/29 23:41:20     23] #Up-Via Summary (total 12):
+[11/29 23:41:20     23] #           
+[11/29 23:41:20     23] #-----------------------
+[11/29 23:41:20     23] #  Metal 1           10
+[11/29 23:41:20     23] #  Metal 2            2
+[11/29 23:41:20     23] #-----------------------
+[11/29 23:41:20     23] #                    12 
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 742.77 (MB), peak = 897.52 (MB)
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #globalRoute statistics:
+[11/29 23:41:20     23] #Cpu time = 00:00:01
+[11/29 23:41:20     23] #Elapsed time = 00:00:01
+[11/29 23:41:20     23] #Increased memory = 24.68 (MB)
+[11/29 23:41:20     23] #Total memory = 734.47 (MB)
+[11/29 23:41:20     23] #Peak memory = 897.52 (MB)
+[11/29 23:41:20     23] #Number of warnings = 55
+[11/29 23:41:20     23] #Total number of warnings = 56
+[11/29 23:41:20     23] #Number of fails = 0
+[11/29 23:41:20     23] #Total number of fails = 0
+[11/29 23:41:20     23] #Complete globalRoute on Tue Nov 29 23:41:20 2016
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23]      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[11/29 23:41:20     23] UM:                                                                   final
+[11/29 23:41:20     23]      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[11/29 23:41:20     23] UM:          0.76              0                                      route_design
+[11/29 23:41:20     23] #route_design: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 734.49 (MB), peak = 897.52 (MB)
+[11/29 23:41:20     23] 
+[11/29 23:41:20     23] route_detail
+[11/29 23:41:20     23] 
+[11/29 23:41:20     23] #Start route_detail on Tue Nov 29 23:41:20 2016
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/A of net A because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[11/29 23:41:20     23] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/B of net B because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[11/29 23:41:20     23] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/C of net C because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[11/29 23:41:20     23] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/D of net D because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[11/29 23:41:20     23] #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/F of net F because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+[11/29 23:41:20     23] ### Net info: total nets: 17
+[11/29 23:41:20     23] ### Net info: dirty nets: 0
+[11/29 23:41:20     23] ### Net info: marked as disconnected nets: 0
+[11/29 23:41:20     23] ### Net info: fully routed nets: 5
+[11/29 23:41:20     23] ### Net info: trivial (single pin) nets: 0
+[11/29 23:41:20     23] ### Net info: unrouted nets: 12
+[11/29 23:41:20     23] ### Net info: re-extraction nets: 0
+[11/29 23:41:20     23] ### Net info: ignored nets: 0
+[11/29 23:41:20     23] ### Net info: skip routing nets: 0
+[11/29 23:41:20     23] #NanoRoute Version 16.10-p004_1 NR160506-1445/16_10-UB
+[11/29 23:41:20     23] #Using multithreading with 8 threads.
+[11/29 23:41:20     23] #Start routing data preparation.
+[11/29 23:41:20     23] #Minimum voltage of a net in the design = 0.000.
+[11/29 23:41:20     23] #Maximum voltage of a net in the design = 1.000.
+[11/29 23:41:20     23] #Voltage range [0.000 - 0.000] has 4 nets.
+[11/29 23:41:20     23] #Voltage range [0.000 - 1.000] has 13 nets.
+[11/29 23:41:20     23] # M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.190
+[11/29 23:41:20     23] # M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+[11/29 23:41:20     23] # M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+[11/29 23:41:20     23] # M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+[11/29 23:41:20     23] # M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+[11/29 23:41:20     23] # M6           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+[11/29 23:41:20     23] # M7           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+[11/29 23:41:20     23] # AP           V   Track-Pitch = 5.000    Line-2-Via Pitch = 5.700
+[11/29 23:41:20     23] #WARNING (NRAG-44) Track pitch is too small compared with line-2-via pitch.
+[11/29 23:41:20     23] #Using user defined Ggrids in DB.
+[11/29 23:41:20     23] #Done routing data preparation.
+[11/29 23:41:20     23] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 739.15 (MB), peak = 897.52 (MB)
+[11/29 23:41:20     23] #Merging special wires using 8 threads...
+[11/29 23:41:20     23] #
+[11/29 23:41:20     23] #Connectivity extraction summary:
+[11/29 23:41:20     23] #Total number of nets = 0.
+[11/29 23:41:20     23] #
+[11/29 23:41:21     24] #
+[11/29 23:41:21     24] #Start Detail Routing..
+[11/29 23:41:21     24] #start initial detail routing ...
+[11/29 23:41:21     24] #    number of violations = 0
+[11/29 23:41:21     24] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 748.02 (MB), peak = 897.52 (MB)
+[11/29 23:41:21     24] #start 1st optimization iteration ...
+[11/29 23:41:21     24] #    number of violations = 0
+[11/29 23:41:21     24] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 749.28 (MB), peak = 897.52 (MB)
+[11/29 23:41:21     24] #Complete Detail Routing.
+[11/29 23:41:21     24] #Total wire length = 11 um.
+[11/29 23:41:21     24] #Total half perimeter of net bounding box = 20 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M1 = 1 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M2 = 9 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M3 = 1 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M4 = 0 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M5 = 0 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M6 = 0 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M7 = 0 um.
+[11/29 23:41:21     24] #Total wire length on LAYER AP = 0 um.
+[11/29 23:41:21     24] #Total number of vias = 12
+[11/29 23:41:21     24] #Up-Via Summary (total 12):
+[11/29 23:41:21     24] #           
+[11/29 23:41:21     24] #-----------------------
+[11/29 23:41:21     24] #  Metal 1           10
+[11/29 23:41:21     24] #  Metal 2            2
+[11/29 23:41:21     24] #-----------------------
+[11/29 23:41:21     24] #                    12 
+[11/29 23:41:21     24] #
+[11/29 23:41:21     24] #Total number of DRC violations = 0
+[11/29 23:41:21     24] #Cpu time = 00:00:01
+[11/29 23:41:21     24] #Elapsed time = 00:00:01
+[11/29 23:41:21     24] #Increased memory = 3.76 (MB)
+[11/29 23:41:21     24] #Total memory = 742.38 (MB)
+[11/29 23:41:21     24] #Peak memory = 897.52 (MB)
+[11/29 23:41:21     24] #
+[11/29 23:41:21     24] #start routing for process antenna violation fix ...
+[11/29 23:41:21     24] #
+[11/29 23:41:21     24] #Connectivity extraction summary:
+[11/29 23:41:21     24] #Total number of nets = 0.
+[11/29 23:41:21     24] #
+[11/29 23:41:21     24] #cpu time = 00:00:01, elapsed time = 00:00:01, memory = 744.17 (MB), peak = 897.52 (MB)
+[11/29 23:41:21     24] #
+[11/29 23:41:21     24] #Total wire length = 11 um.
+[11/29 23:41:21     24] #Total half perimeter of net bounding box = 20 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M1 = 1 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M2 = 9 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M3 = 1 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M4 = 0 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M5 = 0 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M6 = 0 um.
+[11/29 23:41:21     24] #Total wire length on LAYER M7 = 0 um.
+[11/29 23:41:21     24] #Total wire length on LAYER AP = 0 um.
+[11/29 23:41:21     24] #Total number of vias = 12
+[11/29 23:41:21     24] #Up-Via Summary (total 12):
+[11/29 23:41:21     24] #           
+[11/29 23:41:21     24] #-----------------------
+[11/29 23:41:21     24] #  Metal 1           10
+[11/29 23:41:21     24] #  Metal 2            2
+[11/29 23:41:21     24] #-----------------------
+[11/29 23:41:21     24] #                    12 
+[11/29 23:41:21     24] #
+[11/29 23:41:21     24] #Total number of DRC violations = 0
+[11/29 23:41:21     24] #Total number of net violated process antenna rule = 0
+[11/29 23:41:21     24] #
+[11/29 23:41:21     24] #
+[11/29 23:41:21     24] #route_detail statistics:
+[11/29 23:41:21     24] #Cpu time = 00:00:01
+[11/29 23:41:21     24] #Elapsed time = 00:00:01
+[11/29 23:41:21     24] #Increased memory = 3.55 (MB)
+[11/29 23:41:21     24] #Total memory = 738.08 (MB)
+[11/29 23:41:21     24] #Peak memory = 897.52 (MB)
+[11/29 23:41:21     24] #Number of warnings = 7
+[11/29 23:41:21     24] #Total number of warnings = 63
+[11/29 23:41:21     24] #Number of fails = 0
+[11/29 23:41:21     24] #Total number of fails = 0
+[11/29 23:41:21     24] #Complete route_detail on Tue Nov 29 23:41:21 2016
+[11/29 23:41:21     24] #
+[11/29 23:41:21     24] **WARN: (IMPSP-5217):	add_fillers command is running on a postRoute database. It is recommended to be followed by eco_route command to make the DRC clean.
+[11/29 23:41:21     24] Type 'man IMPSP-5217' for more detail.
+[11/29 23:41:21     24] Core basic site is CORE
+[11/29 23:41:22     24] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/29 23:41:22     24]   Signal wire search tree: 20 elements. (cpu=0:00:00.0, mem=0.0M)
+[11/29 23:41:22     24] *INFO: Adding fillers to top-module.
+[11/29 23:41:22     24] *INFO:   Added 0 filler inst  (cell HS65_GS_FILLERPFP4 / prefix FILLER).
+[11/29 23:41:22     24] *INFO:   Added 2 filler insts (cell HS65_GS_FILLERPFP3 / prefix FILLER).
+[11/29 23:41:22     24] *INFO:   Added 1 filler inst  (cell HS65_GS_FILLERPFP2 / prefix FILLER).
+[11/29 23:41:22     24] *INFO:   Added 0 filler inst  (cell HS65_GS_FILLERPFP1 / prefix FILLER).
+[11/29 23:41:22     24] *INFO: Total 3 filler insts added - prefix FILLER (CPU: 0:00:00.0).
+[11/29 23:41:22     24] For 3 new insts, *** Applied 4 GNC rules (cpu = 0:00:00.0)
+[11/29 23:41:22     24] Core basic site is CORE
+[11/29 23:41:22     24] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/29 23:41:22     24] Begin checking placement ... (start mem=1038.3M, init mem=1038.3M)
+[11/29 23:41:22     24] *info: Recommended don't use cell = 0           
+[11/29 23:41:22     24] *info: Placed = 9             
+[11/29 23:41:22     24] *info: Unplaced = 0           
+[11/29 23:41:22     24] Placement Density:100.00%(18/18)
+[11/29 23:41:22     24] Placement Density (including fixed std cells):100.00%(18/18)
+[11/29 23:41:22     24] Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=1038.3M)
+[11/29 23:41:22     24] ############################################################################
+[11/29 23:41:22     24] # Innovus Netlist Design Rule Check
+[11/29 23:41:22     24] # Tue Nov 29 23:41:22 2016
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] ############################################################################
+[11/29 23:41:22     24] Design: TF
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] ------ Design Summary:
+[11/29 23:41:22     24] Total Standard Cell Number   (cells) : 9
+[11/29 23:41:22     24] Total Block Cell Number      (cells) : 0
+[11/29 23:41:22     24] Total I/O Pad Cell Number    (cells) : 0
+[11/29 23:41:22     24] Total Standard Cell Area     ( um^2) : 17.68
+[11/29 23:41:22     24] Total Block Cell Area        ( um^2) : 0.00
+[11/29 23:41:22     24] Total I/O Pad Cell Area      ( um^2) : 0.00
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] ------ Design Statistics:
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Number of Instances            : 9
+[11/29 23:41:22     24] Number of Non-uniquified Insts : 7
+[11/29 23:41:22     24] Number of Nets                 : 17
+[11/29 23:41:22     24] Average number of Pins per Net : 1.18
+[11/29 23:41:22     24] Maximum number of Pins in Net  : 2
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] ------ I/O Port summary
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Number of Primary I/O Ports    : 5
+[11/29 23:41:22     24] Number of Input Ports          : 4
+[11/29 23:41:22     24] Number of Output Ports         : 1
+[11/29 23:41:22     24] Number of Bidirectional Ports  : 0
+[11/29 23:41:22     24] Number of Power/Ground Ports   : 0
+[11/29 23:41:22     24] Number of Floating Ports                     *: 0
+[11/29 23:41:22     24] Number of Ports Connected to Multiple Pads   *: 0
+[11/29 23:41:22     24] Number of Ports Connected to Core Instances   : 5
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] ------ Design Rule Checking:
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Number of Output Pins connect to Power/Ground *: 0
+[11/29 23:41:22     24] Number of Insts with Input Pins tied together ?: 0
+[11/29 23:41:22     24] Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+[11/29 23:41:22     24] Number of Input/InOut Floating Pins            : 0
+[11/29 23:41:22     24] Number of Output Floating Pins                 : 0
+[11/29 23:41:22     24] Number of Output Term Marked TieHi/Lo         *: 0
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Number of nets with tri-state drivers          : 0
+[11/29 23:41:22     24] Number of nets with parallel drivers           : 0
+[11/29 23:41:22     24] Number of nets with multiple drivers           : 0
+[11/29 23:41:22     24] Number of nets with no driver (No FanIn)       : 0
+[11/29 23:41:22     24] Number of Output Floating nets (No FanOut)     : 0
+[11/29 23:41:22     24] Number of High Fanout nets (>50)               : 0
+[11/29 23:41:22     24] Checking routing tracks.....
+[11/29 23:41:22     24] Checking other grids.....
+[11/29 23:41:22     24] Checking FINFET Grid is on Manufacture Grid.....
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Checking core/die box is on Grid.....
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Checking snap rule ......
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Checking Row is on grid......
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Checking AreaIO row.....
+[11/29 23:41:22     24] Checking routing blockage.....
+[11/29 23:41:22     24] Checking components.....
+[11/29 23:41:22     24] Checking IO Pins.....
+[11/29 23:41:22     24] Unplaced Io Pins = 5 
+[11/29 23:41:22     24] Checking constraints (guide/region/fence).....
+[11/29 23:41:22     24] Checking groups.....
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Checking Ptn Pins .....
+[11/29 23:41:22     24] Checking Ptn Core Box.....
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Checking Preroutes.....
+[11/29 23:41:22     24] No. of regular pre-routes not on tracks : 0 
+[11/29 23:41:22     24]  Design check done.
+[11/29 23:41:22     24] Report saved in file checkDesign/TF.main.htm.ascii.
+[11/29 23:41:22     24] *** Message Summary: 0 warning(s), 0 error(s)
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24]  *** Starting Verify DRC (MEM: 1038.3) ***
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24]   VERIFY DRC ...... Starting Verification
+[11/29 23:41:22     24]   VERIFY DRC ...... Initializing
+[11/29 23:41:22     24]   VERIFY DRC ...... Deleting Existing Violations
+[11/29 23:41:22     24]   VERIFY DRC ...... Creating Sub-Areas
+[11/29 23:41:22     24] **WARN: (IMPVFG-1198):	The number of CPUs requested 8 is larger than that check_drc used 1. In Multithreading mode, the number of CPUs check_drc used is not larger than the number of subareas.
+[11/29 23:41:22     24]  Use 'set_multi_cpu_usage -local_cpu' to specify the less cup number if the verify area is not large.
+[11/29 23:41:22     24]   VERIFY DRC ...... Using new threading
+[11/29 23:41:22     24]   VERIFY DRC ...... Sub-Area : 1 of 1
+[11/29 23:41:22     24]   VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24]   Verification Complete : 0 Viols.
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24]  *** End Verify DRC (CPU: 0:00:00.1  ELAPSED TIME: 0.00  MEM: 110.8M) ***
+[11/29 23:41:22     24] 
+[11/29 23:41:22     24] Start to collect the design information.
+[11/29 23:41:22     24] Build netlist information for Cell TF.
+[11/29 23:41:22     24] Finished collecting the design information.
+[11/29 23:41:22     24] Generating standard cells used in the design report.
+[11/29 23:41:22     24] Analyze library ... 
+[11/29 23:41:22     24] Analyze netlist ... 
+[11/29 23:41:22     24] Analyze timing ... 
+[11/29 23:41:22     24] Analyze floorplan/placement ... 
+[11/29 23:41:22     24] Analysis Routing ...
+[11/29 23:41:22     24] Report saved in file summaryReport/TF.main.htm.ascii.
+[11/29 23:41:22     24] [DEV]innovus 2> set_layer_preference pinblock -is_visible 1
+[11/29 23:41:31     25] set_layer_preference pinstdCell -is_visible 1
+[11/29 23:41:31     25] set_layer_preference pinio -is_visible 1
+[11/29 23:41:31     25] set_layer_preference piniopin -is_visible 1
+[11/29 23:41:31     25] set_layer_preference pinother -is_visible 1
+[11/29 23:41:31     25] set_layer_preference obsblock -is_visible 1
+[11/29 23:41:31     25] set_layer_preference obsstdCell -is_visible 1
+[11/29 23:41:31     25] set_layer_preference obsio -is_visible 1
+[11/29 23:41:31     25] set_layer_preference obsother -is_visible 1
+[11/29 23:41:31     25] set_layer_preference layoutObj -is_visible 1
+[11/29 23:41:34     25] set_layer_preference pinblock -is_selectable 1
+[11/29 23:41:34     25] set_layer_preference pinstdCell -is_selectable 1
+[11/29 23:41:34     25] set_layer_preference pinio -is_selectable 1
+[11/29 23:41:34     25] set_layer_preference piniopin -is_selectable 1
+[11/29 23:41:34     25] set_layer_preference pinother -is_selectable 1
+[11/29 23:41:34     25] set_layer_preference obsblock -is_selectable 1
+[11/29 23:41:34     25] set_layer_preference obsstdCell -is_selectable 1
+[11/29 23:41:34     25] set_layer_preference obsio -is_selectable 1
+[11/29 23:41:34     25] set_layer_preference obsother -is_selectable 1
+[11/29 23:41:34     25] set_layer_preference layoutObj -is_selectable 1
+[11/29 23:41:38     25] gui_fit
+[11/29 23:41:45     26] zoom_box 7.492 9.254 3.891 3.929
+[11/29 23:42:19     28] gui_fit
+[11/29 23:43:25     30] set_layer_preference violation -is_visible 1
+[11/29 23:43:25     30] gui_show_markers -all -no_false_marker
+
+[11/29 23:43:47     30] [DEV]innovus 2> check_design -all
+[11/29 23:43:57     31] Core basic site is CORE
+[11/29 23:43:57     31] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+Begin checking placement ... (start mem=1153.1M, init mem=1153.1M)
+[11/29 23:43:57     31] *info: Recommended don't use cell = 0           
+[11/29 23:43:57     31] *info: Placed = 9             
+[11/29 23:43:57     31] *info: Unplaced = 0           
+[11/29 23:43:57     31] Placement Density:100.00%(18/18)
+[11/29 23:43:57     31] Placement Density (including fixed std cells):100.00%(18/18)
+[11/29 23:43:57     31] Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=1153.1M)
+[11/29 23:43:57     31] ############################################################################
+[11/29 23:43:57     31] # Innovus Netlist Design Rule Check
+[11/29 23:43:57     31] # Tue Nov 29 23:43:57 2016
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] ############################################################################
+[11/29 23:43:57     31] Design: TF
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] ------ Design Summary:
+[11/29 23:43:57     31] Total Standard Cell Number   (cells) : 9
+[11/29 23:43:57     31] Total Block Cell Number      (cells) : 0
+[11/29 23:43:57     31] Total I/O Pad Cell Number    (cells) : 0
+[11/29 23:43:57     31] Total Standard Cell Area     ( um^2) : 17.68
+[11/29 23:43:57     31] Total Block Cell Area        ( um^2) : 0.00
+[11/29 23:43:57     31] Total I/O Pad Cell Area      ( um^2) : 0.00
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] ------ Design Statistics:
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] Number of Instances            : 9
+[11/29 23:43:57     31] Number of Non-uniquified Insts : 7
+[11/29 23:43:57     31] Number of Nets                 : 17
+[11/29 23:43:57     31] Average number of Pins per Net : 1.18
+[11/29 23:43:57     31] Maximum number of Pins in Net  : 2
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] ------ I/O Port summary
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] Number of Primary I/O Ports    : 5
+[11/29 23:43:57     31] Number of Input Ports          : 4
+[11/29 23:43:57     31] Number of Output Ports         : 1
+[11/29 23:43:57     31] Number of Bidirectional Ports  : 0
+[11/29 23:43:57     31] Number of Power/Ground Ports   : 0
+[11/29 23:43:57     31] Number of Floating Ports                     *: 0
+[11/29 23:43:57     31] Number of Ports Connected to Multiple Pads   *: 0
+[11/29 23:43:57     31] Number of Ports Connected to Core Instances   : 5
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] ------ Design Rule Checking:
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] Number of Output Pins connect to Power/Ground *: 0
+[11/29 23:43:57     31] Number of Insts with Input Pins tied together ?: 0
+[11/29 23:43:57     31] Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+[11/29 23:43:57     31] Number of Input/InOut Floating Pins            : 0
+[11/29 23:43:57     31] Number of Output Floating Pins                 : 0
+[11/29 23:43:57     31] Number of Output Term Marked TieHi/Lo         *: 0
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] Number of nets with tri-state drivers          : 0
+[11/29 23:43:57     31] Number of nets with parallel drivers           : 0
+[11/29 23:43:57     31] Number of nets with multiple drivers           : 0
+[11/29 23:43:57     31] Number of nets with no driver (No FanIn)       : 0
+[11/29 23:43:57     31] Number of Output Floating nets (No FanOut)     : 0
+[11/29 23:43:57     31] Number of High Fanout nets (>50)               : 0
+[11/29 23:43:57     31] Checking routing tracks.....
+[11/29 23:43:57     31] Checking other grids.....
+[11/29 23:43:57     31] Checking FINFET Grid is on Manufacture Grid.....
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] Checking core/die box is on Grid.....
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] Checking snap rule ......
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] Checking Row is on grid......
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] Checking AreaIO row.....
+[11/29 23:43:57     31] Checking routing blockage.....
+[11/29 23:43:57     31] Checking components.....
+[11/29 23:43:57     31] Checking IO Pins.....
+[11/29 23:43:57     31] Unplaced Io Pins = 5 
+[11/29 23:43:57     31] Checking constraints (guide/region/fence).....
+[11/29 23:43:57     31] Checking groups.....
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] Checking Ptn Pins .....
+[11/29 23:43:57     31] Checking Ptn Core Box.....
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] Checking Preroutes.....
+[11/29 23:43:57     31] No. of regular pre-routes not on tracks : 0 
+[11/29 23:43:57     31]  Design check done.
+[11/29 23:43:57     31] Report saved in file checkDesign/TF.main.htm.ascii.
+[11/29 23:43:57     31] *** Message Summary: 0 warning(s), 0 error(s)
+[11/29 23:43:57     31] 
+[11/29 23:43:57     31] 0
+[11/29 23:43:57     31] [DEV]innovus 3> report_area 
+Depth  Name     #Inst  Area (um^2)
+[11/29 23:44:35     33] ----------------------------------
+[11/29 23:44:35     33] 0      TF       6      13.52      
+[11/29 23:44:35     33] 1
+[11/29 23:44:35     33] [DEV]innovus 4> zoom_box 5.114 7.429 7.927 6.123
+[11/29 23:45:20     34] 
+[11/29 23:45:20     34] *** Memory Usage v#1 (Current mem = 1153.066M, initial mem = 175.422M) ***
+[11/29 23:45:20     34] 
+[11/29 23:45:20     34] *** Summary of all messages that are not suppressed in this session:
+[11/29 23:45:20     34] Severity  ID               Count  Summary                                  
+[11/29 23:45:20     34] WARNING   IMPLF-45           866  Macro '%s' has no SITE statement and it ...
+[11/29 23:45:20     34] WARNING   IMPLF-200         3232  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[11/29 23:45:20     34] WARNING   IMPLF-201          970  Pin '%s' in macro '%s' has no ANTENNADIF...
+[11/29 23:45:20     34] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[11/29 23:45:20     34] WARNING   IMPFP-3961          25  The techSite '%s' has no related standar...
+[11/29 23:45:20     34] WARNING   IMPEXT-6140         17  The RC table is not interpolated for wir...
+[11/29 23:45:20     34] WARNING   IMPVL-159         1732  Pin '%s' of cell '%s' is defined in LEF ...
+[11/29 23:45:20     34] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[11/29 23:45:20     34] WARNING   IMPVFG-1198          1  The number of CPUs requested %d is large...
+[11/29 23:45:20     34] WARNING   IMPPP-193            4  The currently specified %s spacing %.4f ...
+[11/29 23:45:20     34] WARNING   IMPSR-4302           1  Cap-table is found in the design, so the...
+[11/29 23:45:20     34] WARNING   IMPSR-1235           2  Find %d via whose layer definition is in...
+[11/29 23:45:20     34] WARNING   IMPSR-1254           2  Cannot find any block pin of net %s. Che...
+[11/29 23:45:20     34] WARNING   IMPSR-1256           2  Cannot find any CORE class pad pin of ne...
+[11/29 23:45:20     34] WARNING   IMPSP-5217           1  add_fillers command is running on a post...
+[11/29 23:45:20     34] WARNING   IMPSP-362            1  Site '%s' has %s std.Cell height, so ign...
+[11/29 23:45:20     34] *** Message Summary: 6858 warning(s), 0 error(s)
+[11/29 23:45:20     34] 
+[11/29 23:45:20     34] --- Ending "Innovus" (totcpu=0:00:34.6, real=0:05:14, mem=1153.1M) ---

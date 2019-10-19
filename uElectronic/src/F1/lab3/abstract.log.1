@@ -1,0 +1,225 @@
+LOG       (ABS-1420): Starting @(#)$CDS: ui version 5.1.0 06/20/2007 02:10 (cicln03) $, sub-version 5.10.41_USR5.90.69, on Linux 2.4.9-e.57enterprise
+Loading libInit file of library "cmos065" ...
+   Loading 'callback_common.il' ...
+   Loading 'callback_bipolar.il' ...
+   Loading 'callback_celemfringe.il' ...
+   Loading 'callback_polyCap.il' ...
+   Loading 'callback_diode.il' ...
+   Loading 'callback_gatedDiode.il' ...
+   Loading 'callback_drift.il' ...
+   Loading 'callback_mosfet.il' ...
+   Loading 'callback_resistor.il' ...
+   Loading 'callback_rnpofuse.il' ...
+   Loading 'callback_cfringe.il' ...
+   Loading 'callback_cmetal.il' ...
+   Loading 'callback_cstripe.il' ...
+   Loading 'callback_mimCap.il' ...
+   Loading 'callback_sealring.il' ...
+   Loading 'callback_pgtext.il' ...
+   Loading 'callback_stackvia.il' ...
+   Loading 'callback_backannotation.il' ...
+   Loading 'equation_common.il' ...
+   Loading 'equation_polyCap.il' ...
+   Loading 'equation_mosfet.il' ...
+   Loading 'equation_resistor.il' ...
+   Loading 'equation_cfringe.il' ...
+   Loading 'equation_cmetal.il' ...
+   Loading 'equation_cstripe.il' ...
+   Loading 'equation_mimCap.il' ...
+   Loading 'label.il' ...
+   Loading 'netlist.il' ...
+   Loading 'param.il' ...
+   Loading 'cmos065customization.il' ...
+   Loading 'cmos065contact_callback.il' ...
+   Loading 'commonPcellProcs.il' ...
+   Loading 'genericSealring.il' ...
+   Loading 'pgtext_drc_clean_function.il' ...
+   Loading 'DKPcellLib.il' ...
+   Loading 'genericTmpSealring.il' ...
+   Loading 'genericSealring_1.il' ...
+   Loading 'genericLayersAndDRs.il' ...
+
+   Defining DRF path ... 
+---> defUserInitProc for le: DK_cmos065_leUserInitProc
+   Loading user file ... 
+INFO      (ABS-100): Library lab3 opening /home/micro1/lab3/lab3
+LOG       (ABS-212): Verifying Technology Data
+INFO      (ABS-232): Layer summary: 8 metal layer(s), 8 via layer(s), 1 poly layer(s), and 0 diff layer(s) found
+INFO      (ABS-234): Via summary: 13 default via(s) and 0 non-default via(s) found
+INFO      (ABS-104): Library lab3 no options loaded
+INFO      (ABS-103): Library lab3 loading options  from /home/micro1/lab3/lab3/.abstract.options
+INFO      (ABS-105): Library lab3 loading messages from /home/micro1/lab3/lab3/.abstract.messages
+INFO      (ABS-101): Library lab3 loading 1 cells
+INFO      (ABS-102): Library lab3 loaded 1 cells
+INFO      (ABS-108): Library lab3 opened
+t
+t
+t
+0
+4
+1
+1
+1
+1
+1
+5
+1
+INFO      (ABS-110): Library lab3 saving existing options file to /home/micro1/lab3/lab3/.abstract.options.prev
+INFO      (ABS-112): Library lab3 saving options to file /home/micro1/lab3/lab3/.abstract.options
+LOG       (ABS-1300): Cell inv: step Pins started
+WARNING   (ABS-515): Cell inv: prBoundary does not enclose all cell view geometry. Specify any missing layers in the Using geometry on layers field.
+INFO      (ABS-501): Cell inv: 4 existing terminals, no pins will be added
+LOG       (ABS-1301): Cell inv: step Pins finished
+INFO      (ABS-110): Library lab3 saving existing options file to /home/micro1/lab3/lab3/.abstract.options.prev
+INFO      (ABS-112): Library lab3 saving options to file /home/micro1/lab3/lab3/.abstract.options
+LOG       (ABS-1300): Cell inv: step Extract started
+INFO      (ABS-602): Cell inv: extracting 4 nets
+INFO      (ABS-604): Cell inv: extracting net Z, 1 of 4
+INFO      (ABS-604): Cell inv: extracting net A, 2 of 4
+INFO      (ABS-604): Cell inv: extracting net gnd!, 3 of 4
+INFO      (ABS-604): Cell inv: extracting net vdd!, 4 of 4
+LOG       (ABS-1301): Cell inv: step Extract finished
+INFO      (ABS-110): Library lab3 saving existing options file to /home/micro1/lab3/lab3/.abstract.options.prev
+INFO      (ABS-112): Library lab3 saving options to file /home/micro1/lab3/lab3/.abstract.options
+LOG       (ABS-1300): Cell inv: step Abstract started
+INFO      (ABS-1425): Generating detailed blockages for layer M1
+INFO      (ABS-1425): Generating detailed blockages for layer VIA1
+INFO      (ABS-1425): Generating detailed blockages for layer M2
+INFO      (ABS-1425): Generating detailed blockages for layer VIA2
+INFO      (ABS-1425): Generating detailed blockages for layer M3
+INFO      (ABS-1425): Generating detailed blockages for layer VIA3
+INFO      (ABS-1425): Generating detailed blockages for layer M4
+INFO      (ABS-1425): Generating detailed blockages for layer VIA4
+INFO      (ABS-1425): Generating detailed blockages for layer M5
+INFO      (ABS-1425): Generating detailed blockages for layer VIA5
+INFO      (ABS-1425): Generating detailed blockages for layer M6
+INFO      (ABS-1425): Generating detailed blockages for layer VIA6
+INFO      (ABS-1425): Generating detailed blockages for layer M7
+INFO      (ABS-1425): Generating detailed blockages for layer CB
+INFO      (ABS-1425): Generating detailed blockages for layer AP
+LOG       (ABS-1301): Cell inv: step Abstract finished
+INFO      (ABS-704): Power Rail Analysis: 
+                      
+                      =====================================================================
+                      Rails found
+                      =====================================================================
+                      
+                      rail  type    net   layer  width  offset  shape     direction   cells
+                      ---------------------------------------------------------------------
+                      1     ground  gnd!  M1     0.56   0.19    abutment  horizontal  inv
+                      2     power   vdd!  M1     0.56   2.63    abutment  horizontal  inv
+                      
+INFO      (ABS-705): Using power rails 2 and 1 to set terminal properties.
+                      These settings may be altered using the Adjust 'Power 
+                      rail widths and offsets:' option table.
+INFO      (ABS-1074): Metal1 pitch = 0.2 microns, Metal1 offset = 0 microns
+INFO      (ABS-1074): Metal2 pitch = 0.2 microns, Metal2 offset = 0 microns
+INFO      (ABS-1074): Metal1 pitch is 0.015 microns  greater than line to via spacing
+INFO      (ABS-1074): Metal2 pitch is 0.04 microns  less than line to via spacing
+INFO      (ABS-1074): Diagonal vias are legal with this metal1 and metal2 pitch
+INFO      (ABS-1074): Number of cells checked = 1
+INFO      (ABS-1074): Number of cells whose pr boundary is not multiple of x pitch = 0
+INFO      (ABS-1074): Number of cells whose pr boundary is not multiple of y pitch = 0
+INFO      (ABS-1074): Number of cells with off grid terminals or blockages = 0
+INFO      (ABS-1074): Number of cells with off grid terminals = 0
+INFO      (ABS-1074): Number of cells with off grid pins = 1
+INFO      (ABS-1074): Number of cells with inaccessible terminals = 0
+INFO      (ABS-1074): Number of terminals checked = 4
+INFO      (ABS-1074): Number of terminals off grid = 0
+INFO      (ABS-1074): Number of terminals inaccessible = 0
+INFO      (ABS-1074): Number of pins checked = 10
+INFO      (ABS-1074): Number of pins off grid = 3
+INFO      (ABS-1074): Number of pins off grid in x = 3
+INFO      (ABS-1074): Number of pins off grid in y = 0
+INFO      (ABS-1074): Number of blockages checked = 0
+INFO      (ABS-1074): Number of blockages off grid = 0
+INFO      (ABS-1074): Number of blockages off grid in x = 0
+INFO      (ABS-1074): Number of blockages off grid in y = 0
+INFO      (ABS-202): Created site CoreSite in library lab3
+*WARNING* file /home/micro1/CDS.log File is already locked by some other process.
+*WARNING* Could not locate rgb.txt file in /usr/lib/X11
+*WARNING* This file is required for color operations with the non-graphical
+*WARNING* X server and many WARNING messages may follow this one!
+COPYRIGHT © 1992-2005  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+          © 1992-2005  UNIX SYSTEMS Laboratories INC.,
+                         Reproduced with permission.
+
+This Cadence Design Systems program and online documentation are
+proprietary/confidential information and may be disclosed/used only
+as authorized in a license agreement controlling such use and disclosure.
+
+          RESTRICTED RIGHTS NOTICE (SHORT FORM)
+Use/reproduction/disclosure is subject to restriction
+set forth at FAR 1252.227-19 or its equivalent.
+*Error* ilGetInt: arg must be fixnum - nil
+Loading FLutil.cxt 
+Loading libInit file of library "cmos065" ...
+"   Loading 'callback_common.il' ..."
+"   Loading 'callback_bipolar.il' ..."
+"   Loading 'callback_celemfringe.il' ..."
+"   Loading 'callback_polyCap.il' ..."
+"   Loading 'callback_diode.il' ..."
+"   Loading 'callback_gatedDiode.il' ..."
+"   Loading 'callback_drift.il' ..."
+"   Loading 'callback_mosfet.il' ..."
+"   Loading 'callback_resistor.il' ..."
+"   Loading 'callback_rnpofuse.il' ..."
+"   Loading 'callback_cfringe.il' ..."
+"   Loading 'callback_cmetal.il' ..."
+"   Loading 'callback_cstripe.il' ..."
+"   Loading 'callback_mimCap.il' ..."
+"   Loading 'callback_sealring.il' ..."
+"   Loading 'callback_pgtext.il' ..."
+"   Loading 'callback_stackvia.il' ..."
+"   Loading 'callback_backannotation.il' ..."
+"   Loading 'equation_common.il' ..."
+"   Loading 'equation_polyCap.il' ..."
+"   Loading 'equation_mosfet.il' ..."
+"   Loading 'equation_resistor.il' ..."
+"   Loading 'equation_cfringe.il' ..."
+"   Loading 'equation_cmetal.il' ..."
+"   Loading 'equation_cstripe.il' ..."
+"   Loading 'equation_mimCap.il' ..."
+"   Loading 'label.il' ..."
+"   Loading 'netlist.il' ..."
+"   Loading 'param.il' ..."
+"   Loading 'cmos065customization.il' ..."
+"   Loading 'cmos065contact_callback.il' ..."
+"   Loading 'commonPcellProcs.il' ..."
+"   Loading 'genericSealring.il' ..."
+"   Loading 'pgtext_drc_clean_function.il' ..."
+"   Loading 'DKPcellLib.il' ..."
+"   Loading 'genericTmpSealring.il' ..."
+"   Loading 'genericSealring_1.il' ..."
+"   Loading 'genericLayersAndDRs.il' ..."
+
+   Defining DRF path ... 
+*WARNING* X-Colormap overflow. Colors snabluegreen and snabluegreen are not defined.
+Please exit some of applications to free color cells from X-Colormap
+or increase layer pool size by "setenv CDS_LAYER_POOL_SIZE n".
+---> defUserInitProc for le: DK_cmos065_leUserInitProc
+   Loading user file ... 
+LEFOUT: beginning output...
+
+********************************************************************************
+Product   : Virtuoso(R) LEF Out
+Program   : lefdef version 5.1.0 Wed Jun 20 02:13:00 PDT 2007 (cicln03)
+SubVersion: sub-version 5.10.41_USR5.90.69
+Started at: 06-Sep-2016  16:17:11
+User Name : micro1
+Host Name : kriti
+Directory : /home/micro1/lab3
+CADENCE Design Systems, Inc.
+********************************************************************************
+LEFOUT: Generating list of valid layers...
+Layers are successfully generated
+LEFOUT: 'lab3 inv abstract' being processed.
+
+
+Elapsed time 00:00:00 
+LEFOUT: completed
+INFO      (ABS-109): Library lab3 closing /home/micro1/lab3/lab3
+INFO      (ABS-110): Library lab3 saving existing options file to /home/micro1/lab3/lab3/.abstract.options.prev
+INFO      (ABS-112): Library lab3 saving options to file /home/micro1/lab3/lab3/.abstract.options
+INFO      (ABS-116): Library lab3 closed
+LOG       (ABS-1421): Finished sub-version 5.10.41_USR5.90.69

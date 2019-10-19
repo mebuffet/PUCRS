@@ -1,0 +1,130 @@
+library (altos_generated_library) {
+  altos_database : true;
+  /* Models written by LIBERATE v15.1.0.503 */
+  date : "$Date: Tue Sep  6 16:38:26 2016 $";
+  altos_compile_version : "15.1.0.503";
+  altos_compile_date : "Wed Nov 18 20:37:06 PST 2015";
+  revision : "1.0";
+  comment : "";
+  delay_model : table_lookup;
+  capacitive_load_unit (1,pf);
+  current_unit : "1mA";
+  leakage_power_unit : "1nW";
+  pulling_resistance_unit : "1kohm";
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  in_place_swap_mode : match_footprint;
+  nom_process : 1;
+  nom_temperature : 25;
+  nom_voltage : 1;
+  altos_default_operating_conditions : PVT_1V_25C;
+  altos_measure_slew_lower_fall : 0.2;
+  altos_measure_slew_lower_rise : 0.2;
+  altos_measure_slew_upper_fall : 0.8;
+  altos_measure_slew_upper_rise : 0.8;
+  altos_slew_lower_fall : 0.2;
+  altos_slew_lower_rise : 0.2;
+  altos_slew_upper_fall : 0.8;
+  altos_slew_upper_rise : 0.8;
+  altos_vtn : 0.35;
+  altos_vtp : 0.35;
+  input_threshold_pct_fall : 50;
+  input_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  slew_lower_threshold_pct_fall : 20;
+  slew_lower_threshold_pct_rise : 20;
+  slew_upper_threshold_pct_fall : 80;
+  slew_upper_threshold_pct_rise : 80;
+  altos_receiver_fall_cap_threshold ("0.8, 0.7, 0.5, 0.4, 0.3, 0.2, 0.1, 0.0001, 0");
+  altos_receiver_rise_cap_threshold ("0.2, 0.3, 0.5, 0.6, 0.7, 0.8, 0.9, 0.9999, 100");
+  altos_set_var ("extsim_deck_include", "1");
+  altos_set_var ("simulator", "spectre");
+  altos_set_var ("user_set_ccs", "0");
+  altos_voltage_map ("vdd!", 1);
+  altos_voltage_map ("gnd!", 0);
+  altos_voltage_map ("VDD", 1);
+  altos_voltage_map ("VSS", 0);
+  altos_voltage_map ("GND", 0);
+  output_current_template (ccs_template) {
+    variable_1 : input_net_transition;
+    variable_2 : total_output_net_capacitance;
+    variable_3 : time;
+  }
+  lu_table_template (ccsn_dc_template) {
+    variable_1 : input_voltage;
+    variable_2 : output_voltage;
+    index_1 ("-1, -0.5, -0.2, -0.1, 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.1, 1.2, 1.5, 2");
+    index_2 ("-1, -0.5, -0.2, -0.1, 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.1, 1.2, 1.5, 2");
+  }
+  lu_table_template (ccsn_prop_template) {
+    variable_1 : input_noise_width;
+    variable_2 : total_output_net_capacitance;
+    variable_3 : input_noise_height;
+    variable_4 : time;
+    index_1 ("0");
+    index_2 ("1e-06");
+    index_3 ("0");
+    index_4 ("0");
+  }
+  lu_table_template (ccsn_vout_template) {
+    variable_1 : input_net_transition;
+    variable_2 : total_output_net_capacitance;
+    variable_3 : time;
+    index_1 ("0");
+    index_2 ("1e-06");
+    index_3 ("0");
+  }
+  lu_table_template (constraint_4x5) {
+    variable_1 : constrained_pin_transition;
+    variable_2 : related_pin_transition;
+    index_1 ("0.003, 0.08, 0.16, 0.31");
+    index_2 ("0.001, 0.003, 0.01, 0.025, 0.08");
+  }
+  lu_table_template (delay_4x5) {
+    variable_1 : input_net_transition;
+    variable_2 : total_output_net_capacitance;
+    index_1 ("0.003, 0.08, 0.16, 0.31");
+    index_2 ("0.001, 0.003, 0.01, 0.025, 0.08");
+  }
+  ecsm_lut_template (ecsm_template_13) {
+    variable_1 : normalized_voltage;
+    index_1 ("0.02, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 0.98");
+  }
+  lu_table_template (mpw_constraint_4x5) {
+    variable_1 : constrained_pin_transition;
+    index_1 ("0.003, 0.08, 0.16, 0.31");
+  }
+  power_lut_template (passive_output_power_4x5) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.001, 0.003, 0.01, 0.025, 0.08");
+  }
+  power_lut_template (passive_power_4x5) {
+    variable_1 : input_transition_time;
+    index_1 ("0.003, 0.08, 0.16, 0.31");
+  }
+  power_lut_template (power_4x5) {
+    variable_1 : input_transition_time;
+    variable_2 : total_output_net_capacitance;
+    index_1 ("0.003, 0.08, 0.16, 0.31");
+    index_2 ("0.001, 0.003, 0.01, 0.025, 0.08");
+  }
+  lu_table_template (receiver_cap_power_4x5) {
+    variable_1 : input_net_transition;
+    index_1 ("0.003, 0.08, 0.16, 0.31");
+  }
+  altos_power_supply () {
+    default_power_rail : "vdd!_gnd!";
+    power_rail ("vdd!_gnd!", 1);
+  }
+  altos_operating_conditions (PVT_1V_25C) {
+    process : 1;
+    temperature : 25;
+    voltage : 1;
+    power_rail ("vdd!_gnd!", 1);
+  }
+  default_cell_leakage_power : 0;
+  default_fanout_load : 1;
+  default_max_transition : 3;
+  default_output_pin_cap : 0;
+}

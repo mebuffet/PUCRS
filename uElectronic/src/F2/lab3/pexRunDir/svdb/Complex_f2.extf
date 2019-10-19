@@ -1,0 +1,10 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 2
+lvs_ExtRunTimes 1497670169 1497670175
+lvs_ExtOutFile RUNDIR /home/micro2/lab3/pexRunDir
+lvs_ExtOutFile RULES_FILE /home/micro2/lab3/pexRunDir/_calibrexrclvs_cgi_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/micro2/lab3/pexRunDir/svdb/Complex_f2.sp
+lvs_ExtOutFile EXTRACTION_REPORT Complex_f2.lvs.report.ext
+lvs_ExtOutFile LAYOUT_PDSP promoted_devices

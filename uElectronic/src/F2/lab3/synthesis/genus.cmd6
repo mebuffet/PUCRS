@@ -1,0 +1,11 @@
+# Cadence Genus(TM) Synthesis Solution, Version 16.10-p006_1, built Jun  8 2016
+
+# Date: Tue Nov 29 16:07:41 2016
+# Host: kriti (x86_64 w/Linux 2.6.18-416.el5) (4cores*8cpus*Intel(R) Xeon(R) CPU W5580 @ 3.20GHz 8192KB)
+# OS:   CentOS release 5.11 (Final)
+
+Um sistem com diversos elementos de processamento  chamado de Multiprocessor System-on-Chip (MPSoC). Ao mesmo tempo em que a tecnologia de semicondutores permitiu integrar dezenas de cores no mesmo chip, a dissipao de potncia no chip tambm amentou. O aumento na dissipao de potncia reflete em altas variaes de temperatura no chip e hotspots trmicos, o que influencia no envelhecimento e desempenho do sistema, ocasionando falhas devido a esse desgaste. O gerenciamento de energia e temperatura  amplamente reconhecido como uma das caractersticas essenciais em um MPSoC. Uma temperatura no controlada pode significar uma diminuio do desempenho e reduo da confiabilidade do sistema devido ao alto gradiente trmico. O gerenciamento de energia e temperatura so desafios crticos para sistemas multicore e um dos principais fatores que devem ser levados em conta no momento de projetar um MPSoC. Este projeto tem por objetivo realizar estudos e desenvolvimentos em 3 eixos de pesquisa: (1) monitoramento; (2) heursticas de gerenciamento trmico e energtico; (3) atuao no sistema para manter as restries trmicas, de potncia e energia consumida.
+read_hdl -vhdl Complex_f2.vhd
+include load.tcl
+read_hdl -vhdl Complex_f2.vhd
+exit

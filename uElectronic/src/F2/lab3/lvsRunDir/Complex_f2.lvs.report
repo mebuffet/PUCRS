@@ -1,0 +1,717 @@
+
+
+Missing connections STAMPing layer PWELLC:4 by layer PSTRAP_FINAL.
+
+   Location
+
+   (-0.150,-3.000)
+
+
+Missing connections STAMPing layer SUBS:5 by layer SUBTIE_FINAL.
+
+   Location
+
+   (-0.150,-3.000)
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         Complex_f2.lvs.report
+LAYOUT NAME:              Complex_f2.calibre.db
+SOURCE NAME:              /home/micro2/lab3/lvsRunDir/Complex_f2.src.net ('Complex_f2')
+RULE FILE:                /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+RULE FILE TITLE:          CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+LVS MODE:                 Mask
+RULE FILE NAME:           /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+CREATION TIME:            Wed Jun 21 17:49:38 2017
+CURRENT DIRECTORY:        /home/micro2/lab3/lvsRunDir
+USER NAME:                micro2
+CALIBRE VERSION:          v2011.3_29.20    Thu Sep 8 17:08:11 PDT 2011
+
+
+**************************************************************************************************************
+                               OVERALL COMPARISON RESULTS
+**************************************************************************************************************
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              7         7
+
+ Nets:              34        10    *
+
+ Instances:          4         4         MN (4 pins)
+                     4         4         MP (4 pins)
+                ------    ------
+ Total Inst:         8         8
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              7         7
+
+ Nets:              10        10
+
+ Instances:          4         4         MN (4 pins)
+                     4         4         MP (4 pins)
+                ------    ------
+ Total Inst:         8         8
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VDD" "vdd" "vdd!" "vdd;" "VDDS" "vdds" "vdds!" "vdds;"
+   LVS GROUND NAME                        "GND" "gnd" "gnd!" "gnd;" "GNDS" "gnds" "gnds!" "gnds;"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    NONE
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       NO
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            YES
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NAMES TYPES
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        ALL
+   // LVS SIGNATURE MAXIMUM
+   LVS FILTER UNUSED OPTION               AB O RC RG
+   LVS REPORT OPTION                      A B C D
+   LVS REPORT UNITS                       NO
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           NO
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  MN(NSVTLP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NSVTGP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NHVTLP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NHVTGP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NLVTLP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NLVTGP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NHPALP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NSVT25)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NSVT18)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NNVT25)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NNVT18)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MN(NSVTLPPGSP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NSVTGPPGSP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NSVTLPPGSP620)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NSVTLPPGDP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NSVTGPPGDP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NSVTLPPDSP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NSVTGPPDSP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NSVTLPPDSP620)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NSVTLPPDDP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NSVTGPPDDP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NHVTLPPGSP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NHVTLPPGSP620)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NHVTLPPGDP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NHVTLPPDSP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NHVTLPPDSP620)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NHVTLPPDDP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NSVTLPRPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MN(NSVTGPRPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MN(NHVTLPRPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MN(NHVTGPRPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MN(NLVTLPRPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MN(NSVT25RPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MN(NSVT18RPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MN(NSVT25RPONOLDD)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MN(NSVT18RPONOLDD)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MP(PLVTLP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MP(PLVTGP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MP(PHVTLP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MP(PHVTGP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MP(PSVTLP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MP(PSVTGP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MP(PHPALP)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MP(PSVT25)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MP(PSVT18)  PARALLEL [ TOLERANCE L 0 accurateFlow 0 ]
+   LVS REDUCE  MP(PHVTLPPUSP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MP(PHVTLPPUSP620)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MP(PSVTLPPUSP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MP(PSVTLPPUSP620)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MP(PSVTGPPUSP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MP(PHVTLPPUDP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MP(PSVTLPPUDP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MP(PSVTGPPUDP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MP(PHVTLPRPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MP(PHVTGPRPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MP(PLVTLPRPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MP(PSVTLPRPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MP(PSVTGPRPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MP(PSVT25RPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MP(PSVT18RPO)  PARALLEL [ TOLERANCE L 0 ESU 1 EDU 1 ]
+   LVS REDUCE  MN(NSVT25DRAM)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  MN(NLVT25DRAM)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  D(DGNSVT25)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  D(DGNSVT18)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  D(DGPSVT25)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  D(DGPSVT18)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  LDDN(ndr25)  PARALLEL [ TOLERANCE L 0 SIDENUM 0 ]
+   LVS REDUCE  LDDN(ndr18)  PARALLEL [ TOLERANCE L 0 SIDENUM 0 ]
+   LVS REDUCE  LDDN(NDR25OTP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  LDDN(NDR18OTP)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  pdr25  PARALLEL [ TOLERANCE L 0 SIDENUM 0 ]
+   LVS REDUCE  pdr18  PARALLEL [ TOLERANCE L 0 SIDENUM 0 ]
+   LVS REDUCE  Q(NPNISO4)  PARALLEL [ TOLERANCE AE 0 PE 0 ]
+   LVS REDUCE  Q(NPNISO25)  PARALLEL [ TOLERANCE AE 0 PE 0 ]
+   LVS REDUCE  Q(PNPS4)  PARALLEL [ TOLERANCE AE 0 PE 0 ]
+   LVS REDUCE  Q(PNPS25)  PARALLEL [ TOLERANCE AE 0 PE 0 ]
+   LVS REDUCE  R(RPODRPO)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RPODRPO)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  R(RNPORPO)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RNPORPO)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  R(RPPORPO)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RPPORPO)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  R(RNPO)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RNPO)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  R(RHIPORPO)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RHIPORPO)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  R(RNPOFUSE)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RNPOFUSE)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  R(RNPOI)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RNPOI)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  R(RPPOI)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RPPOI)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  R(RM1)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RM1)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  R(RMX)  PARALLEL [ TOLERANCE W 0 L 0 METAL 0 ]
+   LVS REDUCE  R(RMX)  SERIES POS NEG [ TOLERANCE W 0 METAL 0 ]
+   LVS REDUCE  R(RMZ)  PARALLEL [ TOLERANCE W 0 L 0 METAL 0 ]
+   LVS REDUCE  R(RMZ)  SERIES POS NEG [ TOLERANCE W 0 METAL 0 ]
+   LVS REDUCE  R(RMT)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RMT)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  R(RAP)  PARALLEL [ TOLERANCE W 0 L 0 ]
+   LVS REDUCE  R(RAP)  SERIES POS NEG [ TOLERANCE W 0 ]
+   LVS REDUCE  C(cmimmk4x0y)  PARALLEL
+   LVS REDUCE  C(cmimmk4x0ynosub)  PARALLEL
+   LVS REDUCE  C(CPOLPNW)  PARALLEL
+   LVS REDUCE  C(CPOLPPW)  PARALLEL
+   LVS REDUCE  C(CPO25NW)  PARALLEL
+   LVS REDUCE  C(CPO18NW)  PARALLEL
+   LVS REDUCE  C(CPO25PW)  PARALLEL
+   LVS REDUCE  C(CPO18PW)  PARALLEL
+   LVS REDUCE  C(CM1MX)  PARALLEL
+   LVS REDUCE  C(CMXMX)  PARALLEL [ TOLERANCE TOPLAYER 0 ]
+   LVS REDUCE  C(CMXMZ)  PARALLEL [ TOLERANCE TOPLAYER 0 ]
+   LVS REDUCE  C(CMZMT)  PARALLEL [ TOLERANCE TOPLAYER 0 ]
+   LVS REDUCE  C(CMZMZ)  PARALLEL [ TOLERANCE TOPLAYER 0 ]
+   LVS REDUCE  C(CMSTRSTK)  PARALLEL [ TOLERANCE BOTLAYER 0 TOPLAYER 0 ]
+   LVS REDUCE  C(CFRM1)  SERIES POS NEG NO
+   LVS REDUCE  C(CFRM1)  PARALLEL [ TOLERANCE L 0 FS 0 ]
+   LVS REDUCE  C(CFRMX)  SERIES POS NEG NO
+   LVS REDUCE  C(CFRMX)  PARALLEL [ TOLERANCE L 0 FS 0 METAL 0 ]
+   LVS REDUCE  C(CFRMZ)  SERIES POS NEG NO
+   LVS REDUCE  C(CFRMZ)  PARALLEL [ TOLERANCE L 0 FS 0 METAL 0 ]
+   LVS REDUCE  C(CFRMT)  SERIES POS NEG NO
+   LVS REDUCE  C(CFRMT)  PARALLEL [ TOLERANCE L 0 FS 0 METAL 0 ]
+   LVS REDUCE  C(CE1E2)  PARALLEL
+   LVS REDUCE  LDDN(ndr25hv)  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  pdr25hv  PARALLEL [ TOLERANCE L 0 ]
+   LVS REDUCE  LDDN(next18hv)  PARALLEL [ TOLERANCE L 0 ngcon 0 ncrsd 0 ]
+   LVS REDUCE  next18hvi  PARALLEL [ TOLERANCE L 0 ngcon 0 ncrsd 0 ]
+   LVS REDUCE  pext18hv  PARALLEL [ TOLERANCE L 0 ngcon 0 ncrsd 0 ]
+   LVS REDUCE  LDDN(next25hv)  PARALLEL [ TOLERANCE L 0 ngcon 0 ncrsd 0 ]
+   LVS REDUCE  next25hvi  PARALLEL [ TOLERANCE L 0 ngcon 0 ncrsd 0 ]
+   LVS REDUCE  pext25hv  PARALLEL [ TOLERANCE L 0 ngcon 0 ncrsd 0 ]
+   LVS REDUCE  MN(nsvtlp_rf)  PARALLEL [ TOLERANCE L 0 NFING 0 ncrsd 0 ]
+   LVS REDUCE  MP(psvtlp_rf)  PARALLEL [ TOLERANCE L 0 NFING 0 ncrsd 0 ]
+   LVS REDUCE  MN(nsvt25_rf)  PARALLEL [ TOLERANCE L 0 NFING 0 ncrsd 0 ]
+   LVS REDUCE  MP(psvt25_rf)  PARALLEL [ TOLERANCE L 0 NFING 0 ncrsd 0 ]
+   LVS REDUCE  MN(nsvt18_rf)  PARALLEL [ TOLERANCE L 0 NFING 0 ncrsd 0 ]
+   LVS REDUCE  MP(psvt18_rf)  PARALLEL [ TOLERANCE L 0 NFING 0 ncrsd 0 ]
+   LVS REDUCE  MN(nlvtlp_rf)  PARALLEL [ TOLERANCE L 0 NFING 0 ncrsd 0 ]
+   LVS REDUCE  MP(plvtlp_rf)  PARALLEL [ TOLERANCE L 0 NFING 0 ncrsd 0 ]
+   LVS REDUCE  MN(nhpalp_rf)  PARALLEL [ TOLERANCE L 0 NFING 0 NCRSD 0 ]
+   LVS REDUCE  MP(phpalp_rf)  PARALLEL [ TOLERANCE L 0 NFING 0 NCRSD 0 ]
+   LVS REDUCE  C(cmetm2m4)  PARALLEL NO
+   LVS REDUCE  C(cmim5_sh)  PARALLEL [ TOLERANCE W 0 ]
+   LVS REDUCE  C(cmim5t_sh)  PARALLEL [ TOLERANCE W 0 ]
+   LVS REDUCE  C(cmim5_2p)  PARALLEL [ TOLERANCE W 0 ]
+   LVS REDUCE  C(cmim5t_2p)  PARALLEL [ TOLERANCE W 0 ]
+   LVS REDUCE  C(cmim5)  PARALLEL [ TOLERANCE W 0 ]
+   LVS REDUCE  C(cmim5t)  PARALLEL [ TOLERANCE W 0 ]
+   LVS REDUCE  D(dschottky)  PARALLEL NO
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Filter
+
+   LVS FILTER  R(RP)  SHORT SOURCE
+   LVS FILTER  C(CP)  OPEN SOURCE
+   LVS FILTER  R(SH)  SHORT SOURCE
+
+   // Trace Property
+
+   TRACE PROPERTY  d(dnsvtlp)  a a 1
+   TRACE PROPERTY  d(dnsvtlp)  p p 1
+   TRACE PROPERTY  d(dnsvtgp)  a a 1
+   TRACE PROPERTY  d(dnsvtgp)  p p 1
+   TRACE PROPERTY  d(dnhvtlp)  a a 1
+   TRACE PROPERTY  d(dnhvtlp)  p p 1
+   TRACE PROPERTY  d(dnhvtgp)  a a 1
+   TRACE PROPERTY  d(dnhvtgp)  p p 1
+   TRACE PROPERTY  d(dnlvtlp)  a a 1
+   TRACE PROPERTY  d(dnlvtlp)  p p 1
+   TRACE PROPERTY  d(dnlvtgp)  a a 1
+   TRACE PROPERTY  d(dnlvtgp)  p p 1
+   TRACE PROPERTY  d(dnhpalp)  a a 1
+   TRACE PROPERTY  d(dnhpalp)  p p 1
+   TRACE PROPERTY  d(dpsvtlp)  a a 1
+   TRACE PROPERTY  d(dpsvtlp)  p p 1
+   TRACE PROPERTY  d(dpsvtgp)  a a 1
+   TRACE PROPERTY  d(dpsvtgp)  p p 1
+   TRACE PROPERTY  d(dphvtlp)  a a 1
+   TRACE PROPERTY  d(dphvtlp)  p p 1
+   TRACE PROPERTY  d(dphvtgp)  a a 1
+   TRACE PROPERTY  d(dphvtgp)  p p 1
+   TRACE PROPERTY  d(dplvtlp)  a a 1
+   TRACE PROPERTY  d(dplvtlp)  p p 1
+   TRACE PROPERTY  d(dplvtgp)  a a 1
+   TRACE PROPERTY  d(dplvtgp)  p p 1
+   TRACE PROPERTY  d(dphpalp)  a a 1
+   TRACE PROPERTY  d(dphpalp)  p p 1
+   TRACE PROPERTY  d(dnsvt25)  a a 1
+   TRACE PROPERTY  d(dnsvt25)  p p 1
+   TRACE PROPERTY  d(dnsvt18)  a a 1
+   TRACE PROPERTY  d(dnsvt18)  p p 1
+   TRACE PROPERTY  d(dpsvt25)  a a 1
+   TRACE PROPERTY  d(dpsvt25)  p p 1
+   TRACE PROPERTY  d(dpsvt18)  a a 1
+   TRACE PROPERTY  d(dpsvt18)  p p 1
+   TRACE PROPERTY  d(ddnwpw)  a a 1
+   TRACE PROPERTY  d(ddnwpw)  p p 1
+   TRACE PROPERTY  d(dgnsvt25)  w w 0
+   TRACE PROPERTY  d(dgnsvt25)  l l 0
+   TRACE PROPERTY  d(dgnsvt25)  nfing nfing 0
+   TRACE PROPERTY  d(dgnsvt18)  w w 0
+   TRACE PROPERTY  d(dgnsvt18)  l l 0
+   TRACE PROPERTY  d(dgnsvt18)  nfing nfing 0
+   TRACE PROPERTY  d(dgpsvt25)  w w 0
+   TRACE PROPERTY  d(dgpsvt25)  l l 0
+   TRACE PROPERTY  d(dgpsvt25)  nfing nfing 0
+   TRACE PROPERTY  d(dgpsvt18)  w w 0
+   TRACE PROPERTY  d(dgpsvt18)  l l 0
+   TRACE PROPERTY  d(dgpsvt18)  nfing nfing 0
+   TRACE PROPERTY  d(dnsvt25dram)  a a 1
+   TRACE PROPERTY  d(dnsvt25dram)  p p 1
+   TRACE PROPERTY  mn(nsvtlppgsp)  w w 1
+   TRACE PROPERTY  mn(nsvtlppgsp)  l l 0
+   TRACE PROPERTY  mn(nsvtgppgsp)  w w 1
+   TRACE PROPERTY  mn(nsvtgppgsp)  l l 0
+   TRACE PROPERTY  mn(nsvtlppgsp620)  w w 1
+   TRACE PROPERTY  mn(nsvtlppgsp620)  l l 0
+   TRACE PROPERTY  mn(nsvtlppgdp)  w w 1
+   TRACE PROPERTY  mn(nsvtlppgdp)  l l 0
+   TRACE PROPERTY  mn(nsvtgppgdp)  w w 1
+   TRACE PROPERTY  mn(nsvtgppgdp)  l l 0
+   TRACE PROPERTY  mn(nsvtlppdsp)  w w 1
+   TRACE PROPERTY  mn(nsvtlppdsp)  l l 0
+   TRACE PROPERTY  mn(nsvtgppdsp)  w w 1
+   TRACE PROPERTY  mn(nsvtgppdsp)  l l 0
+   TRACE PROPERTY  mn(nsvtlppdsp620)  w w 1
+   TRACE PROPERTY  mn(nsvtlppdsp620)  l l 0
+   TRACE PROPERTY  mn(nsvtlppddp)  w w 1
+   TRACE PROPERTY  mn(nsvtlppddp)  l l 0
+   TRACE PROPERTY  mn(nsvtgppddp)  w w 1
+   TRACE PROPERTY  mn(nsvtgppddp)  l l 0
+   TRACE PROPERTY  mn(nhvtlppgsp)  w w 1
+   TRACE PROPERTY  mn(nhvtlppgsp)  l l 0
+   TRACE PROPERTY  mn(nhvtlppgsp620)  w w 1
+   TRACE PROPERTY  mn(nhvtlppgsp620)  l l 0
+   TRACE PROPERTY  mn(nhvtlppgdp)  w w 1
+   TRACE PROPERTY  mn(nhvtlppgdp)  l l 0
+   TRACE PROPERTY  mn(nhvtlppdsp)  w w 1
+   TRACE PROPERTY  mn(nhvtlppdsp)  l l 0
+   TRACE PROPERTY  mn(nhvtlppdsp620)  w w 1
+   TRACE PROPERTY  mn(nhvtlppdsp620)  l l 0
+   TRACE PROPERTY  mn(nhvtlppddp)  w w 1
+   TRACE PROPERTY  mn(nhvtlppddp)  l l 0
+   TRACE PROPERTY  mn(nsvtlprpo)  w w 1
+   TRACE PROPERTY  mn(nsvtlprpo)  l l 0
+   TRACE PROPERTY  mn(nsvtlprpo)  edu edu 1
+   TRACE PROPERTY  mn(nsvtlprpo)  esu esu 1
+   TRACE PROPERTY  mn(nsvtgprpo)  w w 1
+   TRACE PROPERTY  mn(nsvtgprpo)  l l 0
+   TRACE PROPERTY  mn(nsvtgprpo)  edu edu 1
+   TRACE PROPERTY  mn(nsvtgprpo)  esu esu 1
+   TRACE PROPERTY  mn(nhvtlprpo)  w w 1
+   TRACE PROPERTY  mn(nhvtlprpo)  l l 0
+   TRACE PROPERTY  mn(nhvtlprpo)  edu edu 1
+   TRACE PROPERTY  mn(nhvtlprpo)  esu esu 1
+   TRACE PROPERTY  mn(nhvtgprpo)  w w 1
+   TRACE PROPERTY  mn(nhvtgprpo)  l l 0
+   TRACE PROPERTY  mn(nhvtgprpo)  edu edu 1
+   TRACE PROPERTY  mn(nhvtgprpo)  esu esu 1
+   TRACE PROPERTY  mn(nlvtlprpo)  w w 1
+   TRACE PROPERTY  mn(nlvtlprpo)  l l 0
+   TRACE PROPERTY  mn(nlvtlprpo)  edu edu 1
+   TRACE PROPERTY  mn(nlvtlprpo)  esu esu 1
+   TRACE PROPERTY  mn(nsvt25rpo)  w w 1
+   TRACE PROPERTY  mn(nsvt25rpo)  l l 0
+   TRACE PROPERTY  mn(nsvt25rpo)  edu edu 1
+   TRACE PROPERTY  mn(nsvt25rpo)  esu esu 1
+   TRACE PROPERTY  mn(nsvt18rpo)  w w 1
+   TRACE PROPERTY  mn(nsvt18rpo)  l l 0
+   TRACE PROPERTY  mn(nsvt18rpo)  edu edu 1
+   TRACE PROPERTY  mn(nsvt18rpo)  esu esu 1
+   TRACE PROPERTY  mn(nsvt25rponoldd)  w w 1
+   TRACE PROPERTY  mn(nsvt25rponoldd)  l l 0
+   TRACE PROPERTY  mn(nsvt25rponoldd)  edu edu 1
+   TRACE PROPERTY  mn(nsvt25rponoldd)  esu esu 1
+   TRACE PROPERTY  mn(nsvt18rponoldd)  w w 1
+   TRACE PROPERTY  mn(nsvt18rponoldd)  l l 0
+   TRACE PROPERTY  mn(nsvt18rponoldd)  edu edu 1
+   TRACE PROPERTY  mn(nsvt18rponoldd)  esu esu 1
+   TRACE PROPERTY  lddn(ndr25)  w w 1
+   TRACE PROPERTY  lddn(ndr25)  l l 0
+   TRACE PROPERTY  lddn(ndr25)  sidenum sidenum 0
+   TRACE PROPERTY  lddn(ndr18)  w w 1
+   TRACE PROPERTY  lddn(ndr18)  l l 0
+   TRACE PROPERTY  lddn(ndr18)  sidenum sidenum 0
+   TRACE PROPERTY  lddn(ndr25otp)  w w 1
+   TRACE PROPERTY  lddn(ndr25otp)  l l 0
+   TRACE PROPERTY  lddn(ndr18otp)  w w 1
+   TRACE PROPERTY  lddn(ndr18otp)  l l 0
+   TRACE PROPERTY  mn(nsvt25dram)  w w 1
+   TRACE PROPERTY  mn(nsvt25dram)  l l 0
+   TRACE PROPERTY  mn(nlvt25dram)  w w 1
+   TRACE PROPERTY  mn(nlvt25dram)  l l 0
+   TRACE PROPERTY  mp(phvtlppusp)  w w 1
+   TRACE PROPERTY  mp(phvtlppusp)  l l 0
+   TRACE PROPERTY  mp(phvtlppusp620)  w w 1
+   TRACE PROPERTY  mp(phvtlppusp620)  l l 0
+   TRACE PROPERTY  mp(psvtlppusp)  w w 1
+   TRACE PROPERTY  mp(psvtlppusp)  l l 0
+   TRACE PROPERTY  mp(psvtlppusp620)  w w 1
+   TRACE PROPERTY  mp(psvtlppusp620)  l l 0
+   TRACE PROPERTY  mp(psvtgppusp)  w w 1
+   TRACE PROPERTY  mp(psvtgppusp)  l l 0
+   TRACE PROPERTY  mp(phvtlppudp)  w w 1
+   TRACE PROPERTY  mp(phvtlppudp)  l l 0
+   TRACE PROPERTY  mp(psvtlppudp)  w w 1
+   TRACE PROPERTY  mp(psvtlppudp)  l l 0
+   TRACE PROPERTY  mp(psvtgppudp)  w w 1
+   TRACE PROPERTY  mp(psvtgppudp)  l l 0
+   TRACE PROPERTY  mp(phvtlprpo)  w w 1
+   TRACE PROPERTY  mp(phvtlprpo)  l l 0
+   TRACE PROPERTY  mp(phvtlprpo)  edu edu 1
+   TRACE PROPERTY  mp(phvtlprpo)  esu esu 1
+   TRACE PROPERTY  mp(phvtgprpo)  w w 1
+   TRACE PROPERTY  mp(phvtgprpo)  l l 0
+   TRACE PROPERTY  mp(phvtgprpo)  edu edu 1
+   TRACE PROPERTY  mp(phvtgprpo)  esu esu 1
+   TRACE PROPERTY  mp(plvtlprpo)  w w 1
+   TRACE PROPERTY  mp(plvtlprpo)  l l 0
+   TRACE PROPERTY  mp(plvtlprpo)  edu edu 1
+   TRACE PROPERTY  mp(plvtlprpo)  esu esu 1
+   TRACE PROPERTY  mp(psvtlprpo)  w w 1
+   TRACE PROPERTY  mp(psvtlprpo)  l l 0
+   TRACE PROPERTY  mp(psvtlprpo)  edu edu 1
+   TRACE PROPERTY  mp(psvtlprpo)  esu esu 1
+   TRACE PROPERTY  mp(psvtgprpo)  w w 1
+   TRACE PROPERTY  mp(psvtgprpo)  l l 0
+   TRACE PROPERTY  mp(psvtgprpo)  edu edu 1
+   TRACE PROPERTY  mp(psvtgprpo)  esu esu 1
+   TRACE PROPERTY  mp(psvt25rpo)  w w 1
+   TRACE PROPERTY  mp(psvt25rpo)  l l 0
+   TRACE PROPERTY  mp(psvt25rpo)  edu edu 1
+   TRACE PROPERTY  mp(psvt25rpo)  esu esu 1
+   TRACE PROPERTY  mp(psvt18rpo)  w w 1
+   TRACE PROPERTY  mp(psvt18rpo)  l l 0
+   TRACE PROPERTY  mp(psvt18rpo)  edu edu 1
+   TRACE PROPERTY  mp(psvt18rpo)  esu esu 1
+   TRACE PROPERTY  pdr25  w w 1
+   TRACE PROPERTY  pdr25  l l 0
+   TRACE PROPERTY  pdr25  sidenum sidenum 0
+   TRACE PROPERTY  pdr18  w w 1
+   TRACE PROPERTY  pdr18  l l 0
+   TRACE PROPERTY  pdr18  sidenum sidenum 0
+   TRACE PROPERTY  q(npniso4)  ae ae 1
+   TRACE PROPERTY  q(npniso4)  pe pe 1
+   TRACE PROPERTY  q(npniso25)  ae ae 1
+   TRACE PROPERTY  q(npniso25)  pe pe 1
+   TRACE PROPERTY  q(pnps4)  ae ae 1
+   TRACE PROPERTY  q(pnps4)  pe pe 1
+   TRACE PROPERTY  q(pnps25)  ae ae 1
+   TRACE PROPERTY  q(pnps25)  pe pe 1
+   TRACE PROPERTY  r(rpodrpo)  w w 0
+   TRACE PROPERTY  r(rpodrpo)  l l 0
+   TRACE PROPERTY  r(rnporpo)  w w 0
+   TRACE PROPERTY  r(rnporpo)  l l 0
+   TRACE PROPERTY  r(rpporpo)  w w 0
+   TRACE PROPERTY  r(rpporpo)  l l 0
+   TRACE PROPERTY  r(rnpo)  w w 0
+   TRACE PROPERTY  r(rnpo)  l l 0
+   TRACE PROPERTY  r(rhiporpo)  w w 0
+   TRACE PROPERTY  r(rhiporpo)  l l 0
+   TRACE PROPERTY  r(rnpofuse)  w w 0
+   TRACE PROPERTY  r(rnpofuse)  l l 0
+   TRACE PROPERTY  r(rnpoi)  w w 0
+   TRACE PROPERTY  r(rnpoi)  l l 0
+   TRACE PROPERTY  r(rppoi)  w w 0
+   TRACE PROPERTY  r(rppoi)  l l 0
+   TRACE PROPERTY  r(rm1)  w w 0
+   TRACE PROPERTY  r(rm1)  l l 0
+   TRACE PROPERTY  r(rmx)  w w 0
+   TRACE PROPERTY  r(rmx)  l l 0
+   TRACE PROPERTY  r(rmx)  metal metal 0
+   TRACE PROPERTY  r(rmz)  w w 0
+   TRACE PROPERTY  r(rmz)  l l 0
+   TRACE PROPERTY  r(rmz)  metal metal 0
+   TRACE PROPERTY  r(rmt)  w w 0
+   TRACE PROPERTY  r(rmt)  l l 0
+   TRACE PROPERTY  r(rap)  w w 0
+   TRACE PROPERTY  r(rap)  l l 0
+   TRACE PROPERTY  c(cmimmk4x0y)  carea carea 1
+   TRACE PROPERTY  c(cmimmk4x0y)  cperi cperi 1
+   TRACE PROPERTY  c(cmimmk4x0ynosub)  carea carea 1
+   TRACE PROPERTY  c(cmimmk4x0ynosub)  cperi cperi 1
+   TRACE PROPERTY  c(cpolpnw)  carea carea 1
+   TRACE PROPERTY  c(cpolpnw)  cperi cperi 1
+   TRACE PROPERTY  c(cpolppw)  carea carea 1
+   TRACE PROPERTY  c(cpolppw)  cperi cperi 1
+   TRACE PROPERTY  c(cpo25nw)  carea carea 1
+   TRACE PROPERTY  c(cpo25nw)  cperi cperi 1
+   TRACE PROPERTY  c(cpo18nw)  carea carea 1
+   TRACE PROPERTY  c(cpo18nw)  cperi cperi 1
+   TRACE PROPERTY  c(cpo25pw)  carea carea 1
+   TRACE PROPERTY  c(cpo25pw)  cperi cperi 1
+   TRACE PROPERTY  c(cpo18pw)  carea carea 1
+   TRACE PROPERTY  c(cpo18pw)  cperi cperi 1
+   TRACE PROPERTY  c(cm1mx)  carea carea 1
+   TRACE PROPERTY  c(cm1mx)  cperi cperi 1
+   TRACE PROPERTY  c(cmxmx)  carea carea 1
+   TRACE PROPERTY  c(cmxmx)  cperi cperi 1
+   TRACE PROPERTY  c(cmxmx)  toplayer toplayer 0
+   TRACE PROPERTY  c(cmxmz)  carea carea 1
+   TRACE PROPERTY  c(cmxmz)  cperi cperi 1
+   TRACE PROPERTY  c(cmxmz)  toplayer toplayer 0
+   TRACE PROPERTY  c(cmzmt)  carea carea 1
+   TRACE PROPERTY  c(cmzmt)  cperi cperi 1
+   TRACE PROPERTY  c(cmzmt)  toplayer toplayer 0
+   TRACE PROPERTY  c(cmzmz)  carea carea 1
+   TRACE PROPERTY  c(cmzmz)  cperi cperi 1
+   TRACE PROPERTY  c(cmzmz)  toplayer toplayer 0
+   TRACE PROPERTY  c(cmstrstk)  carea carea 1
+   TRACE PROPERTY  c(cmstrstk)  cperi cperi 1
+   TRACE PROPERTY  c(cmstrstk)  botlayer botlayer 0
+   TRACE PROPERTY  c(cmstrstk)  toplayer toplayer 0
+   TRACE PROPERTY  c(cfrm1)  l l 1
+   TRACE PROPERTY  c(cfrm1)  fs fs 1
+   TRACE PROPERTY  c(cfrmx)  l l 1
+   TRACE PROPERTY  c(cfrmx)  fs fs 1
+   TRACE PROPERTY  c(cfrmx)  metal metal 0
+   TRACE PROPERTY  c(cfrmz)  l l 1
+   TRACE PROPERTY  c(cfrmz)  fs fs 1
+   TRACE PROPERTY  c(cfrmz)  metal metal 0
+   TRACE PROPERTY  c(cfrmt)  l l 1
+   TRACE PROPERTY  c(cfrmt)  fs fs 1
+   TRACE PROPERTY  c(cfrmt)  metal metal 0
+   TRACE PROPERTY  cfrm1m5shz(cfrm1m5shz)  nf nf 0
+   TRACE PROPERTY  cfrm1m5shz(cfrm1m5shz)  l l 1
+   TRACE PROPERTY  cfrm1m5shznosub(cfrm1m5shznosub)  nf nf 0
+   TRACE PROPERTY  cfrm1m5shznosub(cfrm1m5shznosub)  l l 1
+   TRACE PROPERTY  c(ce1e2)  carea carea 1
+   TRACE PROPERTY  c(ce1e2)  cperi cperi 1
+   TRACE PROPERTY  ebeamprobe7mt(ebeamprobe7mt)  area area 1
+   TRACE PROPERTY  ebeamprobe7mt(ebeamprobe7mt)  peri peri 1
+   TRACE PROPERTY  microprobe7mt(microprobe7mt)  area area 1
+   TRACE PROPERTY  microprobe7mt(microprobe7mt)  peri peri 1
+   TRACE PROPERTY  ebeamprobe7m(ebeamprobe7m)  area area 1
+   TRACE PROPERTY  ebeamprobe7m(ebeamprobe7m)  peri peri 1
+   TRACE PROPERTY  microprobe7m(microprobe7m)  area area 1
+   TRACE PROPERTY  microprobe7m(microprobe7m)  peri peri 1
+   TRACE PROPERTY  lddn(ndr25hv)  w w 1
+   TRACE PROPERTY  lddn(ndr25hv)  l l 0
+   TRACE PROPERTY  pdr25hv  w w 1
+   TRACE PROPERTY  pdr25hv  l l 0
+   TRACE PROPERTY  lddn(next18hv)  w w 1
+   TRACE PROPERTY  lddn(next18hv)  l l 0
+   TRACE PROPERTY  lddn(next18hv)  ngcon ngcon 0
+   TRACE PROPERTY  lddn(next18hv)  ncrsd ncrsd 0
+   TRACE PROPERTY  next18hvi  w w 1
+   TRACE PROPERTY  next18hvi  l l 0
+   TRACE PROPERTY  next18hvi  ngcon ngcon 0
+   TRACE PROPERTY  next18hvi  ncrsd ncrsd 0
+   TRACE PROPERTY  pext18hv  w w 1
+   TRACE PROPERTY  pext18hv  l l 0
+   TRACE PROPERTY  pext18hv  ngcon ngcon 0
+   TRACE PROPERTY  pext18hv  ncrsd ncrsd 0
+   TRACE PROPERTY  lddn(next25hv)  w w 1
+   TRACE PROPERTY  lddn(next25hv)  l l 0
+   TRACE PROPERTY  lddn(next25hv)  ngcon ngcon 0
+   TRACE PROPERTY  lddn(next25hv)  ncrsd ncrsd 0
+   TRACE PROPERTY  next25hvi  w w 1
+   TRACE PROPERTY  next25hvi  l l 0
+   TRACE PROPERTY  next25hvi  ngcon ngcon 0
+   TRACE PROPERTY  next25hvi  ncrsd ncrsd 0
+   TRACE PROPERTY  pext25hv  w w 1
+   TRACE PROPERTY  pext25hv  l l 0
+   TRACE PROPERTY  pext25hv  ngcon ngcon 0
+   TRACE PROPERTY  pext25hv  ncrsd ncrsd 0
+   TRACE PROPERTY  ldd(mtpcell)  l l 1
+   TRACE PROPERTY  ldd(mtpcell)  w w 1
+   TRACE PROPERTY  mp(psvt25rpo_mtp)  w w 1
+   TRACE PROPERTY  mp(psvt25rpo_mtp)  l l 1
+   TRACE PROPERTY  mp(psvt25rpo_mtp)  esu esu 1
+   TRACE PROPERTY  mp(psvt25rpo_mtp)  edu edu 1
+   TRACE PROPERTY  mp(psvt25_mtp)  w w 1
+   TRACE PROPERTY  mp(psvt25_mtp)  l l 1
+   TRACE PROPERTY  c(cmetm2m4)  w w 1
+   TRACE PROPERTY  c(cmim5_sh)  w w 1
+   TRACE PROPERTY  c(cmim5_sh)  l l 1
+   TRACE PROPERTY  c(cmim5t_sh)  w w 1
+   TRACE PROPERTY  c(cmim5t_sh)  l l 1
+   TRACE PROPERTY  c(cmim5_2p)  w w 1
+   TRACE PROPERTY  c(cmim5_2p)  l l 1
+   TRACE PROPERTY  c(cmim5t_2p)  w w 1
+   TRACE PROPERTY  c(cmim5t_2p)  l l 1
+   TRACE PROPERTY  c(cmim5)  w w 1
+   TRACE PROPERTY  c(cmim5)  l l 1
+   TRACE PROPERTY  c(cmim5t)  w w 1
+   TRACE PROPERTY  c(cmim5t)  l l 1
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z  nf_dirx nf_dirx 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z  mtlfrbot mtlfrbot 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z  mtlfrtop mtlfrtop 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z  mtlconbot mtlconbot 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z  mtlcontop mtlcontop 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z  nf_diry nf_diry 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z_sh  nf_dirx nf_dirx 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z_sh  mtlconbot mtlconbot 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z_sh  mtlcontop mtlcontop 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z_sh  nf_diry nf_diry 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z_2p  nf_dirx nf_dirx 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z_2p  mtlfrbot mtlfrbot 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z_2p  mtlfrtop mtlfrtop 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z_2p  mtlconbot mtlconbot 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z_2p  mtlcontop mtlcontop 0
+   TRACE PROPERTY  cfrstack_rf_7m4x0y2z_2p  nf_diry nf_diry 0
+   TRACE PROPERTY  d(dschottky)  sign sign 0
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               7          7            0            0
+
+   Nets:               10         10            0            0
+
+   Instances:           4          4            0            0    MN(NSVTGP)
+                        4          4            0            0    MP(PSVTGP)
+                  -------    -------    ---------    ---------
+   Total Inst:          8          8            0            0
+
+
+o Statistics:
+
+   24 isolated layout nets were deleted.
+
+
+o Isolated Layout Nets:
+
+      (Layout nets which are not connected to any instances or ports).
+
+   9(0.440,-2.185) 10(0.440,-1.990) 11(0.440,-0.820) 12(0.860,-2.185) 13(0.860,-1.990)
+   14(0.860,-0.820) 15(1.280,-2.185) 16(1.280,-1.990) 17(1.280,-0.820) 18(1.700,-2.185)
+   19(1.700,-1.990) 20(1.700,-0.820) 21(0.000,-3.000) 22(0.000,-0.560) 23(0.230,-2.185)
+   24(0.605,-2.185) 27(0.000,-3.000) 28(0.000,-0.560) 29(0.230,-2.185) 30(0.440,-1.700)
+   31(0.605,-2.185) 32(0.860,-1.700) 33(1.280,-1.700) 34(1.700,-1.700)
+
+
+o Initial Correspondence Points:
+
+   Ports:        vdd! gnd! A B C D S
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      1 sec
+Total Elapsed Time:  2 sec

@@ -1,0 +1,10 @@
+Info: 64 top-level, potential tri-state nets excluded from IPO operation.
+*info: 1 clock net excluded
+*info: 2 special nets excluded.
+*info: 64 external nets with a tri-state driver excluded.
+*info: 18 no-driver nets excluded.
+*info: fanout load violations report
+# Net / InstPin                         MaxFanLoad  FanLoad         FanLoadSlk       CellPort             Remark    
+#
+
+*info: there is 0 max fanout load violation in the design.

@@ -1,0 +1,12 @@
+absSetLibrary "lab3"
+absSetOption "ViewLayout" "layout"
+absSetOption "ViewLogical" "schematic"
+absDeselectCells
+absSelectAllBins
+absSelectCells
+absMoveSelectedCellsToBin "Ignore"
+absDeselectCells
+absSelectCell "inv"
+absMoveSelectedCellsToBin "Block"
+absDeselectAllBins
+absSelectBin "Block"

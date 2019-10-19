@@ -1,0 +1,132 @@
+Complex_f2 1000
+R_ERC1
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC1 : Nwell not connected
+R_ERC2
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC2 : Nwell connected to multiple nodes
+R_ERC3
+1 1 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC3 : Pwell not connected
+p 1 3
+-150 -3000
+1040 -1500
+-150 -1500
+R_ERC4_ERC12
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC4_ERC12 : Pwell or isolated Pwell connected to multiple nodes
+R_ERC5
+1 1 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC5 : Substrate not connected
+p 1 4
+-150 -3000
+2350 150
+2350 20150
+-150 20150
+R_ERC6
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC6 : Substrate connected to multiple nodes
+R_ERC7
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC7 : Floating Deep Nwell
+R_ERC8
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC8 : Deep Nwell connected to multiple nodes
+R_ERC9
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC9 : Substrate isolated by msub ring must be connected to Substrate
+R_ERC10
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC10 : Pwell isolated by Deep Nwell connected to Substrate
+R_ERC11
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC11 : Pwell isolated by msub connected to Substrate
+R_ERC13
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC13 : soft connections through OD (not checked by default)
+R_ERC14
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC14 : soft connections through PO (not checked by default)
+R_ERC15
+8 8 5 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC15 : OD-PO intersection not connected to another device
+terminal (except antenna protection diode terminal) or not connected
+to a well strap or connected to another OD-PO intersection
+p 1 4
+440 -2185
+500 -2185
+500 -1985
+440 -1985
+p 2 4
+440 -1215
+500 -1215
+500 -815
+440 -815
+p 3 4
+860 -2185
+920 -2185
+920 -1985
+860 -1985
+p 4 4
+860 -1215
+920 -1215
+920 -815
+860 -815
+p 5 4
+1280 -2185
+1340 -2185
+1340 -1985
+1280 -1985
+p 6 4
+1280 -1215
+1340 -1215
+1340 -815
+1280 -815
+p 7 4
+1700 -2185
+1760 -2185
+1760 -1985
+1700 -1985
+p 8 4
+1700 -1215
+1760 -1215
+1760 -815
+1700 -815
+R_ERC_NW_BIASING
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC_NW_BIASING : Nwell not connected to one NET-name of the POWER list
+R_ERC_PW_BIASING
+0 0 3 Nov 30 18:10:03 2016                                      
+Rule File Pathname: /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+Rule File Title: CALIBRE cmos065 LVS RULES FILE, Common technology kit team - Crolles, Date: Fri Mar 25 14:29:37 2011 $ - DRM rev L - CTK rev 5.3.6
+Rule ERC_PW_BIASING : Pwell not connected to one NET-name of the GROUND list

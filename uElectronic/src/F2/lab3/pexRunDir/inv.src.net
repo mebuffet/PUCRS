@@ -1,0 +1,34 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab3
+* Top Cell Name: inv
+* View Name:     schematic
+* Netlisted on:  Aug 31 18:50:15 2016
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: lab3
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv A Z
+*.PININFO A:I Z:O
+MM1 Z A vdd! vdd! psvtgp w=0.4 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM0 Z A gnd! gnd! nsvtgp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+.ENDS
+

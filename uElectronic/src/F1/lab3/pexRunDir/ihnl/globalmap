@@ -1,0 +1,10 @@
+CADENCE IHNL01060
+$model
+lab3/Complex_f2/schematic Complex_f2
+$endmodel
+$net
+vdd! vdd!
+gnd! gnd!
+$endnet
+$param
+$endparam

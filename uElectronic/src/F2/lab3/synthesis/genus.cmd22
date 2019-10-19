@@ -1,0 +1,8 @@
+# Cadence Genus(TM) Synthesis Solution, Version 16.10-p006_1, built Jun  8 2016
+
+# Date: Tue Nov 29 17:49:39 2016
+# Host: kriti (x86_64 w/Linux 2.6.18-416.el5) (4cores*8cpus*Intel(R) Xeon(R) CPU W5580 @ 3.20GHz 8192KB)
+# OS:   CentOS release 5.11 (Final)
+
+include cmd_genus
+exit

@@ -1,0 +1,5 @@
+Complex_f2 1000
+M3X.DEN.4::<1>
+0 0 2 Nov 30 17:46:57 2016                      
+M3X.DEN.4::<1> = DENSITY M3X_DENS <= 1 INSIDE OF LAYER CHIP WINDOW 400 BACKUP GRADIENT > 0.4 CORNER 0.707 ABSOLUTE
+Rule M3X.DEN.4: Maximum physical MiX density difference between any two 400um x 400um neighboring checking windows (stepped 400um non-overlapping)b. Exclusion: MKR,ind, MKR,rf.: 0.4

@@ -1,0 +1,13 @@
+Complex_f2 1000
+M1.DEN.1.1::<3>
+1 1 2 Nov 30 17:46:57 2016                      
+M1.DEN.1.1::<3> = DENSITY M1_DENS <= 1 INSIDE OF LAYER CHIP WINDOW 100 STEP 50 BACKUP
+Rule M1.DEN.1.1: Maximum physical M1 density over local 100um x 100um areas.: 0.8
+p 1 4
+DV 0.42523175
+DA 7.875
+DA M1_DENS 3.3487
+-150 -3000
+2350 -3000
+2350 150
+-150 150

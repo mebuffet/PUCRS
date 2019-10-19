@@ -1,0 +1,67 @@
+; $Id: ADVance_MS.menus.static,v 1.2 2009/11/17 09:28:40 ne1 Exp $
+/**********************************************************************
+ * 
+ *  DESCRIPTION
+ *  -----------
+ *
+ *  This file contains definitions for the differences in the simulation
+ *  environment menus between the general case and the case where the
+ *  chosen simulator is the one after which this file is named.
+ * 
+ *  A description of the format used in this file can be found in
+ *  file "simui.menus".
+ *
+ *********************************************************************/
+
+(sevAddMenuItemLists (lambda (session name) (case name
+
+    ("Tools"
+     `(
+       ("Parametric Analysis" ?callback (sevParametricTool ',session) ?form t ?disable (sevNoEnvironment ',session))
+       ("Corners" ?disable t)
+       ("Monte Carlo" ?disable t)
+       ("Optimization" ?callback (sevOptimizationTool ',session) ?form t ?disable (sevNoEnvironment ',session))
+       ("separator")
+       ("*Setup Corners" ?callback (UartCornerSetup) ?form t
+        ?disable (UartMenusDisableSetupCorners "ADVance_MS")
+       )
+       ("*Setup User-Defined Corners" ?callback (UartCornerUserSetup) ?form t
+        ?disable (UartMenusDisableSetupUserDefinedCorners "ADVance_MS")
+       )
+       ("*Setup Simulation Levels" ?callback (UartSimLevelSetup) ?form t
+          ?disable (UartMenusDisableSetupSimulationLevels)
+       )
+       ("*PLS Outputs"
+        ?subMenu
+        (
+         ("Select On Schematic" ?callback (UplsOutputsSelectOnSchematic ',session)
+            ?disable (UartMenusDisableOutputsSelectOnSchematic)
+         )
+         ("Select By Name" ?callback (UplsOutputsSelectByName ',session) ?form t
+            ?disable (UartMenusDisableOutputsSelectByName)
+         )
+        )
+        ?disable (UartMenusDisableOutputs)
+       )
+       ("*Import Netlist" 
+	?subMenu
+	(
+	 ("Create/Update Symbol" ?callback (UartGenerateImportedSymbol ',session) ?form t)
+	 ("Enable"  ?callback (UartSetImportNetlistMode  t)   ?disable (UartGetImportNetlistEnable ',session))
+	 ("Disable" ?callback (UartSetImportNetlistMode  nil) ?disable (UartGetImportNetlistDisable ',session))
+	 ("Show File" ?callback (UartImportShow))
+	 ))
+       ("*Open"
+        ?subMenu
+        (("Simulator Input File" ?callback (UartOpenNetlist) ?form nil)
+         ("Terminal" ?callback (UartOpenTerminal) ?form nil)
+        )
+       )
+       ("separator")
+       ("Calculator" ?callback (sevOpenCalculator) ?form t)
+       ("Results Browser" ?callback (sevOpenDRLBrowser) ?form t)
+       ("Waveform" ?callback (sevOpenPlotWindow ',session) ?form t)
+       ("Results Display" ?callback (sevOpenPrintWindow ',session) ?form t)
+       ("Job Monitor" ?callback (sevOpenJobMonitor) ?form t)
+       ))
+   )))

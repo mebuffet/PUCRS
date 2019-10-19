@@ -1,0 +1,43 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Tue Sep  6 15:27:34 2016"
+"simulator" "spectre"
+"version" "15.1.0.257"
+"date" "3:27:34 PM, Tue Sep 6, 2016"
+"design" "* inversor - simulação do circuito extraído do layout projetado"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"transient1-tran" "analysisInst" (
+"tran"
+"transient1.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient1': time = (0 s -> 25 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient1-meas_tran" "analysisInst" (
+"meas_tran"
+"transient1.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for transient1 Analysis tran"
+)
+END

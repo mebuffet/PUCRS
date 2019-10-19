@@ -1,0 +1,46 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab3
+* Top Cell Name: Complex_f2
+* View Name:     schematic
+* Netlisted on:  Nov 29 22:47:20 2016
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: lab3
+* Cell Name:    Complex_f2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Complex_f2 A B C D S
+*.PININFO A:I B:I C:I D:I S:O
+MNA S A net13 gnd! nsvtgp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MNB net13 B net11 gnd! nsvtgp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MNC net11 C gnd! gnd! nsvtgp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MND net11 D gnd! gnd! nsvtgp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MPA S A vdd! vdd! psvtgp w=0.4 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MPB S B vdd! vdd! psvtgp w=0.4 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MPC S C net33 vdd! psvtgp w=0.4 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MPD net33 D vdd! vdd! psvtgp w=0.4 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+.ENDS
+

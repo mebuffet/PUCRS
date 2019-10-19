@@ -1,0 +1,161 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "anel")
+  (DATE        "Tue Sep 06 16:51:33 -0300 2016")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "GENUS15.20 - 15.20-p004_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::1.0)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::25.0)
+  (TIMESCALE   1ps)
+  (CELL
+     (CELLTYPE "HS65_GS_NAND2X2")
+     (INSTANCE nx)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.1))
+          (IOPATH (posedge A) Z () (::27))
+          (IOPATH (negedge A) Z (::25) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[1\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::28))
+          (IOPATH (negedge A) Z (::30) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[2\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::26))
+          (IOPATH (negedge A) Z (::28) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[3\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::26))
+          (IOPATH (negedge A) Z (::27) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[4\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::26))
+          (IOPATH (negedge A) Z (::27) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[5\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::25))
+          (IOPATH (negedge A) Z (::27) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[6\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::25))
+          (IOPATH (negedge A) Z (::27) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[7\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::25))
+          (IOPATH (negedge A) Z (::27) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[8\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::25))
+          (IOPATH (negedge A) Z (::27) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[9\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::25))
+          (IOPATH (negedge A) Z (::27) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[10\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::25))
+          (IOPATH (negedge A) Z (::27) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[11\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::25))
+          (IOPATH (negedge A) Z (::27) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv")
+     (INSTANCE inv_instance\[12\]\.inv_i)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH (posedge A) Z () (::32))
+          (IOPATH (negedge A) Z (::33) ())
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "HS65_GS_BFX2")
+     (INSTANCE cdn_loop_breaker)
+  )
+)

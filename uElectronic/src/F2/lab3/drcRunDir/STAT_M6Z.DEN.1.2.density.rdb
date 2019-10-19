@@ -1,0 +1,13 @@
+Complex_f2 1000
+M6Z.DEN.1.2::<3>
+1 1 2 Jun 21 17:48:36 2017                      
+M6Z.DEN.1.2::<3> = DENSITY M6Z_DENS <= 1 INSIDE OF LAYER CHIP_M6Z WINDOW 20 STEP 10 BACKUP
+Rule M6Z.DEN.1.2: MiZ widths and spaces have to be chosen such that maximum physical MiZ density over local 20um x 20um areas cannot exceed this value. Exclusions: Mtop under CB or LMARK --Note: At IP level, minimum density values should be increased by 1.5% and maximum density values should be reduced by 1.5% and the window check stepping should be lowered down to 1/20th of the window size for sake of preventing problems after IP instanciation at chip level..: 0.9
+p 1 4
+DV 0
+DA 7.875
+DA M6Z_DENS 0
+-150 -3000
+2350 -3000
+2350 150
+-150 150

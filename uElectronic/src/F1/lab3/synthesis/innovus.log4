@@ -1,0 +1,1222 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v16.10-p004_1, built Thu May 12 14:48:49 PDT 2016
+Options:	-common_ui 
+Date:		Tue Nov 29 18:19:50 2016
+Host:		kriti (x86_64 w/Linux 2.6.18-416.el5) (4cores*8cpus*Intel(R) Xeon(R) CPU W5580 @ 3.20GHz 8192KB)
+OS:		CentOS release 5.11 (Final)
+
+License:
+		invs	Innovus Implementation System	16.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+
+***************************************************************************************
+INFO:    You have enabled the Common UI that has been internally qualified at Cadence but
+         has only limited customer testing. You are encouraged to work with Cadence directly
+         to qualify your usage and make sure it meets your needs before deploying it widely.
+***************************************************************************************
+
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_26862_kriti_micro1_gr7kN6.
+
+
+**INFO:  MMMC transition support version v31-84 
+
+[DEV]innovus 1> source cmd_innovus
+Starting library reading in 'Multi-threaded flow' (with '8' threads)
+
+Threads Configured:8
+Reading default_emulate_libset_max timing library /home/micro1/lab3/characterization/inv.lib.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'inv' is not defined in the library. (File /home/micro1/lab3/characterization/inv.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'Complex_f2' is not defined in the library. (File /home/micro1/lab3/characterization/inv.lib)
+Read 2 cells in inv.
+Reading default_emulate_libset_max timing library /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib.
+Read 866 cells in CORE65GPSVT.
+Library reading multithread flow ended. (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib)
+
+Loading LEF file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef ...
+
+Loading LEF file ../Complex_f2.lef ...
+Set DBUPerIGU to M2 pitch 200.
+
+Loading LEF file ../inv.lef ...
+
+Loading LEF file /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/LEF/CORE65GPSVT.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/LEF/CORE65GPSVT.lef at line 1.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS1_FA1X21' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS1_FA1X35' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS1_FA1X9' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS1_HA1X8' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS2_FA1X18' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQNX18' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQNX27' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQNX35' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQX18' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQX27' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPHQX35' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQNX18' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQNX27' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQNX35' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQX18' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQX27' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPQX35' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPRQNX18' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPRQNX27' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (IMPLF-45):	Macro 'HS65_GSS_DFPRQNX35' has no SITE statement and it is a class
+CORE macro that requires a SITE statement. The SITE CORE is
+chosen because it is a core site with height 2.6000 that matches the macro
+SIZE height.
+**WARN: (EMS-27):	Message (IMPLF-45) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/LEF/CORE65GPSVT.lef at line 75302.
+
+Loading LEF file /soft64/design-kits/stm/65nm-cmos065_536/PRHS65_7.0.a/CADENCE/LEF/PRHS65_soc.lef ...
+**WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LS_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LS_ANTPROT1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LL_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LL_ANTPROT1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LH_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_LH_ANTPROT1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_GS_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_GL_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'MINUS' in macro 'HS65_GH_ANTPROT3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'CLOCKTREE' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'CLOCKTREE' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'HS65_GS_XOR3X9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'B' in macro 'HS65_GS_XOR3X9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'C' in macro 'HS65_GS_XOR3X9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR3X9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'HS65_GS_XOR3X4' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'B' in macro 'HS65_GS_XOR3X4' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'C' in macro 'HS65_GS_XOR3X4' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR3X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'HS65_GS_XOR3X27' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'B' in macro 'HS65_GS_XOR3X27' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'C' in macro 'HS65_GS_XOR3X27' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR3X27' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'HS65_GS_XOR3X18' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR3X18' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR2X9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR2X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR2X35' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR2X27' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XOR2X18' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR3X9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR3X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR3X27' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR3X18' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR2X9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR2X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR2X35' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR2X27' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'HS65_GS_XNOR2X18' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'HS65_GS_SDFPSQX9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+viaInitial starts at Tue Nov 29 18:20:10 2016
+viaInitial ends at Tue Nov 29 18:20:10 2016
+#- Begin Load netlist data ... (date=11/29 18:20:10, mem=620.2M)
+*** Begin netlist parsing (mem=620.2M) ***
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR3X9' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR3X9' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR3X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR3X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR3X27' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR3X27' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR3X18' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR3X18' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR2X9' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR2X9' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR2X35' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR2X35' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR2X27' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR2X27' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XOR2X18' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XOR2X18' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'HS65_GS_XNOR3X9' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'HS65_GS_XNOR3X9' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 868 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'layout/TF.v'
+
+*** Memory Usage v#1 (Current mem = 620.227M, initial mem = 175.422M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=620.2M) ***
+#- End Load netlist data ... (date=11/29 18:20:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=620.2M, current mem=620.2M)
+Top level cell is TF.
+Hooked 868 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell TF ...
+*** Netlist is unique.
+** info: there are 1022 modules.
+** info: there are 6 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 640.227M, initial mem = 175.422M) ***
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPFP-3961):	The techSite 'IOPADSITE_SF_TF_2ROWS' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOPADSITE_SF_2ROWS' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOPADSITE_TF_2ROWS' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOPADSITE_SF_LIN' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOPADSITE_TF_LIN' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHD_QG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHD_QV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHV_QG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHV_QV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CORE_QG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CORE_QV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHD_TG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHD_TV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHV_TG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHV_TV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CORE_TG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CORE_TV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHD_DG' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHD_DV' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'COREHD' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (EMS-27):	Message (IMPFP-3961) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Extraction setup Started 
+default_emulate_view
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.captable ...
+Cap table was created using Encounter 08.10-s338_1.
+Process name: cmos065_7m4x0y2z_GL_RCMAX.
+Allocated an empty WireEdgeEnlargement table in default_emulate_rc_corner [6].
+Allocated an empty WireEdgeEnlargement table in default_emulate_rc_corner [7].
+Allocated an empty WireEdgeEnlargement table in default_emulate_rc_corner [8].
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file 'layout//TF.default_emulate_constraint_mode.sdc' ...
+Current (total cpu=0:00:18.0, real=0:00:21.0, peak res=267.9M, current mem=735.3M)
+TF
+INFO (CTE): Constraints read successfully.
+TF
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=275.6M, current mem=740.8M)
+Current (total cpu=0:00:18.0, real=0:00:21.0, peak res=275.6M, current mem=740.8M)
+Total number of combinational cells: 619
+Total number of sequential cells: 239
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: HS65_GS_BFX13 HS65_GS_BFX106 HS65_GS_BFX142 HS65_GS_BFX2 HS65_GS_BFX18 HS65_GS_BFX213 HS65_GS_BFX27 HS65_GS_BFX22 HS65_GS_BFX284 HS65_GS_BFX31 HS65_GS_BFX4 HS65_GS_BFX35 HS65_GS_BFX44 HS65_GS_BFX40 HS65_GS_BFX53 HS65_GS_BFX49 HS65_GS_BFX62 HS65_GS_BFX9 HS65_GS_BFX7 HS65_GS_BFX71
+Total number of usable buffers: 20
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: inv HS65_GS_IVX13 HS65_GS_IVX106 HS65_GS_IVX142 HS65_GS_IVX2 HS65_GS_IVX18 HS65_GS_IVX213 HS65_GS_IVX27 HS65_GS_IVX22 HS65_GS_IVX284 HS65_GS_IVX31 HS65_GS_IVX4 HS65_GS_IVX35 HS65_GS_IVX44 HS65_GS_IVX40 HS65_GS_IVX53 HS65_GS_IVX49 HS65_GS_IVX62 HS65_GS_IVX9 HS65_GS_IVX7 HS65_GS_IVX71
+Total number of usable inverters: 21
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+Adjusting core size to PlacementGrid : width :default_emulate_view
+default_emulate_view
+default_emulate_view
+3.2 height : 5.2
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current create_floorplan objects are automatically derived based on specified new create_floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+#- Begin addRing (date=11/29 18:20:11, mem=744.8M)
+
+**WARN: (IMPPP-193):	The currently specified top spacing 0.2500  might create min enclosed area violation. The required min enclosed area for layer M1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.2500  might create min enclosed area violation. The required min enclosed area for layer M1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.2500  might create min enclosed area violation. The required min enclosed area for layer M2 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.2500  might create min enclosed area violation. The required min enclosed area for layer M2 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Ring generation is complete; vias are now being generated.
+The power planner created 8 wires.
+#- End addRing (date=11/29 18:20:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=744.8M, current mem=744.8M)
+#- Begin sroute (date=11/29 18:20:11, mem=744.8M)
+*** Begin SPECIAL ROUTE on Tue Nov 29 18:20:11 2016 ***
+SPECIAL ROUTE ran on directory: /home/micro1/lab3/synthesis
+SPECIAL ROUTE ran on machine: kriti (Linux 2.6.18-416.el5 Xeon 1.60Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "gnd vdd"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 8
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 8
+srouteTopTargetLayerLimit set to 8
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1504.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table is found in the design, so the same information from the technology file will be ignored.
+Read in 17 layers, 8 routing layers, 1 overlap layer
+Read in 1021 macros, 2 used
+Read in 2 components
+  2 core components: 2 unplaced, 0 placed, 0 fixed
+Read in 5 logical pins
+Read in 5 nets
+Read in 7 special nets, 2 routed
+Read in 4 terminals
+2 nets selected.
+
+Begin power routing ...
+Bad via found: CONT1
+**WARN: (IMPSR-1235):	Find 1 via whose layer definition is incorrect before power routing.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vdd. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net vdd. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net gnd. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net gnd. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+Bad via found: CONT1
+**WARN: (IMPSR-1235):	Find 1 via whose layer definition is incorrect after power routing.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 6
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 3
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1513.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 84 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Tue Nov 29 18:20:11 2016
+The viaGen is rebuilding shadow vias for net gnd.
+sroute post-processing ends at Tue Nov 29 18:20:11 2016
+
+sroute post-processing starts at Tue Nov 29 18:20:11 2016
+The viaGen is rebuilding shadow vias for net vdd.
+sroute post-processing ends at Tue Nov 29 18:20:11 2016
+#- End sroute (date=11/29 18:20:11, total cpu=0:00:00.3, real=0:00:00.0, peak res=750.1M, current mem=750.1M)
+*** Starting place_design default flow ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Deleted 0 physical inst  (cell - / prefix -).
+Multithreaded Timing Analysis is initialized with 8 threads
+
+*** Starting "NanoPlace(TM) placement v#1 (mem=841.6M)" ...
+*** Build Buffered Sizing Timing Model (Used Compact Buffer Set) ...(cpu=0:00:01.5 mem=895.6M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:03.3 mem=948.6M) ***
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=6 (0 fixed + 6 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=10 #term=20 #term/net=2.00, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=5
+stdCell: 6 single + 0 double + 0 multi
+Total standard cell length = 0.0050 (mm), area = 0.0000 (mm^2)
+**WARN: (IMPSP-362):	Site 'CORE' has one std.Cell height, so ignoring its X-symmetry.
+Type 'man IMPSP-362' for more detail.
+Estimated cell power/ground rail width = 0.568 um
+Average module density = 0.781.
+Density for the design = 0.781.
+       = stdcell_area 25 sites (13 um^2) / alloc_area 32 sites (17 um^2).
+Pin Density = 0.4167.
+            = total # of pins 20 / total area 48.
+Enabling multi-CPU acceleration with 8 CPU(s) for placement
+=== lastAutoLevel = 3 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1154.9M
+Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1154.9M
+Iteration  3: Total net bbox = 1.810e-08 (0.00e+00 1.81e-08)
+              Est.  stn bbox = 1.810e-08 (0.00e+00 1.81e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1154.9M
+Iteration  4: Total net bbox = 1.503e+01 (0.00e+00 1.50e+01)
+              Est.  stn bbox = 1.503e+01 (0.00e+00 1.50e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1154.9M
+Iteration  5: Total net bbox = 9.008e+00 (3.71e-03 9.00e+00)
+              Est.  stn bbox = 9.008e+00 (3.71e-03 9.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1154.9M
+Iteration  6: Total net bbox = 6.953e+01 (3.00e+01 3.95e+01)
+              Est.  stn bbox = 6.953e+01 (3.00e+01 3.95e+01)
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 1154.9M
+*** cost = 6.953e+01 (3.00e+01 3.95e+01) (cpu for global=0:00:00.0) real=0:00:01.0***
+Placement multithread real runtime: 0:00:01.0 with 8 threads.
+Info: 0 clock gating cells identified, 0 (on average) moved
+TF
+TF
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:01.0
+*** Starting place_detail (0:00:22.5 mem=1027.7M) ***
+Total net bbox length = 6.953e+01 (3.000e+01 3.953e+01) (ext = 5.802e+01)
+Density distribution unevenness ratio = 0.000%
+Move report: Detail placement moves 6 insts, mean move: 2.91 um, max move: 3.94 um
+	Max move on inst (inv1): (5.30, 2.96) --> (5.00, 6.60)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1059.7MB
+Summary Report:
+Instances move: 6 (out of 6 movable)
+Instances flipped: 0
+Mean displacement: 2.91 um
+Max displacement: 3.94 um (Instance: inv1) (5.301, 2.961) -> (5, 6.6)
+	Length: 3 sites, height: 1 rows, site name: CORE, cell type: inv
+	Violation at original loc: Placement Blockage Violation
+Total net bbox length = 7.200e+01 (3.140e+01 4.060e+01) (ext = 6.360e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1059.7MB
+*** Finished place_detail (0:00:22.5 mem=1059.7M) ***
+*** End of Placement (cpu=0:00:03.9, real=0:00:05.0, mem=1059.7M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 1 )
+Density distribution unevenness ratio = 0.000%
+*** Free Virtual Timing Model ...(mem=1059.7M)
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:                                                                   final
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:                                                                   global_place
+congRepair running 8 threads
+Starting congestion repair ...
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 2
+[NR-eGR] maxRouteLayer          : 2147483647
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has no routable track
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] Layer5 has single uniform track structure
+[NR-eGR] Layer6 has single uniform track structure
+[NR-eGR] Layer7 has single uniform track structure
+[NR-eGR] Layer8 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=18 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=5  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 5 
+[NR-eGR] id=0  routeTrackId=0  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=190  L2=200  L3=200  L4=200  L5=200  L6=800  L7=800  L8=5000
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 5 net(s) in layer range [2, 8]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.040000e+01um
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+describeCongestion: hCong = 0.00 vCong = 0.00
+Skipped repairing congestion.
+[NR-eGR] Layer1(M1)(F) length: 0.000000e+00um, number of vias: 10
+[NR-eGR] Layer2(M2)(V) length: 6.200000e+00um, number of vias: 14
+[NR-eGR] Layer3(M3)(H) length: 2.200000e+00um, number of vias: 0
+[NR-eGR] Layer4(M4)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer5(M5)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer6(M6)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer7(M7)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer8(AP)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 8.400000e+00um, number of vias: 24
+End of congRepair (cpu=0:00:00.0, real=0:00:00.0)
+*** Finishing place_design default flow ***
+***** Total cpu  0:0:4
+***** Total real time  0:0:6
+**place_design ... cpu = 0: 0: 4, real = 0: 0: 6, mem = 1019.9M **
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+WARNING   IMPSP-362            1  Site '%s' has %s std.Cell height, so ign...
+*** Message Summary: 2 warning(s), 0 error(s)
+
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:                                                                   final
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:          4.55              6                                      place_design
+default_emulate_view
+#route_design: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 709.77 (MB), peak = 908.71 (MB)
+#default_emulate_rc_corner has no qx tech file defined
+#No active RC corner or QRC tech file is missing.
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: mulit-cut via swapping is disabled by user.
+#**INFO: All auto set options tuned by route_design will be restored to their original settings on command completion.
+#**INFO: auto set of routeReserveSpaceForMultiCut to true
+#**INFO: auto set of routeConcurrentMinimizeViaCountEffort to high
+Begin checking placement ... (start mem=1019.9M, init mem=1019.9M)
+*info: Placed = 6             
+*info: Unplaced = 0           
+Placement Density:78.12%(13/17)
+Placement Density (including fixed std cells):78.12%(13/17)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=1019.9M)
+#**INFO: auto set of routeWithTimingDriven to true
+#**INFO: auto set of routeWithSiDriven to true
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1019.9M) ***
+
+globalRoute
+
+#setNanoRouteMode -routeConcurrentMinimizeViaCountEffort "high"
+#setNanoRouteMode -routeReserveSpaceForMultiCut true
+#setNanoRouteMode -routeWithSiDriven true
+#setNanoRouteMode -routeWithTimingDriven true
+#Start globalRoute on Tue Nov 29 18:20:17 2016
+#
+#WARNING (NRDB-728) PIN Z in CELL_VIEW CLOCKTREE does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR3X9 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR3X4 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR3X27 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR3X18 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR2X9 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR2X4 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR2X35 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR2X27 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XOR2X18 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR3X9 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR3X4 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR3X27 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR3X18 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR2X9 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR2X4 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR2X35 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR2X27 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Z in CELL_VIEW HS65_GS_XNOR2X18 does not have antenna diff area.
+#WARNING (NRDB-728) PIN Q in CELL_VIEW HS65_GS_SDFPSQX9 does not have antenna diff area.
+#WARNING (EMS-27) Message (NRDB-728) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+**WARN: (IMPEXT-6140):	The RC table is not interpolated for wire width '100' on M1. As a result, an RC of wire width '90' is being used instead. This may cause some accuracy degradation.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/A of net A because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/B of net B because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/C of net C because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/D of net D because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/F of net F because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#NanoRoute Version 16.10-p004_1 NR160506-1445/16_10-UB
+#Using multithreading with 8 threads.
+#Start routing data preparation.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M1 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M2 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M1 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M2 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M2 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M3 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M2 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M3 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M3 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M4 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M3 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M4 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M4 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M5 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M4 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M5 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M5 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M6 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M5 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M6 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M6 is not specified for width 0.400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M7 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M6 is not specified for width 0.400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M7 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M7 is not specified for width 0.400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER AP is not specified for width 3.000.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M7 is not specified for width 0.400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER AP is not specified for width 3.000.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.000.
+#Voltage range [0.000 - 0.000] has 4 nets.
+#Voltage range [0.000 - 1.000] has 13 nets.
+# M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.190
+# M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M6           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# M7           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# AP           V   Track-Pitch = 5.000    Line-2-Via Pitch = 5.700
+#WARNING (NRAG-44) Track pitch is too small compared with line-2-via pitch.
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer M3's pitch = 0.200.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 737.01 (MB), peak = 908.71 (MB)
+#Merging special wires using 8 threads...
+#
+#Connectivity extraction summary:
+#Total number of nets = 0.
+#
+#Number of eco nets is 0
+#
+#Start data preparation...
+#
+#Data preparation is done on Tue Nov 29 18:20:18 2016
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Tue Nov 29 18:20:18 2016
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H          65           0          16    12.50%
+#  Metal 2        V          55           0          16     0.00%
+#  Metal 3        H          65           0          16     0.00%
+#  Metal 4        V          55           0          16     0.00%
+#  Metal 5        H          65           0          16     0.00%
+#  Metal 6        V          13           0          16     0.00%
+#  Metal 7        H          16           0          16     0.00%
+#  Metal 8        V           2           0          16    50.00%
+#  --------------------------------------------------------------
+#  Total                    336       0.00%         128     7.81%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 737.40 (MB), peak = 908.71 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 737.85 (MB), peak = 908.71 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 737.98 (MB), peak = 908.71 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 12 (skipped).
+#Total number of routable nets = 5.
+#Total number of nets in the design = 17.
+#
+#5 routable nets have only global wires.
+#
+#Routed nets constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default               5  
+#-----------------------------
+#        Total               5  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default               5  
+#-----------------------------
+#        Total               5  
+#-----------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#  Overflow after GR: 0.00% H + 0.00% V
+#
+#Complete Global Routing.
+#Total wire length = 12 um.
+#Total half perimeter of net bounding box = 16 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 9 um.
+#Total wire length on LAYER M3 = 3 um.
+#Total wire length on LAYER M4 = 0 um.
+#Total wire length on LAYER M5 = 0 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 10
+#Up-Via Summary (total 10):
+#           
+#-----------------------
+#  Metal 1            8
+#  Metal 2            2
+#-----------------------
+#                    10 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 741.83 (MB), peak = 908.71 (MB)
+#
+#
+#Connectivity extraction summary:
+#Total number of nets = 0.
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 738.00 (MB), peak = 908.71 (MB)
+#Start Track Assignment.
+#Done with 1 horizontal wires in 1 hboxes and 3 vertical wires in 1 hboxes.
+#Done with 0 horizontal wires in 1 hboxes and 0 vertical wires in 1 hboxes.
+#Done with 1 horizontal wires in 1 hboxes and 1 vertical wires in 1 hboxes.
+#
+#Track assignment summary:
+#layer  (wire length)   (overlap)        (long ovlp) 
+#----------------------------------------------------
+#M1 	      0.00 	  0.00%  	  0.00%
+#M2 	      9.50 	  0.00%  	  0.00%
+#M3 	      1.90 	  0.00%  	  0.00%
+#M4 	      0.00 	  0.00%  	  0.00%
+#M5 	      0.00 	  0.00%  	  0.00%
+#M6 	      0.00 	  0.00%  	  0.00%
+#M7 	      0.00 	  0.00%  	  0.00%
+#M8 	      0.00 	  0.00%  	  0.00%
+#----------------------------------------------------
+#All 	     11.40  	  0.00% 	  0.00%
+#Complete Track Assignment.
+#Total wire length = 11 um.
+#Total half perimeter of net bounding box = 16 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 9 um.
+#Total wire length on LAYER M3 = 2 um.
+#Total wire length on LAYER M4 = 0 um.
+#Total wire length on LAYER M5 = 0 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 10
+#Up-Via Summary (total 10):
+#           
+#-----------------------
+#  Metal 1            8
+#  Metal 2            2
+#-----------------------
+#                    10 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 743.04 (MB), peak = 908.71 (MB)
+#
+#
+#globalRoute statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 24.75 (MB)
+#Total memory = 734.70 (MB)
+#Peak memory = 908.71 (MB)
+#Number of warnings = 55
+#Total number of warnings = 56
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalRoute on Tue Nov 29 18:20:18 2016
+#
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:                                                                   final
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:          0.76              1                                      route_design
+default_emulate_view
+#route_design: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 734.73 (MB), peak = 908.71 (MB)
+
+route_detail
+
+#Start route_detail on Tue Nov 29 18:20:18 2016
+#
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/A of net A because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/B of net B because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/C of net C because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/D of net D because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/F of net F because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#NanoRoute Version 16.10-p004_1 NR160506-1445/16_10-UB
+#Using multithreading with 8 threads.
+#Start routing data preparation.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.000.
+#Voltage range [0.000 - 0.000] has 4 nets.
+#Voltage range [0.000 - 1.000] has 13 nets.
+# M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.190
+# M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M6           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# M7           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# AP           V   Track-Pitch = 5.000    Line-2-Via Pitch = 5.700
+#WARNING (NRAG-44) Track pitch is too small compared with line-2-via pitch.
+#Using user defined Ggrids in DB.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 739.39 (MB), peak = 908.71 (MB)
+#Merging special wires using 8 threads...
+#
+#Connectivity extraction summary:
+#Total number of nets = 0.
+#
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#    number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	M1            1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 748.21 (MB), peak = 908.71 (MB)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 753.48 (MB), peak = 908.71 (MB)
+#Complete Detail Routing.
+#Total wire length = 8 um.
+#Total half perimeter of net bounding box = 16 um.
+#Total wire length on LAYER M1 = 1 um.
+#Total wire length on LAYER M2 = 7 um.
+#Total wire length on LAYER M3 = 1 um.
+#Total wire length on LAYER M4 = 0 um.
+#Total wire length on LAYER M5 = 0 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 10
+#Up-Via Summary (total 10):
+#           
+#-----------------------
+#  Metal 1            8
+#  Metal 2            2
+#-----------------------
+#                    10 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 4.07 (MB)
+#Total memory = 742.92 (MB)
+#Peak memory = 908.71 (MB)
+#
+#start routing for process antenna violation fix ...
+#
+#Connectivity extraction summary:
+#Total number of nets = 0.
+#
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 744.69 (MB), peak = 908.71 (MB)
+#
+#Total wire length = 8 um.
+#Total half perimeter of net bounding box = 16 um.
+#Total wire length on LAYER M1 = 1 um.
+#Total wire length on LAYER M2 = 7 um.
+#Total wire length on LAYER M3 = 1 um.
+#Total wire length on LAYER M4 = 0 um.
+#Total wire length on LAYER M5 = 0 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 10
+#Up-Via Summary (total 10):
+#           
+#-----------------------
+#  Metal 1            8
+#  Metal 2            2
+#-----------------------
+#                    10 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#
+#route_detail statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 3.85 (MB)
+#Total memory = 738.62 (MB)
+#Peak memory = 908.71 (MB)
+#Number of warnings = 7
+#Total number of warnings = 63
+#Number of fails = 0
+#Total number of fails = 0
+#Complete route_detail on Tue Nov 29 18:20:19 2016
+#
+**WARN: (IMPSP-5217):	add_fillers command is running on a postRoute database. It is recommended to be followed by eco_route command to make the DRC clean.
+Type 'man IMPSP-5217' for more detail.
+*INFO: Adding fillers to top-module.
+*INFO:   Added 1 filler inst  (cell HS65_GS_FILLERPFP4 / prefix FILLER).
+*INFO:   Added 0 filler inst  (cell HS65_GS_FILLERPFP3 / prefix FILLER).
+*INFO:   Added 1 filler inst  (cell HS65_GS_FILLERPFP2 / prefix FILLER).
+*INFO:   Added 1 filler inst  (cell HS65_GS_FILLERPFP1 / prefix FILLER).
+*INFO: Total 3 filler insts added - prefix FILLER (CPU: 0:00:00.0).
+For 3 new insts, *** Applied 4 GNC rules (cpu = 0:00:00.0)
+Begin checking placement ... (start mem=1035.6M, init mem=1035.6M)
+*info: Recommended don't use cell = 0           
+*info: Placed = 9             
+*info: Unplaced = 0           
+Placement Density:100.00%(17/17)
+Placement Density (including fixed std cells):100.00%(17/17)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=1035.6M)
+############################################################################
+# Innovus Netlist Design Rule Check
+# Tue Nov 29 18:20:19 2016
+
+############################################################################
+Design: TF
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 9
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 16.64
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 9
+Number of Non-uniquified Insts : 5
+Number of Nets                 : 17
+Average number of Pins per Net : 1.18
+Maximum number of Pins in Net  : 2
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 5
+Number of Input Ports          : 4
+Number of Output Ports         : 1
+Number of Bidirectional Ports  : 0
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 0
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 5
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 0
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+Number of Input/InOut Floating Pins            : 0
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 0
+Number of High Fanout nets (>50)               : 0
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+
+Checking core/die box is on Grid.....
+
+Checking snap rule ......
+
+Checking Row is on grid......
+
+Checking AreaIO row.....
+Checking routing blockage.....
+Checking components.....
+Checking IO Pins.....
+Unplaced Io Pins = 5 
+Checking constraints (guide/region/fence).....
+Checking groups.....
+
+Checking Ptn Pins .....
+Checking Ptn Core Box.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+ Design check done.
+Report saved in file checkDesign/TF.main.htm.ascii.
+*** Message Summary: 0 warning(s), 0 error(s)
+
+ *** Starting Verify DRC (MEM: 1035.6) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+**WARN: (IMPVFG-1198):	The number of CPUs requested 8 is larger than that check_drc used 1. In Multithreading mode, the number of CPUs check_drc used is not larger than the number of subareas.
+ Use 'set_multi_cpu_usage -local_cpu' to specify the less cup number if the verify area is not large.
+  VERIFY DRC ...... Using new threading
+  VERIFY DRC ...... Sub-Area : 1 of 1
+  VERIFY DRC ...... Sub-Area : 1 complete 1 Viols.
+
+  Verification Complete : 1 Viols.
+
+ *** End Verify DRC (CPU: 0:00:00.1  ELAPSED TIME: 0.00  MEM: 110.8M) ***
+
+Start to collect the design information.
+Build netlist information for Cell TF.
+Finished collecting the design information.
+Generating standard cells used in the design report.
+Analyze library ... 
+Analyze netlist ... 
+Analyze timing ... 
+Analyze floorplan/placement ... 
+Analysis Routing ...
+Report saved in file summaryReport/TF.main.htm.ascii.
+[DEV]innovus 2> set_layer_preference pinblock -is_visible 1
+set_layer_preference pinstdCell -is_visible 1
+set_layer_preference pinio -is_visible 1
+set_layer_preference piniopin -is_visible 1
+set_layer_preference pinother -is_visible 1
+set_layer_preference obsblock -is_visible 1
+set_layer_preference obsstdCell -is_visible 1
+set_layer_preference obsio -is_visible 1
+set_layer_preference obsother -is_visible 1
+set_layer_preference layoutObj -is_visible 1
+set_layer_preference pinblock -is_visible 0
+set_layer_preference pinstdCell -is_visible 0
+set_layer_preference pinio -is_visible 0
+set_layer_preference piniopin -is_visible 0
+set_layer_preference pinother -is_visible 0
+set_layer_preference obsblock -is_visible 0
+set_layer_preference obsstdCell -is_visible 0
+set_layer_preference obsio -is_visible 0
+set_layer_preference obsother -is_visible 0
+set_layer_preference layoutObj -is_visible 0
+set_layer_preference pinblock -is_visible 1
+set_layer_preference pinstdCell -is_visible 1
+set_layer_preference pinio -is_visible 1
+set_layer_preference piniopin -is_visible 1
+set_layer_preference pinother -is_visible 1
+set_layer_preference obsblock -is_visible 1
+set_layer_preference obsstdCell -is_visible 1
+set_layer_preference obsio -is_visible 1
+set_layer_preference obsother -is_visible 1
+set_layer_preference layoutObj -is_visible 1
+set_layer_preference pinblock -is_selectable 1
+set_layer_preference pinstdCell -is_selectable 1
+set_layer_preference pinio -is_selectable 1
+set_layer_preference piniopin -is_selectable 1
+set_layer_preference pinother -is_selectable 1
+set_layer_preference obsblock -is_selectable 1
+set_layer_preference obsstdCell -is_selectable 1
+set_layer_preference obsio -is_selectable 1
+set_layer_preference obsother -is_selectable 1
+set_layer_preference layoutObj -is_selectable 1
+zoom_box 0.842 11.488 10.226 2.155
+zoom_box 3.050 9.598 8.419 3.225
+set_layer_preference violation -is_visible 1
+gui_show_markers -all -no_false_marker
+zoom_box 4.04 3.86 5.1 4.9
+gui_select -point {4.942 4.838}
+gui_redraw
+zoom_box 4.04 3.86 5.1 4.9
+gui_select -point {4.754 4.837}
+zoom_out
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+zoom_out
+zoom_in
+zoom_in
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_set_tool ruler
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_set_tool ruler
+zoom_box 4.04 3.86 5.1 4.9
+**ERROR: (IMPDBTCL-248):	'obj_type' is not a recognized object/attribute for object type ''. Type 'help :' to get a list of all supported objects and attributes.
+**ERROR: (IMPQTF-4044):	Error happens when execute '::Rda_Browser::VB::showProperty' with error message: ''.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+
+*** Memory Usage v#1 (Current mem = 1150.410M, initial mem = 175.422M) ***
+*** Message Summary: 6858 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:50.8, real=0:04:46, mem=1150.4M) ---

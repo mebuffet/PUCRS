@@ -1,0 +1,160 @@
+VERSION 5.5 ;
+
+NAMESCASESENSITIVE ON ;
+
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+
+DESIGN Complex_f2 ;
+    TECHNOLOGY lab3 ;
+    HISTORY DESIGN DATA : 
+      DATA PATH : /home/micro2/lab3/lab3/Complex_f2/abstract#2ever/layout.cdb
+      LIBRARY : lab3
+      CELL NAME : Complex_f2
+      VIEW NAME : abstract.ver
+      DATE : Wed Dec 31 21:00:00 1969
+     ;
+    HISTORY THIS FILE : 
+      CREATOR : micro2
+      DATE : Tue Jun  6 10:39:04 2017
+     ;
+    UNITS DISTANCE MICRONS 1000 ;
+    DIEAREA ( -23800 -11600 ) ( 26000 14200 )   ;
+    ROW ROW_2 CoreSite -2200 2600 N
+        DO 33 BY 1 STEP 200 0  ;
+    ROW ROW_1 CoreSite -2200 0 N
+        DO 33 BY 1 STEP 200 0  ;
+    ROW ROW_0 CoreSite -2200 -2600 N
+        DO 33 BY 1 STEP 200 0  ;
+    TRACKS X -23800 DO 248 STEP 200 LAYER AP M7 M6 M5 M4 M3 M2 M1  ;
+    TRACKS Y -11600 DO 128 STEP 200 LAYER AP M7 M6 M5 M4 M3 M2 M1  ;
+
+COMPONENTS 5 ;
+    - Top Complex_f2  + PLACED ( 0 2600 ) FS  ;
+    - Bottom Complex_f2  + PLACED ( 0 -2600 ) FS  ;
+    - Right Complex_f2  + PLACED ( 2200 0 ) FN  ;
+    - Left Complex_f2  + PLACED ( -2200 0 ) FN  ;
+    - main Complex_f2  + PLACED ( 0 0 ) N  ;
+
+END COMPONENTS
+
+PINS 25 ;
+  - Top_A + NET Top_A + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 6555 13755 ) N  ;
+  - Top_B + NET Top_B + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 6155 13755 ) N  ;
+  - Top_C + NET Top_C + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 5755 13755 ) N  ;
+  - Top_D + NET Top_D + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 5355 13755 ) N  ;
+  - Top_S + NET Top_S + DIRECTION OUTPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 1355 -11245 ) N  ;
+  - Bottom_A + NET Bottom_A + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 4955 13755 ) N  ;
+  - Bottom_B + NET Bottom_B + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 4555 13755 ) N  ;
+  - Bottom_C + NET Bottom_C + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 4155 13755 ) N  ;
+  - Bottom_D + NET Bottom_D + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 1955 13755 ) N  ;
+  - Bottom_S + NET Bottom_S + DIRECTION OUTPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 955 -11245 ) N  ;
+  - Right_A + NET Right_A + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 3755 13755 ) N  ;
+  - Right_B + NET Right_B + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 3355 13755 ) N  ;
+  - Right_C + NET Right_C + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 2955 13755 ) N  ;
+  - Right_D + NET Right_D + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 2555 13755 ) N  ;
+  - Right_S + NET Right_S + DIRECTION OUTPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 3555 -11245 ) N  ;
+  - Left_A + NET Left_A + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( -445 13755 ) N  ;
+  - Left_B + NET Left_B + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( -845 13755 ) N  ;
+  - Left_C + NET Left_C + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( -1245 13755 ) N  ;
+  - Left_D + NET Left_D + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( -1645 13755 ) N  ;
+  - Left_S + NET Left_S + DIRECTION OUTPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( -645 -11245 ) N  ;
+  - main_A + NET main_A + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 355 13755 ) N  ;
+  - main_B + NET main_B + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 755 13755 ) N  ;
+  - main_C + NET main_C + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 1155 13755 ) N  ;
+  - main_D + NET main_D + DIRECTION INPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 1555 13755 ) N  ;
+  - main_S + NET main_S + DIRECTION OUTPUT
+    + LAYER M1 ( 0 0 ) ( 90 90 ) 
+    + PLACED ( 555 -11245 ) N  ;
+
+END PINS
+
+NETS 25 ;
+    - main_S ( main S )   ;
+    - main_D ( main D )   ;
+    - main_C ( main C )   ;
+    - main_B ( main B )   ;
+    - main_A ( main A )   ;
+    - Left_S ( Left S )   ;
+    - Left_D ( Left D )   ;
+    - Left_C ( Left C )   ;
+    - Left_B ( Left B )   ;
+    - Left_A ( Left A )   ;
+    - Right_S ( Right S )   ;
+    - Right_D ( Right D )   ;
+    - Right_C ( Right C )   ;
+    - Right_B ( Right B )   ;
+    - Right_A ( Right A )   ;
+    - Bottom_S ( Bottom S )   ;
+    - Bottom_D ( Bottom D )   ;
+    - Bottom_C ( Bottom C )   ;
+    - Bottom_B ( Bottom B )   ;
+    - Bottom_A ( Bottom A )   ;
+    - Top_S ( Top S )   ;
+    - Top_D ( Top D )   ;
+    - Top_C ( Top C )   ;
+    - Top_B ( Top B )   ;
+    - Top_A ( Top A )   ;
+
+END NETS
+
+SPECIALNETS 2 ;
+    - vdd! ( Top vdd! ) ( Bottom vdd! ) 
+    ( Right vdd! ) ( Left vdd! ) ( main vdd! ) 
+    + USE POWER  ;
+    - gnd! 
+    ( Top gnd! ) ( Bottom gnd! ) ( Right gnd! ) 
+    ( Left gnd! ) ( main gnd! ) 
+    + USE GROUND  ;
+
+END SPECIALNETS
+
+END DESIGN

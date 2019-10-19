@@ -1,0 +1,61 @@
+; $Id: GoldenGate.menus.static,v 1.3 2009/11/17 09:28:55 ne1 Exp $
+; $Log: GoldenGate.menus.static,v $
+; Revision 1.3  2009/11/17 09:28:55  ne1
+; add Open menu
+;
+; Revision 1.2  2008/03/06 10:29:04  ne1
+; remobve SEP Out
+;
+; Revision 1.1  2008/02/06 12:53:35  ne1
+; Initial revision
+;
+(sevAddMenuItemLists (lambda (session name) (case name
+	("Tools"
+		`(
+       ("*Setup Corners" ?callback (UartCornerSetup) ?form t ?disable (UartMenusDisableSetupCorners "spectre"))
+       ("*Setup Simulation Levels" ?callback (UartSimLevelSetup) ?form t ?disable (UartMenusDisableSetupSimulationLevels))
+       ("*PLS Outputs"
+        ?subMenu
+        (("Select On Schematic" ?callback (UplsOutputsSelectOnSchematic ',session) ?disable (UartMenusDisableOutputsSelectOnSchematic))
+         ("Select By Name" ?callback (UplsOutputsSelectByName ',session) ?form t ?disable (UartMenusDisableOutputsSelectByName))
+        )
+        ?disable (UartMenusDisableOutputs)
+       )
+       ("*Import Netlist" 
+	?subMenu
+	(("Convert Spice Netlist" ?callback (UplsSpectreConvertNetlist ',session) ?form t ?disable (UartMenusDisableConvertSpiceNetlist "spectre"))
+	 ("Create/Update Symbol" ?callback (UartGenerateImportedSymbol ',session) ?form t)
+	 ("Enable"  ?callback (UartSetImportNetlistMode  t)   ?disable (UartGetImportNetlistEnable ',session))
+	 ("Disable" ?callback (UartSetImportNetlistMode  nil) ?disable (UartGetImportNetlistDisable ',session))
+	 ("Show File" ?callback (UartImportShow))
+	)
+       )
+       ("*Open"
+        ?subMenu
+        (("Simulator Input File" ?callback (UartOpenNetlist) ?form nil)
+         ("Terminal" ?callback (UartOpenTerminal) ?form nil)
+        )
+       )
+       ("Parametric Analysis" ?callback (sevParametricTool ',session) ?form t ?disable (sevNoEnvironment ',session))
+       ("Corners" ?callback (sevCornersTool ',session) ?form t ?disable (sevNoEnvironment ',session))
+       ("Monte Carlo" ?callback (sevMonteCarloTool ',session) ?form t ?disable t)
+       ("Optimization" ?callback (sevOptimizationTool ',session) ?form t ?disable (sevNoEnvironment ',session))
+       ("RF" ?disable (sevNoEnvironment ',session) ?subMenu
+          (
+	     ("Transmission Line Modeler ..." ?disable (sevNoEnvironment ',session) ?callback sevLMGTool(',session))
+	     ("RFIC Package Modeler ..." ?disable (sevNoEnvironment ',session) ?callback sevPKGTool(',session))
+	     ("Link to SPW ..." ?disable (sevNoEnvironment ',session) ?callback (sevKmodelTool ',session))
+	     ("Spiral Inductor Modeler ..." ?disable (sevNoEnvironment ',session) ?callback sevPCMTool(',session))
+	     ("Bond Pad Modeler ..." ?disable (sevNoEnvironment ',session) ?callback sevBPMTool(',session))
+	     ("Transformer Modeler ..." ?disable (or !artDebug->activateTransformerModeler (sevNoEnvironment ',session)) ?callback sevBALMTool(',session))
+	   )
+	)
+	("")
+
+	("Calculator" ?callback (sevOpenCalculator) ?form t)
+        ("Results Browser" ?callback (sevOpenDRLBrowser) ?form t)
+	("Waveform" ?callback (sevOpenPlotWindow ',session) ?form t)
+	("Results Display" ?callback (sevOpenPrintWindow ',session) ?form t)
+	("Job Monitor" ?callback (sevOpenJobMonitor) ?form t)
+	))
+)))

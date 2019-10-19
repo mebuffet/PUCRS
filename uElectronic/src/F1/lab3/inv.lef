@@ -1,0 +1,77 @@
+
+#******
+# Preview export LEF
+#
+#	 Preview sub-version 5.10.41_USR5.90.69
+#
+# REF LIBS: lab3 
+# TECH LIB NAME: cmos065
+# TECH FILE NAME: techfile.cds
+#******
+
+VERSION 5.5 ;
+
+NAMESCASESENSITIVE ON ;
+
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+
+UNITS
+    DATABASE MICRONS 1000  ;
+END UNITS
+
+ MANUFACTURINGGRID    0.005000 ;
+SITE CORE
+    SYMMETRY Y  ;
+    CLASS CORE  ;
+    SIZE 0.200 BY 2.600 ;
+END CORE
+
+MACRO inv
+    CLASS CORE ;
+    FOREIGN inv 0.21 0.39 ;
+    ORIGIN -0.210 -0.390 ;
+    SIZE 0.600 BY 2.600 ;
+    SYMMETRY X Y ;
+    SITE CORE ;
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER M1 ;
+        RECT  0.260 1.305 0.540 1.455 ;
+        END
+    END A
+    PIN Z
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER M1 ;
+        RECT  0.600 1.855 0.750 2.405 ;
+        RECT  0.660 0.975 0.750 2.405 ;
+        RECT  0.600 0.975 0.750 1.175 ;
+        END
+    END Z
+    PIN vdd!
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER M1 ;
+        RECT  0.210 2.630 0.810 3.190 ;
+        RECT  0.270 2.005 0.420 2.405 ;
+        RECT  0.270 2.005 0.360 3.190 ;
+        END
+    END vdd!
+    PIN gnd!
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER M1 ;
+        RECT  0.210 0.190 0.810 0.750 ;
+        RECT  0.270 0.975 0.420 1.175 ;
+        RECT  0.270 0.190 0.360 1.175 ;
+        END
+    END gnd!
+END inv
+
+END LIBRARY

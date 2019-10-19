@@ -1,0 +1,13 @@
+cUiAddMessageView {Complex_f2} {abstract.pin} {515} {(ABS-515): Cell Complex_f2: prBoundary does not enclose all cell view geometry. Specify any missing layers in the Using geometry on layers field.}
+cUiAddMessageView {Complex_f2} {abstract.pin} {501} {(ABS-501): Cell Complex_f2: 7 existing terminals, no pins will be added}
+cUiAddMessageView {Complex_f2} {abstract.ext} {602} {(ABS-602): Cell Complex_f2: extracting 7 nets}
+cUiAddMessageView {Complex_f2} {abstract.ext} {604} {(ABS-604): Cell Complex_f2: extracting net A, 1 of 7}
+cUiAddMessageView {Complex_f2} {abstract.ext} {604} {(ABS-604): Cell Complex_f2: extracting net B, 2 of 7}
+cUiAddMessageView {Complex_f2} {abstract.ext} {604} {(ABS-604): Cell Complex_f2: extracting net C, 3 of 7}
+cUiAddMessageView {Complex_f2} {abstract.ext} {604} {(ABS-604): Cell Complex_f2: extracting net D, 4 of 7}
+cUiAddMessageView {Complex_f2} {abstract.ext} {604} {(ABS-604): Cell Complex_f2: extracting net S, 5 of 7}
+cUiAddMessageView {Complex_f2} {abstract.ext} {604} {(ABS-604): Cell Complex_f2: extracting net gnd!, 6 of 7}
+cUiAddMessageView {Complex_f2} {abstract.ext} {604} {(ABS-604): Cell Complex_f2: extracting net vdd!, 7 of 7}
+cUiAddMessageView {Complex_f2} {abstract} {1076} {(ABS-1076): Cell Complex_f2: Terminal S has no pins on Metal1-Metal2 Routing grid}
+cUiAddMessageView {Complex_f2} {abstract} {914} {(ABS-914): Cell Complex_f2: predefined site CoreSite will be used}
+cUiAddMessageView {Complex_f2} {abstract.ver} {1056} {(ABS-1056): Cell Complex_f2: unable to verify abstract view in target place-and-route system. Please refer to the place-and-route system's log file in .abstract/verify for more information.}

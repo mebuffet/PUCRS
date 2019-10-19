@@ -1,0 +1,7 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 1
+lvs_ExtOutFile RUNDIR /home/micro2/lab3/lvsRunDir
+lvs_ExtOutFile RULES_FILE /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+lvs_ExtRunTimes 1480536601 1480536603
+lvs_ExtOutFile ERC_DATABASE Complex_f2.erc.results
+lvs_ExtOutFile ERC_SUMMARY Complex_f2.erc.summary

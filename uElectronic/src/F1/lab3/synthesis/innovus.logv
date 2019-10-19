@@ -1,0 +1,93 @@
+[09/06 16:54:15     0s] 
+[09/06 16:54:15     0s] Cadence Innovus(TM) Implementation System.
+[09/06 16:54:15     0s] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[09/06 16:54:15     0s] 
+[09/06 16:54:15     0s] Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+[09/06 16:54:15     0s] Options:	-commom_ui 
+[09/06 16:54:15     0s] Date:		Tue Sep  6 16:54:15 2016
+[09/06 16:54:15     0s] Host:		kriti (x86_64 w/Linux 2.6.18-410.el5) (4cores*8cpus*Intel(R) Xeon(R) CPU W5580 @ 3.20GHz 8192KB)
+[09/06 16:54:15     0s] OS:		CentOS release 5.11 (Final)
+[09/06 16:54:15     0s] 
+[09/06 16:54:15     0s] License:
+[09/06 16:54:15     0s] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[09/06 16:54:15     0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[09/06 16:54:22     2s] **ERROR: (IMPSYT-468):	Unknown argument -commom_ui
+[09/06 16:54:22     2s] Usage: innovus
+[09/06 16:54:22     2s]  	[-abort_on_error]
+[09/06 16:54:22     2s]  	[-batch]
+[09/06 16:54:22     2s]  	[-cds_lib_file <in_file>]
+[09/06 16:54:22     2s]  	[-cpus <integer>]
+[09/06 16:54:22     2s]  	[-disable_user_startup]
+[09/06 16:54:22     2s]  	[-execute <Tcl_commands>]
+[09/06 16:54:22     2s]  	[-files <in_file_list>]
+[09/06 16:54:22     2s]  	[-help]
+[09/06 16:54:22     2s]  	[-lic_multi_cpu <lic_list>]
+[09/06 16:54:22     2s]  	[-lic_options <lic_list>]
+[09/06 16:54:22     2s]  	[-lic_startup <lic_list>]
+[09/06 16:54:22     2s]  	[-lic_startup_options <lic_list>]
+[09/06 16:54:22     2s]  	[-lic_stack <integer>]
+[09/06 16:54:22     2s]  	[-log <prefix>]
+[09/06 16:54:22     2s]  	[-no_gui]
+[09/06 16:54:22     2s]  	[-no_logv]
+[09/06 16:54:22     2s]  	[-overwrite]
+[09/06 16:54:22     2s]  	[-version]
+[09/06 16:54:22     2s]  	[-wait <minutes>]
+[09/06 16:54:22     2s] 
+[09/06 16:54:22     2s] Usage: innovus [options]
+[09/06 16:54:22     2s] [-abort_on_error]
+[09/06 16:54:22     2s] 	Exit if an error is detected at any point.
+[09/06 16:54:22     2s] [-batch]
+[09/06 16:54:22     2s] 	No interactive prompt occurs. Exit after -execute and -files options
+[09/06 16:54:22     2s] 	are processed.
+[09/06 16:54:22     2s] [-cds_lib_file <in_file>]
+[09/06 16:54:22     2s] 	Load in_file rather than the default cds.lib file in the current
+[09/06 16:54:22     2s] 	directory to obtain the names and locations of OpenAccess libraries.
+[09/06 16:54:22     2s] [-cpus <integer>]
+[09/06 16:54:22     2s] 	Number of cpus to use for multi-threading on current host.
+[09/06 16:54:22     2s] [-disable_user_startup]
+[09/06 16:54:22     2s] 	Only read the init file in the installation hierarchy. Do not read
+[09/06 16:54:22     2s] 	init files in the home or current directory.
+[09/06 16:54:22     2s] [-execute <Tcl_commands>]
+[09/06 16:54:22     2s] 	Tcl commands to execute at startup, before -files.
+[09/06 16:54:22     2s] [-files <in_file_list>]
+[09/06 16:54:22     2s] 	One or more Tcl files to source at startup, after -execute.
+[09/06 16:54:22     2s] [-help]
+[09/06 16:54:22     2s] 	Write out the usage and options with brief descriptions.
+[09/06 16:54:22     2s] [-lic_multi_cpu <lic_list>]
+[09/06 16:54:22     2s] 	Control which licenses to use for higher multi-cpu usage in priority
+[09/06 16:54:22     2s] 	order from left to right. The allowed license names are:
+[09/06 16:54:22     2s] 	"invs_cpu invs invsb fel fexl"
+[09/06 16:54:22     2s] [-lic_options <lic_list>]
+[09/06 16:54:22     2s] 	Ordered list for dynamic option license checkout in priority order
+[09/06 16:54:22     2s] 	from left to right. These are checked out when needed by a specific
+[09/06 16:54:22     2s] 	Tcl command. Legal names are:
+[09/06 16:54:22     2s] 	"invs_hier invs_ms invs_3d_ic invs_20nm invs_10nm invs_i20nm invs_i10nm enclp encan enccco encng vdixl_capacity
+[09/06 16:54:22     2s] 	 tpsxl tpsl vtsxl vtsl vtsaa"
+[09/06 16:54:22     2s] [-lic_startup <lic_list>]
+[09/06 16:54:22     2s] 	Request one of these licenses at startup in priority order from left
+[09/06 16:54:22     2s] 	to right. The supported licenses are:
+[09/06 16:54:22     2s] 	"invs invsb fexl vdixl vdi fel"
+[09/06 16:54:22     2s] [-lic_startup_options <lic_list>]
+[09/06 16:54:22     2s] 	Additional option licenses needed at startup. The allowed license
+[09/06 16:54:22     2s] 	names are:
+[09/06 16:54:22     2s] 	"invs_hier invs_ms invs_3d_ic invs_20nm invs_10nm invs_i20nm invs_i10nm enclp encan enccco encng vdixl_capacity
+[09/06 16:54:22     2s] 	 tpsxl tpsl vtsxl vtsl vtsaa"
+[09/06 16:54:22     2s] [-lic_stack <integer>]
+[09/06 16:54:22     2s] 	Number of licenses to stack for stackable licenses.
+[09/06 16:54:22     2s] [-log <prefix>]
+[09/06 16:54:22     2s] 	Prefix for the .log, .cmd, and .logv files. If 3 args are given like
+[09/06 16:54:22     2s] 	-log "a b c" then the 3 names are used without any extension added.
+[09/06 16:54:22     2s] 	If the .log file already exists, an integer is appended to all the
+[09/06 16:54:22     2s] 	names to make the files unique.
+[09/06 16:54:22     2s] [-no_gui]
+[09/06 16:54:22     2s] 	Disable GUI and Tk support. GUI will not be available later in the
+[09/06 16:54:22     2s] 	session.
+[09/06 16:54:22     2s] [-no_logv]
+[09/06 16:54:22     2s] 	No verbose log file.
+[09/06 16:54:22     2s] [-overwrite]
+[09/06 16:54:22     2s] 	Overwrite an existing .log file (and associated .cmd, .logv files)
+[09/06 16:54:22     2s] 	instead of adding an integer to make the files unique.
+[09/06 16:54:22     2s] [-version]
+[09/06 16:54:22     2s] 	Return program version information.
+[09/06 16:54:22     2s] [-wait <minutes>]
+[09/06 16:54:22     2s] 	Number of minutes to wait for licenses before exiting. The default is 0.

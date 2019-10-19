@@ -1,0 +1,92 @@
+; $Id: eldoD.menus.static,v 1.3 2009/11/17 09:29:08 ne1 Exp $
+/**********************************************************************
+ *  VERSIONS
+ *  --------
+ *  Program       : @(#)$CDS: icms.exe version 5.1.0 09/12/2006 22:49 (cicln03) $
+ *  Hierarchy     : /sw/unicad/uniopus/5141usr4_ams2006.1p084006_ads2005a_mmsim/lnx/tools.lnx86/dfII/
+ *  Sub-version   : sub-version 5.10.41_USR4.54.77
+ *  ArtistKit     : 4.9.7 (18 Jan 2007 10:59:57)
+ * 
+ *  DESCRIPTION
+ *  -----------
+ *
+ *  This file contains definitions for the differences in the simulation
+ *  environment menus between the general case and the case where the
+ *  chosen simulator is the one after which this file is named.
+ *
+ *  A description of the format used in this file can be found in
+ *  file "simui.menus".
+ *
+ *********************************************************************/
+(when (and (getShellEnvVar "NASSDA_ARTISTIF") (boundp 'NASSDA_ARTISTMENUS) NASSDA_ARTISTMENUS)
+(sevSetMainWindowPulldownMenus
+  `(
+    "Session"
+    "Setup"
+    "Analyses"
+    "Variables"
+    "Outputs"
+    "Simulation"
+    "Results"
+    "Tools"
+    "Help"
+    "MGC Sim"
+   ,@NASSDA_ARTISTMENUS
+  )
+)
+(load (strcat (getShellEnvVar "NASSDA_ARTISTIF") "/menus/hsim.menus"))
+)
+
+/*
+ * MENU "TOOLS"
+ * 
+ */
+
+(sevAddMenuItemLists (lambda (session name) (case name
+    ("Tools"
+     `(
+       ("*Setup Corners" ?callback (UartCornerSetup) ?form t ?disable (UartMenusDisableSetupCorners "eldoD"))
+       ("*Setup User-Defined Corners" ?callback (UartCornerUserSetup) ?form t ?disable (UartMenusDisableSetupUserDefinedCorners "eldoD"))
+       ("*Setup Simulation Levels" ?callback (UartSimLevelSetup) ?form t ?disable (UartMenusDisableSetupSimulationLevels))
+       ("*PLS Outputs" 
+        ?subMenu
+        (("Select On Schematic" ?callback (UplsOutputsSelectOnSchematic ',session) ?disable (UartMenusDisableOutputsSelectOnSchematic))
+         ("Select By Name" ?callback (UplsOutputsSelectByName ',session) ?form t ?disable (UartMenusDisableOutputsSelectByName))
+        )
+        ?disable (UartMenusDisableOutputs)
+       )
+       ("*Import Netlist" 
+	?subMenu
+	(("Create/Update Symbol" ?callback (UartGenerateImportedSymbol ',session) ?form t)
+	 ("Enable"  ?callback (UartSetImportNetlistMode  t)   ?disable (UartGetImportNetlistEnable ',session))
+	 ("Disable" ?callback (UartSetImportNetlistMode  nil) ?disable (UartGetImportNetlistDisable ',session))
+	 ("Show File" ?callback (UartImportShow))
+        )
+       )
+       ("*SEP Out" 
+        ?subMenu
+        (("Create" ?callback (UartSepNetlist) ?form t)
+         ("Display" ?callback (UartSepDisplay) ?form t)
+         ("Corners Simulation" ?callback (UartBestWorst) ?form t ?disable (UartMenusDisableSepOutCornersSimulation "eldoD"))
+        )
+       )
+       ("*Open"
+        ?subMenu
+        (("Simulator Input File" ?callback (UartOpenNetlist) ?form nil)
+         ("Terminal" ?callback (UartOpenTerminal) ?form nil)
+        )
+       )
+       ("separator")
+       ("ADE Parametric Analysis" ?callback (sevParametricTool ',session) ?form t ?disable (sevNoEnvironment ',session))
+       ("ADE Corners" ?disable t)
+       ("ADE Monte Carlo" ?disable t)
+       ("ADE Optimization" ?callback (sevOptimizationTool ',session) ?form t ?disable (sevNoEnvironment ',session))
+       ("separator")
+       ("Calculator" ?callback (sevOpenCalculator) ?form t)
+       ("Results Browser" ?callback (sevOpenDRLBrowser) ?form t)
+       ("Waveform" ?callback (sevOpenPlotWindow ',session) ?form t)
+       ("Results Display" ?callback (sevOpenPrintWindow ',session) ?form t)
+       ("Job Monitor" ?callback (sevOpenJobMonitor) ?form t)
+     )
+   )
+)))

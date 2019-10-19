@@ -1,0 +1,10 @@
+Info: 64 top-level, potential tri-state nets excluded from IPO operation.
+*info: 1 clock net excluded
+*info: 2 special nets excluded.
+*info: 64 external nets with a tri-state driver excluded.
+*info: 18 no-driver nets excluded.
+*info: max. length violation report
+# Net                                                       MaxLen(um)  Length(um)      Slack(um)   
+#
+
+*info: there is 0 max. length violation in the design.

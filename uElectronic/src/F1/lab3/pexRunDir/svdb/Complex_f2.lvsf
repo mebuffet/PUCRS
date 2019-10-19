@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/micro2/lab3/pexRunDir
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_LvsOutFile LVS_REPORT Complex_f2.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/micro2/lab3/pexRunDir/Complex_f2.src.net
+lvs_LvsOutFile RULES_FILE /home/micro2/lab3/pexRunDir/_calibrexrclvs_cgi_
+lvs_LvsRunTimes 1480466853 1480466853

@@ -1,0 +1,6 @@
+cUiSetViewStatus {CoreSite} {layout} {0}
+cUiSetViewStatus {CoreSite} {schematic} {0}
+cUiSetViewStatus {CoreSite} {abstract.pin} {0}
+cUiSetViewStatus {CoreSite} {abstract.ext} {0}
+cUiSetViewStatus {CoreSite} {abstract} {33}
+cUiSetViewStatus {CoreSite} {abstract.ver} {0}

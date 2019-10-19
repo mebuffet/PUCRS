@@ -1,0 +1,30 @@
+* File: Complex_f2.pex.spi
+* Created: Sat Nov 26 12:36:19 2016
+* Program "Calibre xRC"
+* Version "v2011.3_29.20"
+* 
+.subckt Complex_f2  A B C D S
+* 
+XM0 S A vdd! vdd! psvtgp L=0.06 W=0.4 NFING=1 M=1 AS=0.0984 AD=0.0564 PS=0.892
++ PD=0.282 PO2ACT=0.4 NGCON=1 lpe=1
+XM3 net24 B S vdd! psvtgp L=0.06 W=0.4 NFING=1 M=1 AS=0.0564 AD=0.0564 PS=0.282
++ PD=0.282 PO2ACT=0.68875 NGCON=1 lpe=1
+XM2 net28 C net24 vdd! psvtgp L=0.06 W=0.4 NFING=1 M=1 AS=0.0564 AD=0.0564
++ PS=0.282 PD=0.282 PO2ACT=0.675 NGCON=1 lpe=0
+XM1 vdd! D net28 vdd! psvtgp L=0.06 W=0.4 NFING=1 M=1 AS=0.0564 AD=0.0864
++ PS=0.282 PD=0.832 PO2ACT=0.35875 NGCON=1 lpe=0
+XM4 S A net21 gnd! nsvtgp L=0.06 W=0.2 NFING=1 M=1 AS=0.0284 AD=0.0494 PS=0.284
++ PD=0.694 PO2ACT=0.4 NGCON=1 lpe=1
+XM7 net21 B gnd! gnd! nsvtgp L=0.06 W=0.2 NFING=1 M=1 AS=0.0284 AD=0.0284
++ PS=0.284 PD=0.284 PO2ACT=0.68875 NGCON=1 lpe=1
+XM6 net21 C gnd! gnd! nsvtgp L=0.06 W=0.2 NFING=1 M=1 AS=0.0284 AD=0.0284
++ PS=0.284 PD=0.284 PO2ACT=0.675 NGCON=1 lpe=1
+XM5 net21 D gnd! gnd! nsvtgp L=0.06 W=0.2 NFING=1 M=1 AS=0.0434 AD=0.0284
++ PS=0.634 PD=0.284 PO2ACT=0.35875 NGCON=1 lpe=1
+X8_noxref gnd! vdd! dnwps  AREA=3.4874 PJ=7.53
+*
+.include "Complex_f2.pex.spi.Complex_f2.pxi"
+*
+.ends
+*
+*

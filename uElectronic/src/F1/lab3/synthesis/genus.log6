@@ -1,0 +1,415 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 16.10-p006_1, built Wed Jun 08 2016
+Options: 
+Date:    Tue Nov 29 16:07:41 2016
+Host:    kriti (x86_64 w/Linux 2.6.18-416.el5) (4cores*8cpus*Intel(R) Xeon(R) CPU W5580 @ 3.20GHz 8192KB) (30886032KB)
+OS:      CentOS release 5.11 (Final)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+Finished loading tool scripts (8 seconds elapsed).
+
+genus@root:> Um sistem com diversos elementos de processamento  chamado de Multiprocessor System-on-Chip (MPSoC). Ao mesmo tempo em que a tecnologia de semicondutores permitiu integrar dezenas de cores no mesmo chip, a dissipao de potncia no chip tambm amentou. O aumento na dissipao de potncia reflete em altas variaes de temperatura no chip e hotspots trmicos, o que influencia no envelhecimento e desempenho do sistema, ocasionando falhas devido a esse desgaste. O gerenciamento de energia e temperatura  amplamente reconhecido como uma das caractersticas essenciais em um MPSoC. Uma temperatura no controlada pode significar uma diminuio do desempenho e reduo da confiabilidade do sistema devido ao alto gradiente trmico. O gerenciamento de energia e temperatura so desafios crticos para sistemas multicore e um dos principais fatores que devem ser levados em conta no momento de projetar um MPSoC. Este projeto tem por objetivo realizar estudos e desenvolvimentos em 3 eixos de pesquisa: (1) monitoramento; (2) heursticas de gerenciamento trmico e energtico; (3) atuao no sistema para manter as restries trmicas, de potncia e energia consumida.
+invalid command name "Um"
+genus@root:> read_hdl -vhdl Complex_f2.vhd
+Info    : Message severity has been changed from default value. [MESG-7]
+        : Message 'VHDLPT-500' default severity is 'Warning'
+Error   : Cannot open file. [VHDLPT-500] [read_hdl]
+        : VHDL source file 'Complex_f2.vhd'.
+        : The input VHDL file cannot be opened.  Make sure that the directory path and file extension (e.g., .vhdl) are specified.
+1
+genus@root:> include load.tcl
+Sourcing './load.tcl' (Tue Nov 29 16:08:08 -0200 2016)...
+  Setting attribute of root '/': 'script_search_path' = ./
+  Setting attribute of root '/': 'init_hdl_search_path' = src
+  Setting attribute of root '/': 'information_level' = 9
+            Reading file '/home/micro1/lab3/synthesis/../characterization/inv.lib'
+    Loading library inv.lib
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'inv' is not defined in the library. (File /home/micro1/lab3/synthesis/../characterization/inv.lib)
+
+  Message Summary for Library inv.lib:
+  ************************************
+  Could not find an attribute in the library. [LBR-436]: 1
+  ************************************
+ 
+            Reading file '/soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib'
+    Loading library CORE65GPSVT_nom_1.00V_25C.lib
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 19)
+        : Check to see if this construct is really needed for synthesis.  Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 20)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 1458)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 3065)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 4672)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 6279)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 6879)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 8491)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 9171)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 9851)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 10531)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 11211)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 11891)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 12571)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 12957)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 13343)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 13729)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 14115)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 14501)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 14888)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'HS65_GS_BK1SX1' (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 482297)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'HS65_GS_BK1SX1'. This may cause potential problems with results of downstream tools (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'BB' for the cell 'HS65_GS_BK1SX1'. (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 482362)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'BB' for the cell 'HS65_GS_BK1X1'. (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 482503)
+
+  Message Summary for Library CORE65GPSVT_nom_1.00V_25C.lib:
+  **********************************************************
+  Missing sequential block in the sequential cell. [LBR-526]: 1
+  Missing clock pin in the sequential cell. [LBR-525]: 1
+  Missing a function attribute in the output pin definition. [LBR-518]: 2
+  An unsupported construct was detected in this library. [LBR-40]: 868
+  **********************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.000000, 25.000000) in library 'inv.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'inv/inv'.
+        : Specify a valid area value for the libcell.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.000000, 25.000000) in library 'CORE65GPSVT_nom_1.00V_25C.lib'.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HS65_GS_BK1SX1/BB' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HS65_GS_BK1X1/BB' has no function.
+  Setting attribute of root '/': 'library' = ../characterization/inv.lib /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'Complex_f2' has non-zero origin (-169, 3010).
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CONT1' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2_NPrefDir' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3_NPrefDir' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4_NPrefDir' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_NPrefDir' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via6' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via6_NPrefDir' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_HV_2cut_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_HV_2cut_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_HV_2cut_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_HV_2cut_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_VV_2cut_NPref_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_VV_2cut_NPref_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_VV_2cut_NPref_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_VV_2cut_NPref_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_HV_4cut_H' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_HV_4cut_V' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via1_HV_4cut_SQ' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2_mar_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2_mar_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2_2cut_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2_2cut_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2_2cut_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2_2cut_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2_4cut_H' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2_4cut_V' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via2_4cut_SQ' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3_mar_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3_mar_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3_2cut_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3_2cut_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3_2cut_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3_2cut_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3_4cut_H' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3_4cut_V' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via3_4cut_SQ' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4_mar_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4_mar_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4_2cut_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4_2cut_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4_2cut_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4_2cut_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4_4cut_H' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4_4cut_V' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via4_4cut_SQ' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_alt' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_alt_r90' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_mar' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_2cut_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_2cut_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_2cut_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_2cut_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_4cut_H' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_4cut_V' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via5_4cut_SQ' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via6_alt' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via6_alt_r90' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via6_mar_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via6_mar_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via6_2cut_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via6_2cut_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via6_2cut_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_via6_2cut_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'CDS_CB' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M2_M1_FP' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M3_M2_FP' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M4_M3_FP' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M5_M4_FP' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M6_M5_FP' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M2_M1_FP_2' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M3_M2_FP_2' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M4_M3_FP_2' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'M5_M4_FP_2' has no resistance value.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'CORE' read already, this site in file '/soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef' is ignored.
+
+  According to lef_library, there are total 8 routing layers [ V(4) / H(4) ]
+
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M1' [line 75 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+        : Check the parameter in technology section.
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M2' [line 116 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M3' [line 156 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M4' [line 196 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M5' [line 238 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M6' [line 273 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M7' [line 308 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'AP' [line 330 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M1' [line 75 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M2' [line 116 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M3' [line 156 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M4' [line 196 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M5' [line 238 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M6' [line 273 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M7' [line 308 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'AP' [line 330 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M1' [line 75 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M2' [line 116 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M3' [line 156 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M4' [line 196 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M5' [line 238 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M6' [line 273 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M7' [line 308 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'AP' [line 330 in file /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef]
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.1, 3) of 'WIDTH' for layers 'M1' and 'AP' is too large.
+        : Make sure to check the consistency of the parameters.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.2, 5) of 'PITCH' for layers 'M1' and 'AP' is too large.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.09, 2) of 'MINSPACING' for layers 'M1' and 'AP' is too large.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S0' in libcell 'HS65_GSS1_FA1X21'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B0' and 'S0' in libcell 'HS65_GSS1_FA1X21'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A0' and 'S0' in libcell 'HS65_GSS1_FA1X21'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S0' in libcell 'HS65_GSS1_FA1X35'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B0' and 'S0' in libcell 'HS65_GSS1_FA1X35'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A0' and 'S0' in libcell 'HS65_GSS1_FA1X35'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S0' in libcell 'HS65_GSS1_FA1X9'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B0' and 'S0' in libcell 'HS65_GSS1_FA1X9'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A0' and 'S0' in libcell 'HS65_GSS1_FA1X9'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B0' and 'S0' in libcell 'HS65_GSS1_HA1X8'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A0' and 'S0' in libcell 'HS65_GSS1_HA1X8'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S0' in libcell 'HS65_GSS2_FA1X18'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B0' and 'S0' in libcell 'HS65_GSS2_FA1X18'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A0' and 'S0' in libcell 'HS65_GSS2_FA1X18'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'Z' in libcell 'HS65_GSS_XNOR2X12'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'Z' in libcell 'HS65_GSS_XNOR2X12'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'Z' in libcell 'HS65_GSS_XNOR2X18'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'Z' in libcell 'HS65_GSS_XNOR2X18'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'Z' in libcell 'HS65_GSS_XNOR2X24'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'Z' in libcell 'HS65_GSS_XNOR2X24'.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'CORE65GPSVT_nom_1.00V_25C.lib', Total cells: 866, Unusable cells: 81.
+	List of unusable cells: 'HS65_GS_BK1SX1 HS65_GS_BK1X1 HS65_GS_DFPHQNX18 HS65_GS_DFPHQNX27 HS65_GS_DFPHQNX35 HS65_GS_DFPHQX18 HS65_GS_DFPHQX27 HS65_GS_DFPHQX35 HS65_GS_DFPQNX18 HS65_GS_DFPQNX27 HS65_GS_DFPQNX35 HS65_GS_DFPQX18 HS65_GS_DFPQX27 HS65_GS_DFPQX35 HS65_GS_DFPRQNX18 HS65_GS_DFPRQNX27 HS65_GS_DFPRQNX35 HS65_GS_DFPRQX18 HS65_GS_DFPRQX27 HS65_GS_DFPRQX35 HS65_GS_DFPSQNX18 HS65_GS_DFPSQNX27 HS65_GS_DFPSQNX35 HS65_GS_DFPSQX18 HS65_GS_DFPSQX27 HS65_GS_DFPSQX35 HS65_GS_SDFPBTQX9 HS65_GS_SDFPHQNTX18 HS65_GS_SDFPHQNTX27 HS65_GS_SDFPHQNTX35 HS65_GS_SDFPHQNX18 HS65_GS_SDFPHQNX27 HS65_GS_SDFPHQNX35 HS65_GS_SDFPHQTX18 HS65_GS_SDFPHQTX27 HS65_GS_SDFPHQTX35 HS65_GS_SDFPHQX18 HS65_GS_SDFPHQX27 HS65_GS_SDFPHQX35 HS65_GS_SDFPHRQNTX18 HS65_GS_SDFPHRQNTX27 HS65_GS_SDFPHRQNTX35 HS65_GS_SDFPHRQTX18 HS65_GS_SDFPHRQTX27 HS65_GS_SDFPHRQTX35 HS65_GS_SDFPQNTX18 HS65_GS_SDFPQNTX27 HS65_GS_SDFPQNTX35 HS65_GS_SDFPQNX18 HS65_GS_SDFPQNX27 HS65_GS_SDFPQNX35 HS65_GS_SDFPQTX18 HS65_GS_SDFPQTX27 HS65_GS_SDFPQTX35 HS65_GS_SDFPQX18 HS65_GS_SDFPQX27 HS65_GS_SDFPQX35 HS65_GS_SDFPRQNTX18 HS65_GS_SDFPRQNTX27 HS65_GS_SDFPRQNTX35 HS65_GS_SDFPRQNX18 HS65_GS_SDFPRQNX27 HS65_GS_SDFPRQNX35 HS65_GS_SDFPRQTX18 HS65_GS_SDFPRQTX27 HS65_GS_SDFPRQTX35 HS65_GS_SDFPRQX18 HS65_GS_SDFPRQX27 HS65_GS_SDFPRQX35 HS65_GS_SDFPSQNTX18 HS65_GS_SDFPSQNTX27 HS65_GS_SDFPSQNTX35 HS65_GS_SDFPSQNX18 HS65_GS_SDFPSQNX27 HS65_GS_SDFPSQNX35 HS65_GS_SDFPSQTX18 HS65_GS_SDFPSQTX27 HS65_GS_SDFPSQTX35 HS65_GS_SDFPSQX18 HS65_GS_SDFPSQX27 HS65_GS_SDFPSQX35 .'
+        : For more information, refer to 'Cells Identified as Unusable' in the 'User Guide'. The reason why a cell is considered unusable is stored in the 'unusable_reason' libcell attribute.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'inv' was marked 'avoid' because there was no physical data in the LEF file.
+        : To prevent the library cell from being set to 'avoid', set attribute 'lib_lef_consistency_check_enable' to 'false'.
+  Setting attribute of root '/': 'lef_library' = /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.lef /home/micro1/lab3/synthesis/../Complex_f2.lef /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/LEF/CORE65GPSVT.lef /soft64/design-kits/stm/65nm-cmos065_536/PRHS65_7.0.a/CADENCE/LEF/PRHS65_soc.lef
+
+  According to cap_table_file, there are total 8 routing layers [ V(4) / H(4) ]
+
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.1, 3) of 'WIDTH' for layers 'M1' and 'M8' is too large.
+Warning : Minimum width of layer in lef does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M1' in lef is '0.1', minimum width of layer 'M1' in cap table is '0.09'.
+Warning : Minimum width of layer in lef does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'AP' in lef is '3', minimum width of layer 'M8' in cap table is '2'.
+  Setting attribute of root '/': 'cap_table_file' = /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.captable
+1 /soft64/design-kits/stm/65nm-cmos065_536/EncounterTechnoKit_cmos065_7m4x0y2z_AP@5.3.1/TECH/cmos065_7m4x0y2z_AP_Worst.captable
+genus@root:> read_hdl -vhdl Complex_f2.vhd
+            Reading VHDL file 'src/Complex_f2.vhd'
+              Reading VHDL predefined package '/soft64/cadence/ferramentas/GENUS161/tools/lib/vhdl/ieee/std_logic_1164.vhdl'
+              Reading VHDL predefined package '/soft64/cadence/ferramentas/GENUS161/tools/lib/vhdl/cadence/attributes.vhdl'
+	inv5 : inv port map(not_f, F);
+	                           |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'F' in file 'src/Complex_f2.vhd' on line 47, column 29.
+        : Invalid or unsupported VHDL syntax is encountered.
+Info    : Design unit not stored. [VHDLPT-506]
+        : Architecture test-test.
+Info    : Error summary. [VHDLPT-508]
+        : 1 error and 0 warnings reported.
+1
+genus@root:> exit
+Normal exit.

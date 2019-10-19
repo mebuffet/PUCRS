@@ -1,0 +1,7 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/micro2/lab3/lvsRunDir
+lvs_LvsfVersion 1
+lvs_LvsOutFile LVS_REPORT Complex_f2.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/micro2/lab3/lvsRunDir/Complex_f2.src.net
+lvs_LvsOutFile RULES_FILE /home/micro2/lab3/lvsRunDir/_calibrelvs_cgi_
+lvs_LvsRunTimes 1498078178 1498078178

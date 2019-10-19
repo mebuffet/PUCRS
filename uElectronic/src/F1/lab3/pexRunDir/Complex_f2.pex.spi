@@ -1,0 +1,40 @@
+* File: Complex_f2.pex.spi
+* Created: Tue Nov 29 22:47:43 2016
+* Program "Calibre xRC"
+* Version "v2011.3_29.20"
+* 
+.include "Complex_f2.pex.spi.pex"
+.subckt Complex_f2  A B C D S vdd! gnd!
+* 
+* vdd!	vdd!
+* gnd!	gnd!
+* S	S
+* D	D
+* C	C
+* B	B
+* A	A
+XPA N_S_XPA_d N_A_XPA_g N_vdd!_XPA_s N_vdd!_X8_noxref_minus psvtgp L=0.06 W=0.4
++ NFING=1 M=1 AS=0.0744 AD=0.0864 PS=0.372 PD=0.832 PO2ACT=0.3675 NGCON=1 lpe=3
+XPB N_S_XPB_d N_B_XPB_g N_vdd!_XPA_s N_vdd!_X8_noxref_minus psvtgp L=0.06 W=0.4
++ NFING=1 M=1 AS=0.0744 AD=0.0744 PS=0.372 PD=0.372 PO2ACT=0.7875 NGCON=1 lpe=3
+XPC N_S_XPB_d N_C_XPC_g net33 N_vdd!_X8_noxref_minus psvtgp L=0.06 W=0.4 NFING=1
++ M=1 AS=0.0744 AD=0.0744 PS=0.372 PD=0.372 PO2ACT=0.7875 NGCON=1 lpe=0
+XPD net33 N_D_XPD_g N_vdd!_XPD_s N_vdd!_X8_noxref_minus psvtgp L=0.06 W=0.4
++ NFING=1 M=1 AS=0.0864 AD=0.0744 PS=0.832 PD=0.372 PO2ACT=0.3675 NGCON=1 lpe=0
+XNA N_S_XNA_d N_A_XNA_g net13 N_gnd!_X8_noxref_plus nsvtgp L=0.06 W=0.2 NFING=1
++ M=1 AS=0.0374 AD=0.0434 PS=0.374 PD=0.634 PO2ACT=0.3675 NGCON=1 lpe=0
+XNB net13 N_B_XNB_g N_net11_XNB_s N_gnd!_X8_noxref_plus nsvtgp L=0.06 W=0.2
++ NFING=1 M=1 AS=0.0374 AD=0.0374 PS=0.374 PD=0.374 PO2ACT=0.7875 NGCON=1 lpe=0
+XNC N_net11_XNB_s N_C_XNC_g N_gnd!_XNC_s N_gnd!_X8_noxref_plus nsvtgp L=0.06
++ W=0.2 NFING=1 M=1 AS=0.0374 AD=0.0374 PS=0.374 PD=0.374 PO2ACT=0.7875 NGCON=1
++ lpe=3
+XND N_net11_XND_d N_D_XND_g N_gnd!_XNC_s N_gnd!_X8_noxref_plus nsvtgp L=0.06
++ W=0.2 NFING=1 M=1 AS=0.0374 AD=0.0434 PS=0.374 PD=0.634 PO2ACT=0.3675 NGCON=1
++ lpe=3
+X8_noxref N_gnd!_X8_noxref_plus N_vdd!_X8_noxref_minus dnwps  AREA=3.894 PJ=8.02
+*
+.include "Complex_f2.pex.spi.Complex_f2.pxi"
+*
+.ends
+*
+*

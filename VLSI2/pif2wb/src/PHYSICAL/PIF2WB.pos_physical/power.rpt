@@ -1,0 +1,83 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 16.10-p004_1 (64bit) 05/12/2016 14:48 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2017-Nov-28 12:36:08 (2017-Nov-28 14:36:08 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: PIF2WB
+*
+*	Liberty Libraries used: 
+*	        view_NOMINAL: /soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/libs/CORE65GPSVT_nom_1.00V_25C.lib
+*
+*	Power Domain used: 
+*		Rail:        vdd 	Voltage:          1 
+*
+*       Power View : view_NOMINAL
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile /home/vlsi2_g05/VLSI2/pif2wb/src/PIF2WB.pos_physical/power.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.11009845 	   63.7007%
+Total Switching Power:       0.04592215 	   26.5696%
+Total Leakage Power:         0.01681639 	    9.7296%
+Total Power:                 0.17283699 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                       0.07274    0.009716    0.005626     0.08808       50.96 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                    0.03736     0.03621     0.01119     0.08475       49.04 
+Clock (Combinational)                  0           0           0           0           0 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                             0.1101     0.04592     0.01682      0.1728         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+vdd                         1     0.1101     0.04592     0.01682      0.1728         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:              FE_OFC8_n_96 (HS65_GS_BFX27): 	  0.003614 
+* 		Highest Leakage Power:             FE_OFC0_n_172 (HS65_GS_BFX27): 	 0.0001321 
+* 		Total Cap: 	2.21021e-12 F
+* 		Total instances in design:   252
+* 		Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

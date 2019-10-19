@@ -1,0 +1,16 @@
+Exported variables from results directory:  ./inv.raw/
+
+date               :  6:59:25 PM, Wed Aug 31, 2016
+design             :  * inversor - simulação do circuito extraído do layout projetado
+simulator          :  spectre
+version            :  15.1.0.257
+
+
+Measurement Name   :  transient1
+Analysis Type      :  tran
+td              = 84.6497 
+tdescida        = 8.46497e-11 
+ts              = 92.0072 
+tsubida         = 9.20072e-11 
+
+

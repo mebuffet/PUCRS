@@ -1,0 +1,56 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 16.10-p006_1, built Wed Jun 08 2016
+Options: 
+Date:    Wed Nov 30 17:50:04 2016
+Host:    kriti (x86_64 w/Linux 2.6.18-416.el5) (4cores*8cpus*Intel(R) Xeon(R) CPU W5580 @ 3.20GHz 8192KB) (30886032KB)
+OS:      CentOS release 5.11 (Final)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+Finished loading tool scripts (14 seconds elapsed).
+
+genus@root:> ls
+Complex_f2.lef
+abstract.log
+abstract.log.1
+abstract.log.10
+abstract.log.2
+abstract.log.3
+abstract.log.4
+abstract.log.5
+abstract.log.6
+abstract.log.7
+abstract.log.8
+abstract.log.9
+abstract.record
+ade_wavescan.log
+cds.lib
+cdssetup
+characterization
+drcRunDir
+genus.cmd
+genus.cmd1
+genus.log
+genus.log1
+gera_abstract.txt
+gera_abstract.txt~
+inv.lef
+lab3
+lab3.lef
+lefout.list
+libManager.log
+libManager.log.1
+libManager.log.cdslck
+lvsRunDir
+menus
+nil
+pexRunDir
+sim
+synthesis
+genus@root:> exit
+Normal exit.

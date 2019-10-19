@@ -1,0 +1,13 @@
+Complex_f2 1000
+CB.DEN.2::<3>
+1 1 2 Jun 21 17:48:36 2017                      
+CB.DEN.2::<3> = DENSITY CB_DENS <= 1 INSIDE OF LAYER CHIP
+Rule CB.DEN.2: Maximum CB density across full chip: 0.05
+p 1 4
+DV 0
+DA 7.875
+DA CB_DENS 0
+-150 -3000
+2350 -3000
+2350 150
+-150 150

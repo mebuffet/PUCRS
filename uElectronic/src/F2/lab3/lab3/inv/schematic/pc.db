@@ -1,0 +1,18 @@
+#
+cmos065 psvtgp symbol
+M1
+#
+cmos065 nsvtgp symbol
+M0
+#ISCELL
+cmos065 vdd_inherit symbol
+I0
+#ISCELL
+cmos065 gnd_inherit symbol
+I1
+#ISCELL
+basic ipin symbol
+PIN0
+#ISCELL
+basic opin symbol
+PIN1

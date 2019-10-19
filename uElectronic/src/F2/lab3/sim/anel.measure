@@ -1,0 +1,16 @@
+Exported variables from results directory:  ./anel.raw/
+
+date               :  11:28:43 AM, Thur Sep 8, 2016
+design             :  * inversores em anel para cálculo de frequência com inversor extraído
+simulator          :  spectre
+version            :  15.1.0.257
+
+
+Measurement Name   :  transient1
+Analysis Type      :  tran
+freq_ghz        = 2.5224 
+periodo         = 0.396448 
+tf              = 6.3478e-12 
+tr              = 1.25307e-11 
+
+

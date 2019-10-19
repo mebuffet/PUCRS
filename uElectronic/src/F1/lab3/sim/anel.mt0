@@ -1,0 +1,5 @@
+$ Simulator: spectre (ver. 15.1.0.257)
+.title '* inversores em anel para cálculo de frequência com inversor extraído'
+tf tr periodo freq_ghz temper alter# 
+6.3478e-12 1.25307e-11 0.396448 2.5224 27 1 
+

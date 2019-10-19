@@ -1,0 +1,1912 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 16.10-p006_1, built Wed Jun 08 2016
+Options: 
+Date:    Tue Nov 29 17:04:19 2016
+Host:    kriti (x86_64 w/Linux 2.6.18-416.el5) (4cores*8cpus*Intel(R) Xeon(R) CPU W5580 @ 3.20GHz 8192KB) (30886032KB)
+OS:      CentOS release 5.11 (Final)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+Sourcing GUI preferences file /home/micro1/.cadence/genus/gui.tcl...
+Finished loading tool scripts (12 seconds elapsed).
+
+genus@root:> include load.tcl
+Sourcing './load.tcl' (Tue Nov 29 17:04:44 -0200 2016)...
+  Setting attribute of root '/': 'script_search_path' = ./
+  Setting attribute of root '/': 'init_hdl_search_path' = src
+  Setting attribute of root '/': 'information_level' = 9
+            Reading file '/home/micro1/lab3/synthesis/../characterization/inv.lib'
+    Loading library inv.lib
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'inv' is not defined in the library. (File /home/micro1/lab3/synthesis/../characterization/inv.lib)
+
+  Message Summary for Library inv.lib:
+  ************************************
+  Could not find an attribute in the library. [LBR-436]: 1
+  ************************************
+ 
+            Reading file '/soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib'
+    Loading library CORE65GPSVT_nom_1.00V_25C.lib
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 19)
+        : Check to see if this construct is really needed for synthesis.  Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 20)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 1458)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 3065)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 4672)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 6279)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 6879)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 8491)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 9171)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 9851)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 10531)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 11211)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 11891)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 12571)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 12957)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 13343)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 13729)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 14115)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 14501)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'functional_yield_metric' encountered. Ignoring (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 14888)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'HS65_GS_BK1SX1' (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 482297)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'HS65_GS_BK1SX1'. This may cause potential problems with results of downstream tools (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'BB' for the cell 'HS65_GS_BK1SX1'. (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 482362)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'BB' for the cell 'HS65_GS_BK1X1'. (File /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib, Line 482503)
+
+  Message Summary for Library CORE65GPSVT_nom_1.00V_25C.lib:
+  **********************************************************
+  Missing sequential block in the sequential cell. [LBR-526]: 1
+  Missing clock pin in the sequential cell. [LBR-525]: 1
+  Missing a function attribute in the output pin definition. [LBR-518]: 2
+  An unsupported construct was detected in this library. [LBR-40]: 868
+  **********************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.000000, 25.000000) in library 'inv.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'inv/inv'.
+        : Specify a valid area value for the libcell.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.000000, 25.000000) in library 'CORE65GPSVT_nom_1.00V_25C.lib'.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HS65_GS_BK1SX1/BB' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HS65_GS_BK1X1/BB' has no function.
+  Setting attribute of root '/': 'library' = ../characterization/inv.lib /soft64/design-kits/stm/65nm-cmos065_537/CORE65GPSVT/5.2/libs/CORE65GPSVT_nom_1.00V_25C.lib
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'Complex_f2' has non-zero origin (-169, 3010).
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'CORE' read already, this site in file '/home/micro1/lab3/synthesis/../inv.lef' is ignored.
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'inv' has non-zero origin (-209, -389).
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S0' in libcell 'HS65_GSS1_FA1X21'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B0' and 'S0' in libcell 'HS65_GSS1_FA1X21'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A0' and 'S0' in libcell 'HS65_GSS1_FA1X21'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S0' in libcell 'HS65_GSS1_FA1X35'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B0' and 'S0' in libcell 'HS65_GSS1_FA1X35'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A0' and 'S0' in libcell 'HS65_GSS1_FA1X35'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S0' in libcell 'HS65_GSS1_FA1X9'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B0' and 'S0' in libcell 'HS65_GSS1_FA1X9'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A0' and 'S0' in libcell 'HS65_GSS1_FA1X9'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B0' and 'S0' in libcell 'HS65_GSS1_HA1X8'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A0' and 'S0' in libcell 'HS65_GSS1_HA1X8'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S0' in libcell 'HS65_GSS2_FA1X18'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B0' and 'S0' in libcell 'HS65_GSS2_FA1X18'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A0' and 'S0' in libcell 'HS65_GSS2_FA1X18'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'Z' in libcell 'HS65_GSS_XNOR2X12'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'Z' in libcell 'HS65_GSS_XNOR2X12'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'Z' in libcell 'HS65_GSS_XNOR2X18'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'Z' in libcell 'HS65_GSS_XNOR2X18'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'Z' in libcell 'HS65_GSS_XNOR2X24'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'Z' in libcell 'HS65_GSS_XNOR2X24'.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'CORE65GPSVT_nom_1.00V_25C.lib', Total cells: 866, Unusable cells: 81.
+	List of unusable cells: 'HS65_GS_BK1SX1 HS65_GS_BK1X1 HS65_GS_DFPHQNX18 HS65_GS_DFPHQNX27 HS65_GS_DFPHQNX35 HS65_GS_DFPHQX18 HS65_GS_DFPHQX27 HS65_GS_DFPHQX35 HS65_GS_DFPQNX18 HS65_GS_DFPQNX27 HS65_GS_DFPQNX35 HS65_GS_DFPQX18 HS65_GS_DFPQX27 HS65_GS_DFPQX35 HS65_GS_DFPRQNX18 HS65_GS_DFPRQNX27 HS65_GS_DFPRQNX35 HS65_GS_DFPRQX18 HS65_GS_DFPRQX27 HS65_GS_DFPRQX35 HS65_GS_DFPSQNX18 HS65_GS_DFPSQNX27 HS65_GS_DFPSQNX35 HS65_GS_DFPSQX18 HS65_GS_DFPSQX27 HS65_GS_DFPSQX35 HS65_GS_SDFPBTQX9 HS65_GS_SDFPHQNTX18 HS65_GS_SDFPHQNTX27 HS65_GS_SDFPHQNTX35 HS65_GS_SDFPHQNX18 HS65_GS_SDFPHQNX27 HS65_GS_SDFPHQNX35 HS65_GS_SDFPHQTX18 HS65_GS_SDFPHQTX27 HS65_GS_SDFPHQTX35 HS65_GS_SDFPHQX18 HS65_GS_SDFPHQX27 HS65_GS_SDFPHQX35 HS65_GS_SDFPHRQNTX18 HS65_GS_SDFPHRQNTX27 HS65_GS_SDFPHRQNTX35 HS65_GS_SDFPHRQTX18 HS65_GS_SDFPHRQTX27 HS65_GS_SDFPHRQTX35 HS65_GS_SDFPQNTX18 HS65_GS_SDFPQNTX27 HS65_GS_SDFPQNTX35 HS65_GS_SDFPQNX18 HS65_GS_SDFPQNX27 HS65_GS_SDFPQNX35 HS65_GS_SDFPQTX18 HS65_GS_SDFPQTX27 HS65_GS_SDFPQTX35 HS65_GS_SDFPQX18 HS65_GS_SDFPQX27 HS65_GS_SDFPQX35 HS65_GS_SDFPRQNTX18 HS65_GS_SDFPRQNTX27 HS65_GS_SDFPRQNTX35 HS65_GS_SDFPRQNX18 HS65_GS_SDFPRQNX27 HS65_GS_SDFPRQNX35 HS65_GS_SDFPRQTX18 HS65_GS_SDFPRQTX27 HS65_GS_SDFPRQTX35 HS65_GS_SDFPRQX18 HS65_GS_SDFPRQX27 HS65_GS_SDFPRQX35 HS65_GS_SDFPSQNTX18 HS65_GS_SDFPSQNTX27 HS65_GS_SDFPSQNTX35 HS65_GS_SDFPSQNX18 HS65_GS_SDFPSQNX27 HS65_GS_SDFPSQNX35 HS65_GS_SDFPSQTX18 HS65_GS_SDFPSQTX27 HS65_GS_SDFPSQTX35 HS65_GS_SDFPSQX18 HS65_GS_SDFPSQX27 HS65_GS_SDFPSQX35 .'
+        : For more information, refer to 'Cells Identified as Unusable' in the 'User Guide'. The reason why a cell is considered unusable is stored in the 'unusable_reason' libcell attribute.
+Warning : There are no vertical or horizontal layers. [PHYS-111]
+        : There are no vertical layers.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS1_FA1X21' was marked 'avoid' because there was no physical data in the LEF file.
+        : To prevent the library cell from being set to 'avoid', set attribute 'lib_lef_consistency_check_enable' to 'false'.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS1_FA1X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS1_FA1X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS1_HA1X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS2_FA1X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPHQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPHQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPHQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPHQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPHQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPHQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPRQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPRQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPRQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPRQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPRQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPRQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPSQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPSQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPSQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPSQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPSQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_DFPSQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQNTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQNTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQNTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHRQNTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHRQNTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHRQNTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHRQTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHRQTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPHRQTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQNTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQNTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQNTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQNTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQNTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQNTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPRQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQNTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQNTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQNTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_SDFPSQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XNOR2X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XNOR2X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XNOR2X24' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XNOR2X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XNOR2X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XNOR3X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XNOR3X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XNOR3X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XNOR3X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XOR2X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XOR2X17' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XOR2X23' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XOR2X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XOR2X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XOR3X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XOR3X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XOR3X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GSS_XOR3X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND2ABX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND2ABX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND2ABX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND2ABX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND2X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND2X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND2X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND2X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND2X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND3ABCX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND3ABCX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND3ABCX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND3ABCX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND3X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND3X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND3X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND3X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND3X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND4X13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND4X19' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND4X25' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND4X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AND4X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO112X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO112X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO112X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO112X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO112X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO12X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO12X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO12X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO12X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO12X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO212X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO212X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO212X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO212X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO212X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO222X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO222X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO222X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO222X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO222X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO22X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO22X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO22X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO22X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO22X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO311X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO311X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO311X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO311X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO311X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO312X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO312X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO312X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO312X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO312X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO31X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO31X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO31X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO31X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO31X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO32X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO32X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO32X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO32X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO32X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO33X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO33X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO33X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO33X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AO33X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI112X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI112X13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI112X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI112X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI112X26' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI112X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI112X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI112X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI112X7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI112X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI12X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI12X17' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI12X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI12X23' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI12X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI12X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI12X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI12X46' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI12X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI12X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI13X10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI13X15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI13X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI13X20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI13X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI13X31' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI13X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI13X41' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI13X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI13X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI211X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI211X13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI211X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI211X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI211X26' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI211X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI211X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI211X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI211X7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI211X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI212X13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI212X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI212X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI212X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI212X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI21X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI21X17' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI21X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI21X23' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI21X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI21X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI21X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI21X46' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI21X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI21X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI222X13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI222X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI222X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI222X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI222X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI22X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI22X11' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI22X17' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI22X22' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI22X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI22X33' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI22X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI22X44' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI22X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI22X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI311X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI311X16' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI311X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI311X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI311X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI312X13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI312X17' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI312X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI312X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI312X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI31X10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI31X15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI31X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI31X20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI31X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI31X31' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI31X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI31X41' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI31X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI31X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI32X10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI32X15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI32X20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI32X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI32X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI33X14' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI33X19' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI33X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI33X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_AOI33X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BDECNX20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BDECNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BDECNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BENCX41' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BENCX71' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX106' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX142' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX213' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX22' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX284' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX31' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX40' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX44' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX49' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX53' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX62' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX71' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BFX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BK1SX1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BK1X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BTHX10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BTHX15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BTHX20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BTHX25' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_BTHX30' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CB4I1X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CB4I1X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CB4I1X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CB4I1X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CB4I1X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CB4I6X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CB4I6X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CB4I6X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CB4I6X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CB4I6X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CBI4I1X11' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CBI4I1X16' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CBI4I1X21' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CBI4I1X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CBI4I1X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CBI4I6X14' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CBI4I6X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CBI4I6X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CBI4I6X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_CBI4I6X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_D42COX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPHQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPHQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPHQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPHQNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPHQNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPHQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPHQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPHQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPHQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPHQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPQNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPQNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPRQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPRQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPRQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPRQNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPRQNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPRQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPRQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPRQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPRQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPRQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPSQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPSQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPSQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPSQNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPSQNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPSQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPSQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPSQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPSQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_DFPSQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_FA1X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_FA1X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_FA1X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_FA1X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_FA1X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_HA1X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_HA1X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_HA1X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_HA1X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_HA1X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_ITHX10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_ITHX15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_ITHX20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_ITHX25' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_ITHX30' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX106' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX142' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX213' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX22' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX284' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX31' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX40' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX44' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX49' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX53' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX62' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX71' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_IVX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHQNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHQNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHRQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHRQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHRQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHRQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDHRQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLQNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLQNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLRQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLRQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLRQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLRQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_LDLRQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21I1X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21I1X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21I1X24' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21I1X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21I1X30' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21I1X36' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21I1X42' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21I1X48' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21I1X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21X44' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21X53' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21X62' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21X71' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX21X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX31X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX31X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX31X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX31X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX31X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX41X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX41X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX41X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX41X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUX41X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI21X10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI21X15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI21X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI21X20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI21X30' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI21X40' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI21X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI21X50' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI21X60' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI31X11' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI31X15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI31X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI31X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI31X7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI41X11' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI41X15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI41X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI41X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MUXI41X7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MX41X14' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MX41X21' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MX41X29' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MX41X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_MX41X7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2AX14' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2AX21' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2AX29' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2AX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2AX7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2X11' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2X14' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2X21' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2X29' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2X43' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2X57' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND2X7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3AX13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3AX19' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3AX25' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3AX3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3AX6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3X13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3X19' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3X25' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3X38' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3X50' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND3X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND4ABX13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND4ABX19' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND4ABX25' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND4ABX3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND4ABX6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND4X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND4X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND4X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND4X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NAND4X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2AX13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2AX19' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2AX25' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2AX3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2AX6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2X13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2X19' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2X25' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2X38' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2X50' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR2X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3AX13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3AX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3AX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3AX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3AX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3X13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3X26' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3X7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR3X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR4ABX13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR4ABX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR4ABX2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR4ABX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR4ABX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR4X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR4X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR4X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR4X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_NOR4X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA112X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA112X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA112X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA112X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA112X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA12X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA12X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA12X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA12X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA12X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA212X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA212X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA212X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA212X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA212X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA222X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA222X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA222X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA222X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA222X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA22X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA22X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA22X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA22X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA22X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA311X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA311X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA311X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA311X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA311X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA31X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA31X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA31X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA31X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA31X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA32X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA32X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA32X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA32X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA32X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA33X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA33X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA33X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA33X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OA33X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI112X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI112X11' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI112X16' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI112X22' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI112X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI112X33' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI112X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI112X44' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI112X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI112X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI12X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI12X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI12X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI12X24' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI12X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI12X37' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI12X49' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI12X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI12X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI12X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI13X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI13X10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI13X15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI13X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI13X20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI13X30' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI13X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI13X40' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI13X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI13X7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI211X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI211X11' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI211X16' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI211X22' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI211X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI211X33' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI211X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI211X44' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI211X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI211X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI212X10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI212X15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI212X20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI212X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI212X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI21X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI21X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI21X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI21X24' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI21X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI21X37' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI21X49' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI21X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI21X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI21X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI222X14' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI222X19' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI222X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI222X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI222X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI22X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI22X11' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI22X17' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI22X22' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI22X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI22X33' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI22X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI22X44' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI22X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI22X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI311X10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI311X15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI311X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI311X20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI311X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI31X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI31X10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI31X15' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI31X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI31X20' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI31X30' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI31X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI31X40' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI31X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI31X7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI32X14' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI32X19' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI32X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI32X5' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI32X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI33X10' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI33X13' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI33X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI33X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OAI33X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR2ABX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR2ABX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR2ABX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR2ABX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR2X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR2X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR2X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR2X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR2X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR3ABCX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR3ABCX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR3ABCX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR3ABCX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR3X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR3X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR3X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR3X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR3X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR4X14' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR4X21' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR4X29' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR4X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_OR4X7' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAO2X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAO2X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAO2X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAO2X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAO2X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAO3X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAO3X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAO3X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAO3X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAO3X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI2X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI2X11' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI2X17' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI2X22' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI2X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI2X33' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI2X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI2X44' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI2X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI2X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI3X1' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI3X12' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI3X16' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI3X2' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI3X24' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI3X3' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI3X33' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI3X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI3X6' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_PAOI3X8' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPBTQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQNTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQNTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQNTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQNTX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQNTX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQTX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQTX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHRQNTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHRQNTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHRQNTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHRQNTX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHRQNTX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHRQTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHRQTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHRQTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHRQTX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPHRQTX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQNTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQNTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQNTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQNTX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQNTX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQTX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQTX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQNTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQNTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQNTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQNTX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQNTX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQTX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQTX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPRQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQNTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQNTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQNTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQNTX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQNTX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQNX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQNX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQNX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQNX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQNX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQTX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQTX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQTX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQTX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQTX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQX18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQX27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQX35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQX4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_SDFPSQX9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XNOR2X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XNOR2X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XNOR2X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XNOR2X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XNOR2X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XNOR3X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XNOR3X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XNOR3X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XNOR3X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XOR2X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XOR2X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XOR2X35' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XOR2X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XOR2X9' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XOR3X18' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XOR3X27' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XOR3X4' was marked 'avoid' because there was no physical data in the LEF file.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'HS65_GS_XOR3X9' was marked 'avoid' because there was no physical data in the LEF file.
+Error   : There is no capacitance, resistance specified. [PHYS-10] [set_db]
+        : Specify the tech LEF first.
+        : Check the wire parasitics section.
+Error   : The attribute or the value for this attribute is not allowed at this moment. [TUI-48] [set_db]
+        : attribute: 'lef_library', value: '../Complex_f2.lef  ../inv.lef'
+        : Cannot change the value of the attribute.
+1
+genus@root:> read_hdl -vhdl src/Complex_f2.vhd
+              Reading VHDL predefined package '/soft64/cadence/ferramentas/GENUS161/tools/lib/vhdl/std/standard.vhdl'
+            Reading VHDL file './src/Complex_f2.vhd'
+              Reading VHDL predefined package '/soft64/cadence/ferramentas/GENUS161/tools/lib/vhdl/ieee/std_logic_1164.vhdl'
+              Reading VHDL predefined package '/soft64/cadence/ferramentas/GENUS161/tools/lib/vhdl/cadence/attributes.vhdl'
+genus@root:> elaborate ${DESIGN_TOP}
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'complex_f2'.
+        : Ensure that the design exists or the correct file was loaded.
+1
+genus@root:> 
+genus@root:> exit
+Normal exit.

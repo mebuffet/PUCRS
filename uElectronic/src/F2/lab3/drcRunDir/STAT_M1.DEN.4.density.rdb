@@ -1,0 +1,5 @@
+Complex_f2 1000
+M1.DEN.4::<3>
+0 0 2 Jun 21 17:48:36 2017                      
+M1.DEN.4::<3> = DENSITY M1_DENS <= 1 INSIDE OF LAYER CHIP WINDOW 400 BACKUP GRADIENT > 0 CORNER 0.707 ABSOLUTE
+Rule M1.DEN.4: Maximum physical M1 density difference between any two 400um x 400um neighboring checking windows (stepped 400um non-overlapping) (--Note: DRC implementation: for two windows in diagonal, the maximum density difference is 57%. --) . Exclusion: MKR,ind, MKR,rf: 0.4

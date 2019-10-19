@@ -1,0 +1,198 @@
+* Calibre pushdown separate-properties (back-annotation) data
+***************************************
+*
+* These lvs-actionable properties, indexed by DEVICE element(model) will be kept in the netlist:
+*
+* KEEP_PROP_BEGIN
+* KEEP_PROP C(CE1E2) CAREA CPERI
+* KEEP_PROP C(CFRM1) L FS
+* KEEP_PROP C(CFRMT) L FS METAL
+* KEEP_PROP C(CFRMX) L FS METAL
+* KEEP_PROP C(CFRMZ) L FS METAL
+* KEEP_PROP C(CM1MX) CAREA CPERI
+* KEEP_PROP C(cmetm2m4) W
+* KEEP_PROP C(cmim5) W L
+* KEEP_PROP C(cmim5_2p) W L
+* KEEP_PROP C(cmim5_sh) W L
+* KEEP_PROP C(cmim5t) W L
+* KEEP_PROP C(cmim5t_2p) W L
+* KEEP_PROP C(cmim5t_sh) W L
+* KEEP_PROP C(cmimmk4x0y) CAREA CPERI
+* KEEP_PROP C(cmimmk4x0ynosub) CAREA CPERI
+* KEEP_PROP C(CMSTRSTK) CAREA CPERI BOTLAYER TOPLAYER
+* KEEP_PROP C(CMXMX) CAREA CPERI TOPLAYER
+* KEEP_PROP C(CMXMZ) CAREA CPERI TOPLAYER
+* KEEP_PROP C(CMZMT) CAREA CPERI TOPLAYER
+* KEEP_PROP C(CMZMZ) CAREA CPERI TOPLAYER
+* KEEP_PROP C(CPO18NW) CAREA CPERI
+* KEEP_PROP C(CPO18PW) CAREA CPERI
+* KEEP_PROP C(CPO25NW) CAREA CPERI
+* KEEP_PROP C(CPO25PW) CAREA CPERI
+* KEEP_PROP C(CPOLPNW) CAREA CPERI
+* KEEP_PROP C(CPOLPPW) CAREA CPERI
+* KEEP_PROP D(DDNWPW) A P
+* KEEP_PROP D(DGNSVT18) W L NFING
+* KEEP_PROP D(DGNSVT25) W L NFING
+* KEEP_PROP D(DGPSVT18) W L NFING
+* KEEP_PROP D(DGPSVT25) W L NFING
+* KEEP_PROP D(DNHPALP) A P
+* KEEP_PROP D(DNHVTGP) A P
+* KEEP_PROP D(DNHVTLP) A P
+* KEEP_PROP D(DNLVTGP) A P
+* KEEP_PROP D(DNLVTLP) A P
+* KEEP_PROP D(DNSVT18) A P
+* KEEP_PROP D(DNSVT25) A P
+* KEEP_PROP D(DNSVT25DRAM) A P
+* KEEP_PROP D(DNSVTGP) A P
+* KEEP_PROP D(DNSVTLP) A P
+* KEEP_PROP D(DPHPALP) A P
+* KEEP_PROP D(DPHVTGP) A P
+* KEEP_PROP D(DPHVTLP) A P
+* KEEP_PROP D(DPLVTGP) A P
+* KEEP_PROP D(DPLVTLP) A P
+* KEEP_PROP D(DPSVT18) A P
+* KEEP_PROP D(DPSVT25) A P
+* KEEP_PROP D(DPSVTGP) A P
+* KEEP_PROP D(DPSVTLP) A P
+* KEEP_PROP D(dschottky) SIGN
+* KEEP_PROP LDD(mtpcell) L W
+* KEEP_PROP LDDN(ndr18) W L SIDENUM
+* KEEP_PROP LDDN(NDR18OTP) W L
+* KEEP_PROP LDDN(ndr25) W L SIDENUM
+* KEEP_PROP LDDN(ndr25hv) W L
+* KEEP_PROP LDDN(NDR25OTP) W L
+* KEEP_PROP LDDN(next18hv) W L ngcon ncrsd
+* KEEP_PROP LDDN(next25hv) W L ngcon ncrsd
+* KEEP_PROP MN(NHPALP) w l
+* KEEP_PROP MN(nhpalp_rf) w l nfing ngcon ncrsd mult
+* KEEP_PROP MN(NHVTGP) w l
+* KEEP_PROP MN(NHVTGPRPO) W L EDU ESU
+* KEEP_PROP MN(NHVTLP) w l
+* KEEP_PROP MN(NHVTLPPDDP) W L
+* KEEP_PROP MN(NHVTLPPDSP) W L
+* KEEP_PROP MN(NHVTLPPDSP620) W L
+* KEEP_PROP MN(NHVTLPPGDP) W L
+* KEEP_PROP MN(NHVTLPPGSP) W L
+* KEEP_PROP MN(NHVTLPPGSP620) W L
+* KEEP_PROP MN(NHVTLPRPO) W L EDU ESU
+* KEEP_PROP MN(NLVT25DRAM) W L
+* KEEP_PROP MN(NLVTGP) w l
+* KEEP_PROP MN(NLVTLP) w l
+* KEEP_PROP MN(nlvtlp_rf) w l nfing ngcon ncrsd mult
+* KEEP_PROP MN(NLVTLPRPO) W L EDU ESU
+* KEEP_PROP MN(NNVT18) w l
+* KEEP_PROP MN(NNVT25) w l
+* KEEP_PROP MN(NSVT18) w l
+* KEEP_PROP MN(nsvt18_rf) w l nfing ngcon ncrsd mult
+* KEEP_PROP MN(NSVT18RPO) W L EDU ESU
+* KEEP_PROP MN(NSVT18RPONOLDD) W L EDU ESU
+* KEEP_PROP MN(NSVT25) w l
+* KEEP_PROP MN(nsvt25_rf) w l nfing ngcon ncrsd mult
+* KEEP_PROP MN(NSVT25DRAM) W L
+* KEEP_PROP MN(NSVT25RPO) W L EDU ESU
+* KEEP_PROP MN(NSVT25RPONOLDD) W L EDU ESU
+* KEEP_PROP MN(NSVTGP) w l
+* KEEP_PROP MN(NSVTGPPDDP) W L
+* KEEP_PROP MN(NSVTGPPDSP) W L
+* KEEP_PROP MN(NSVTGPPGDP) W L
+* KEEP_PROP MN(NSVTGPPGSP) W L
+* KEEP_PROP MN(NSVTGPRPO) W L EDU ESU
+* KEEP_PROP MN(NSVTLP) w l
+* KEEP_PROP MN(nsvtlp_rf) w l nfing ngcon ncrsd mult
+* KEEP_PROP MN(NSVTLPPDDP) W L
+* KEEP_PROP MN(NSVTLPPDSP) W L
+* KEEP_PROP MN(NSVTLPPDSP620) W L
+* KEEP_PROP MN(NSVTLPPGDP) W L
+* KEEP_PROP MN(NSVTLPPGSP) W L
+* KEEP_PROP MN(NSVTLPPGSP620) W L
+* KEEP_PROP MN(NSVTLPRPO) W L EDU ESU
+* KEEP_PROP MP(PHPALP) w l
+* KEEP_PROP MP(phpalp_rf) w l nfing ngcon ncrsd mult
+* KEEP_PROP MP(PHVTGP) w l
+* KEEP_PROP MP(PHVTGPRPO) W L EDU ESU
+* KEEP_PROP MP(PHVTLP) w l
+* KEEP_PROP MP(PHVTLPPUDP) W L
+* KEEP_PROP MP(PHVTLPPUSP) W L
+* KEEP_PROP MP(PHVTLPPUSP620) W L
+* KEEP_PROP MP(PHVTLPRPO) W L EDU ESU
+* KEEP_PROP MP(PLVTGP) w l
+* KEEP_PROP MP(PLVTLP) w l
+* KEEP_PROP MP(plvtlp_rf) w l nfing ngcon ncrsd mult
+* KEEP_PROP MP(PLVTLPRPO) W L EDU ESU
+* KEEP_PROP MP(PSVT18) w l
+* KEEP_PROP MP(psvt18_rf) w l nfing ngcon ncrsd mult
+* KEEP_PROP MP(PSVT18RPO) W L EDU ESU
+* KEEP_PROP MP(PSVT25) w l
+* KEEP_PROP MP(psvt25_mtp) W L
+* KEEP_PROP MP(psvt25_rf) w l nfing ngcon ncrsd mult
+* KEEP_PROP MP(PSVT25RPO) W L EDU ESU
+* KEEP_PROP MP(psvt25rpo_mtp) W L ESU EDU
+* KEEP_PROP MP(PSVTGP) w l
+* KEEP_PROP MP(PSVTGPPUDP) W L
+* KEEP_PROP MP(PSVTGPPUSP) W L
+* KEEP_PROP MP(PSVTGPRPO) W L EDU ESU
+* KEEP_PROP MP(PSVTLP) w l
+* KEEP_PROP MP(psvtlp_rf) w l nfing ngcon ncrsd mult
+* KEEP_PROP MP(PSVTLPPUDP) W L
+* KEEP_PROP MP(PSVTLPPUSP) W L
+* KEEP_PROP MP(PSVTLPPUSP620) W L
+* KEEP_PROP MP(PSVTLPRPO) W L EDU ESU
+* KEEP_PROP R(RAP) W L
+* KEEP_PROP R(RHIPORPO) W L
+* KEEP_PROP R(RM1) W L
+* KEEP_PROP R(RMT) W L
+* KEEP_PROP R(RMX) W L METAL
+* KEEP_PROP R(RMZ) W L METAL
+* KEEP_PROP R(RNPO) W L
+* KEEP_PROP R(RNPOFUSE) W L
+* KEEP_PROP R(RNPOI) W L
+* KEEP_PROP R(RNPORPO) W L
+* KEEP_PROP R(RPODRPO) W L
+* KEEP_PROP R(RPPOI) W L
+* KEEP_PROP R(RPPORPO) W L
+* KEEP_PROP cfrm1m5shz(cfrm1m5shz) NF L
+* KEEP_PROP cfrm1m5shznosub(cfrm1m5shznosub) NF L
+* KEEP_PROP cfrstack_rf_7m4x0y2z nf_dirx mtlfrbot mtlfrtop mtlconbot mtlcontop nf_diry
+* KEEP_PROP cfrstack_rf_7m4x0y2z_2p nf_dirx mtlfrbot mtlfrtop mtlconbot mtlcontop nf_diry
+* KEEP_PROP cfrstack_rf_7m4x0y2z_sh nf_dirx mtlconbot mtlcontop nf_diry
+* KEEP_PROP cpo12nw_diff_var w nbfp nbcell l
+* KEEP_PROP cpo12nw_var w nbfp nbcell l
+* KEEP_PROP cpo18nw_atto w nbline nbcolumn l
+* KEEP_PROP cpo18nw_diff_var w nbfp nbcell l
+* KEEP_PROP cpo18nw_var w nbfp nbcell l
+* KEEP_PROP cpo18pw_var w nbfp nbcell l
+* KEEP_PROP cpo25nw_var w nbfp nbcell l
+* KEEP_PROP cpo25pw_var w nbfp nbcell l
+* KEEP_PROP dnsvtlp_var wfp nbfp lfp
+* KEEP_PROP ind_lomf_7m4x0y2z w l d
+* KEEP_PROP ind_lonw_7m4x0y2z w l d
+* KEEP_PROP ind_stdnw_7m4x0y2z w nbturns l d
+* KEEP_PROP inddif_lanw_7m4x0y2z w nbturns l mpout d
+* KEEP_PROP inddif_lomf_7m4x0y2z w l mpout d
+* KEEP_PROP inddif_lonw_7m4x0y2z w l mpout d
+* KEEP_PROP inddif_mf_7m4x0y2z w l mpout d
+* KEEP_PROP inddif_nw_7m4x0y2z w nbturns l mpout d
+* KEEP_PROP indsym_lanw_7m4x0y2z w nbturns l d
+* KEEP_PROP indsym_mf_7m4x0y2z w l d
+* KEEP_PROP indsym_nw_7m4x0y2z w nbturns l d
+* KEEP_PROP next18hvi W L ngcon ncrsd
+* KEEP_PROP next25hvi W L ngcon ncrsd
+* KEEP_PROP pdr18 W L SIDENUM
+* KEEP_PROP pdr25 W L SIDENUM
+* KEEP_PROP pdr25hv W L
+* KEEP_PROP pext18hv W L ngcon ncrsd
+* KEEP_PROP pext25hv W L ngcon ncrsd
+* KEEP_PROP_END
+*
+.SUBCKT Complex_f2
+M0 nfing=1 m=1 as=0.0864 ad=0.0744 ps=0.832 pd=0.372 po2act=0.3675 ngcon=1 $X=446 $Y=-1215 $D=94
+M1 nfing=1 m=1 as=0.0744 ad=0.0744 ps=0.372 pd=0.372 po2act=0.7875 ngcon=1 $X=866 $Y=-1215 $D=94
+M2 nfing=1 m=1 as=0.0744 ad=0.0744 ps=0.372 pd=0.372 po2act=0.7875 ngcon=1 $X=1286 $Y=-1215 $D=94
+M3 nfing=1 m=1 as=0.0744 ad=0.0864 ps=0.372 pd=0.832 po2act=0.3675 ngcon=1 $X=1706 $Y=-1215 $D=94
+M4 nfing=1 m=1 as=0.0434 ad=0.0374 ps=0.634 pd=0.374 po2act=0.3675 ngcon=1 $X=447 $Y=-2185 $D=29
+M5 nfing=1 m=1 as=0.0374 ad=0.0374 ps=0.374 pd=0.374 po2act=0.7875 ngcon=1 $X=867 $Y=-2185 $D=29
+M6 nfing=1 m=1 as=0.0374 ad=0.0374 ps=0.374 pd=0.374 po2act=0.7875 ngcon=1 $X=1287 $Y=-2185 $D=29
+M7 nfing=1 m=1 as=0.0374 ad=0.0434 ps=0.374 pd=0.634 po2act=0.3675 ngcon=1 $X=1707 $Y=-2185 $D=29
+D8 AREA=4.125 PJ=8.3 $X=-150 $Y=-1500 $D=19
+.ENDS
+***************************************

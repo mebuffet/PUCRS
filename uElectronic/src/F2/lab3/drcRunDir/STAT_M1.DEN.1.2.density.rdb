@@ -1,0 +1,13 @@
+Complex_f2 1000
+M1.DEN.1.2::<3>
+1 1 2 Jun 21 17:48:36 2017                      
+M1.DEN.1.2::<3> = DENSITY M1_DENS <= 1 INSIDE OF LAYER CHIP WINDOW 20 STEP 10 BACKUP
+Rule M1.DEN.1.2: M1 widths and spaces have to be chosen such that maximum physical M1 density over local 20um x 20um areas cannot exceed this value.: 0.9
+p 1 4
+DV 0.41576508
+DA 7.875
+DA M1_DENS 3.27415
+-150 -3000
+2350 -3000
+2350 150
+-150 150

@@ -1,0 +1,82 @@
+
+********************************************************************************
+Product   : Virtuoso(R) STREAM Out
+Program   : @(#)$CDS: pipo.exe version 5.1.0 06/20/2007 02:15 (cicln03) $
+SubVersion: sub-version 5.10.41_USR5.90.69
+Started at: 30-Nov-2016  18:09:58
+User Name : micro2
+Host Name : kriti
+Directory : /home/micro2/lab3
+CADENCE Design Systems, Inc.
+********************************************************************************
+
+     1. translating cellview (Complex_f2 layout)
+
+			Individual Cell Statistics
+
+CellView          Rectangles Polygons   Paths Ellipses Labels Instances Arrays  Nodes
+*************************************************************************************
+Complex_f2/layout         80        0       0       0       7       0       0      0
+
+
+                    Statistics Of Layers
+
+
+Cadence    Cadence    Stream   Stream
+ Layer     Purpose    Layer   Datatype Rectangles Polygons Paths  Ellipses  Labels   Nodes
+-------------------------------------------------------------------------------------------
+NW         drawing    3         0         1        0        0        0        0        0       
+prBoundary drawing    108       0         1        0        0        0        0        0       
+CO         drawing    30        0         22       0        0        0        0        0       
+OD         drawing    6         0         4        0        0        0        0        0       
+PO         drawing    17        0         8        0        0        0        0        0       
+PP         drawing    25        0         2        0        0        0        0        0       
+DCO        drawing    90        0         1        0        0        0        0        0       
+NP         drawing    26        0         2        0        0        0        0        0       
+M1         drawing    31        0         32       0        0        0        0        0       
+M1         pin        131       0         7        0        0        0        7        0       
+
+
+   Summary Of Objects
+
+------------------------
+      80 Rectangles
+       0 Polygons
+       0 Paths
+       0 Ellipses
+       7 Labels
+       0 Instances
+       0 Arrays
+       1 Cells
+       0 Nodes
+
+
+00:00:01 Elapsed time
+00:00:00 CPU time
+
+    7115 Kbytes of memory
+
+*** There were no error or warning message ***
+
+The setup file's contents :
+
+streamOutKeys = list(nil
+	'userSkillFile             ""
+	'convertPin                "geometry"
+	'libVersion                "5.0"
+	'units                     "micron"
+	'cellMapTable              ""
+	'errFile                   "PIPO.LOG.Complex_f2"
+	'outFile                   "/home/micro2/lab3/lvsRunDir/Complex_f2.calibre.db"
+	'viewName                  "layout"
+	'primaryCell               "Complex_f2"
+	'libName                   "lab3"
+	'runDir                    "/home/micro2/lab3/lvsRunDir/"
+	'reportPrecision           t
+	'simMosaicToArray          t
+	'checkPolygon              t
+	'pinInfo                   0
+	'caseSensitivity           "preserve"
+	'scale                     0.001
+	'layerTable                "/soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/LIB/lib///cmos065/cmos065.layermap"
+)

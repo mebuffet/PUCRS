@@ -1,0 +1,18 @@
+* File: inv.pex.spi
+* Created: Wed Aug 31 18:50:35 2016
+* Program "Calibre xRC"
+* Version "v2011.3_29.20"
+* 
+.subckt inv  A Z vdd! gnd!
+* 
+XM1 Z A vdd! vdd! psvtgp L=0.06 W=0.4 NFING=1 M=1 AS=0.0864 AD=0.0864 PS=0.832
++ PD=0.832 PO2ACT=0.21 NGCON=1 lpe=1
+XM0 Z A gnd! gnd! nsvtgp L=0.06 W=0.2 NFING=1 M=1 AS=0.0434 AD=0.0434 PS=0.634
++ PD=0.634 PO2ACT=0.21 NGCON=1 lpe=1
+X2_noxref gnd! vdd! dnwps  AREA=1.566 PJ=5.06
+*
+.include "inv.pex.spi.inv.pxi"
+*
+.ends
+*
+*

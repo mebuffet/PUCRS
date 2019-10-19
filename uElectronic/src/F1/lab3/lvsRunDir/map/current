@@ -1,0 +1,25 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "Complex_f2"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/micro2/lab3/lvsRunDir"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "lab3/Complex_f2/schematic" "Complex_f2" )
+ )
+( term
+ )
+( param
+ )
+( "Complex_f2" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,51 @@
+#!tvf
+tvf::VERBATIM {
+//
+//  Rule file generated on Wed Jun 21 17:48:35 -03 2017
+//     by Calibre Interactive - DRC (v2011.3_29.20)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+
+// +++ CUSTOMIZATION SETTINGS START +++ 
+
+#undefine EXCLUDE_SRAMDMY_ONLY
+#undefine DENSITY_CHECK
+#undefine SHRINK
+#undefine DATA_SIZE_SEALRING
+#undefine BEOL_SEALRING
+#undefine COMPANY_MKR_SEALRING
+#undefine PF
+#define INTERACTIVE 
+#define VIAiX_R_5_REC_RULES 
+#define VIAiX.LO.1_RULES 
+#define RECOMMENDED_RULES 
+#define CHECK_PAD_ASSEMBLY 
+#define ALLIANCE 
+#undefine WB_PAD_REC_RULES
+#define ClassPAD ClassFC60A
+
+// +++ CUSTOMIZATION SETTINGS END +++ 
+
+LAYOUT PATH  "Complex_f2.calibre.db"
+LAYOUT PRIMARY "Complex_f2"
+LAYOUT SYSTEM GDSII
+
+DRC RESULTS DATABASE "Complex_f2.drc.results" ASCII 
+DRC MAXIMUM RESULTS 1000
+DRC MAXIMUM VERTEX 199
+
+DRC CELL NAME NO
+DRC SUMMARY REPORT "Complex_f2.drc.summary" REPLACE 
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+DRC ICSTATION YES
+
+}
+
+source "/soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/CALIBRE_CUSTOM/calibredrc_cgi"
+

@@ -1,0 +1,48 @@
+
+
+Working Directory = /home/vlsi2_g05/VLSI2/pif2wb/src
+QoS Summary for PIF2WB
+========================================================================================
+Metric                  PIF2WB.pos_rtl
+========================================================================================
+Slack (ps):                3,488
+  R2R (ps):                3,488
+  I2R (ps):             no_value
+  R2O (ps):             no_value
+  I2O (ps):             no_value
+  CG  (ps):             no_value
+TNS (ps):                      0
+  R2R (ps):                    0
+  I2R (ps):             no_value
+  R2O (ps):             no_value
+  I2O (ps):             no_value
+  CG  (ps):             no_value
+Failing Paths:                 0
+Area:                      1,411
+Instances:                   253
+Utilization (%):            0.00
+Tot. Net Length (um):   no_value
+Avg. Net Length (um):   no_value
+Route Overflow H (%):   no_value
+Route Overflow V (%):   no_value
+Seq MBCI Coverage(%):       0.00
+Norm Cong Hotspot Area:
+  Max Cong(4stdcell):   no_value
+  Tot Cong(4stdcell):   no_value
+========================================================================================
+CPU  Runtime (h:m:s):   00:00:17
+Real Runtime (h:m:s):   00:01:46
+CPU  Elapsed (h:m:s):   00:00:23
+Real Elapsed (h:m:s):   00:01:48
+Memory (MB):              659.55
+========================================================================================
+
+========================================================================================
+Flow Settings:
+========================================================================================
+Total Runtime (h:m:s): 00:01:47
+Total Memory (MB):     662.55
+Executable Version:    16.10
+========================================================================================
+
+

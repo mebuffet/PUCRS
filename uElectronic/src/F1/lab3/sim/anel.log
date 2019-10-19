@@ -1,0 +1,167 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.257 64bit -- 9 Oct 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: micro1   Host: kriti   HostID: 200A72A2   PID: 19824
+Memory  available: 27.7549 GB  physical: 31.5597 GB
+Linux   : CentOS release 5.11 (Final)
+CPU Type: Intel(R) Xeon(R) CPU           W5580  @ 3.20GHz
+All processors running at 1596.0 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 (  4 ),  1 (  5 ),  2 (  6 ),  3 (  7 )
+        
+System load averages (1min, 5min, 15min) : 4.0 %, 2.2 %, 0.8 %
+Hyperthreading is enabled
+
+
+Simulating `anel.sp' on kriti at 11:28:41 AM, Thur Sep 8, 2016 (process id: 19824).
+Current working directory: /home/micro1/lab3/sim
+Command line:
+    /soft64/cadence/ferramentas/MMSIM151/tools/bin/spectre -64 anel.sp
+
+Loading /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/micro1/lab3/sim/anel.sp
+Reading file:  /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/micro1/lab3/sim/st65.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/mismatch.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/mismatch_switch.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/rgateswitch_all.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/common_go1.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/common_poly_cd.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/common_poly_res.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/common_active_cd.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/common_active_res.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/svtlp.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/svtgp.scs
+Reading file:  /soft64/design-kits/stm/65nm-cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/SPECTRE/CORNERS/diodeiso.scs
+Reading file:  /home/micro1/lab3/pexRunDir/inv.pex.spi
+Reading file:  /home/micro1/lab3/pexRunDir/inv.pex.spi.inv.pxi
+Time for NDB Parsing: CPU = 161.976 ms, elapsed = 1.74957 s.
+Time accumulated: CPU = 197.969 ms, elapsed = 1.74958 s.
+Peak resident memory used = 37.2 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  1 (1.8 %)       2 (9.0 %)       7 (1.2 %)      
+        Other   
+Reading link:  /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 50.993 ms, elapsed = 141.59 ms.
+Time accumulated: CPU = 248.962 ms, elapsed = 1.8915 s.
+Peak resident memory used = 43.8 Mbytes.
+
+Loading /soft64/cadence/ferramentas/MMSIM151/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+Time for EDB Visiting: CPU = 93.985 ms, elapsed = 454.431 ms.
+Time accumulated: CPU = 342.947 ms, elapsed = 2.34625 s.
+Peak resident memory used = 52.2 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X21.XM0.m1: `Cdsc' = -416.981 mF/m^2 is negative.
+    WARNING (CMI-2424): X21.XM0.m1: `Acde' = 46.6148 mm/V is unusually small.
+    WARNING (CMI-2424): X21.XM1.m1: `Acde' = 41.1951 mm/V is unusually small.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 22
+              bsim4 42    
+          capacitor 126   
+          juncap200 21    
+            vsource 1     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 4     
+               save 0     
+
+Time for parsing: CPU = 3.999 ms, elapsed = 68.908 ms.
+Time accumulated: CPU = 347.946 ms, elapsed = 2.4155 s.
+Peak resident memory used = 53.3 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+******************************************************
+Transient Analysis `transient1': time = (0 s -> 10 ns)
+******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient1', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 3 ms, elapsed = 16.4158 ms.
+
+Opening the PSF file anel.raw/transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 1 ps
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   1       (current)
+                 save   22      (voltage)
+
+..............9..............8..............7..............6..............5..............4..............3..............2..............1..............0
+Number of accepted tran steps =             5014
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   Parasitics slow down simulation. To speed up, consider
+          add +postlayout on command line
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  1 (44.1 %)      2 (15.2 %)      6 (2.0 %)      
+        Other   
+Initial condition solution time: CPU = 4 ms, elapsed = 18.0769 ms.
+Intrinsic tran analysis time:    CPU = 2.54761 s, elapsed = 2.563 s.
+Total time required for tran analysis `transient1': CPU = 2.55561 s, elapsed = 2.65549 s.
+Time accumulated: CPU = 2.90556 s, elapsed = 5.18929 s.
+Peak resident memory used = 55.6 Mbytes.
+
+
+Aggregate audit (11:28:46 AM, Thur Sep 8, 2016):
+Time used: CPU = 2.92 s, elapsed = 5.24 s, util. = 55.7%.
+Time spent in licensing: elapsed = 146 ms.
+Peak memory used = 56 Mbytes.
+Simulation started at: 11:28:41 AM, Thur Sep 8, 2016, ended at: 11:28:46 AM, Thur Sep 8, 2016, with elapsed time (wall clock): 5.24 s.
+spectre completes with 0 errors, 3 warnings, and 1 notice.
