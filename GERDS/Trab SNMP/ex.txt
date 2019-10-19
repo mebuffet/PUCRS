@@ -1,0 +1,87 @@
+1)
+snmpget -v 1 -c public localhost sysName
+Error in packet
+Reason: (noSuchName) There is no such variable name in this MIB.
+Failed object: SNMPv2-MIB::sysName
+
+snmpget -v 1 -c public localhost sysName.0
+SNMPv2-MIB::sysName.0 = STRING: labredes
+
+2)
+a)
+snmpget -v 1 -c public localhost sysLocation.0
+SNMPv2-MIB::sysLocation.0 = STRING: Unknown
+b)
+snmpget -v 1 -c public localhost ifNumber.0
+IF-MIB::ifNumber.0 = INTEGER: 3
+c)
+snmpget -v 1 -c public localhost ifDescr.2
+IF-MIB::ifDescr.2 = STRING: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
+snmpget -v 1 -c public localhost ifDescr.3
+IF-MIB::ifDescr.3 = STRING: Broadcom Limited NetXtreme BCM5722 Gigabit Ethernet PCI Express
+d)
+nmpgetnext -v 1 -c public localhost ipInReceives.0
+IP-MIB::ipInHdrErrors.0 = Counter32: 0
+
+3)
+snmpgetnext -v 1 -c public localhost ip
+IP-MIB::ipForwarding.0 = INTEGER: notForwarding(2)
+IP-MIB::ipDefaultTTL.0 = INTEGER: 64
+IP-MIB::ipInReceives.0 = Counter32: 16541
+IP-MIB::ipInHdrErrors.0 = Counter32: 0
+IP-MIB::ipInAddrErrors.0 = Counter32: 2
+
+4)
+snmpget -v 1 -c public localhost ifTable.0
+Error in packet
+Reason: (noSuchName) There is no such variable name in this MIB.
+Failed object: IF-MIB::ifTable.0
+
+Erro pois a table não é acessível
+
+5)
+a)
+snmpget -v 1 -c public localhost ifTable.1.6.2
+IF-MIB::ifPhysAddress.2 = STRING: a4:1f:72:f5:90:98
+b)
+snmpget -v 1 -c public localhost icmpInEchos.0
+IP-MIB::icmpInEchos.0 = Counter32: 0
+snmpget -v 1 -c public localhost icmpInEchoReps.0
+IP-MIB::icmpInEchoReps.0 = Counter32: 1
+snmpget -v 1 -c public localhost icmpOutEchos.0
+IP-MIB::icmpOutEchos.0 = Counter32: 0
+snmpget -v 1 -c public localhost icmpOutEchoReps.0
+IP-MIB::icmpOutEchoReps.0 = Counter32: 0
+c)
+snmpget -v 1 -c public localhost snmpInGetNexts.0
+SNMPv2-MIB::snmpInGetNexts.0 = Counter32: 16
+d)
+snmpset -v 1 -c private localhost sysLocation.0 s "LabRedes"
+SNMPv2-MIB::sysLocation.0 = STRING: LabRedes
+
+6)
+a)
+snmpget -v 1 -c public localhost ifInOctets.2 ifType.2
+IF-MIB::ifInOctets.2 = Counter32: 238434458
+IF-MIB::ifType.2 = INTEGER: ethernetCsmacd(6)
+
+b)
+snmpgetnext -v 1 -c public localhost ifInOctets.2 ifType.2
+IF-MIB::ifInOctets.3 = Counter32: 0
+IF-MIB::ifType.3 = INTEGER: ethernetCsmacd(6)
+
+c)
+snmpset -v 1 -c private localhost sysLocation.0 s "Laboratorio 301"
+SNMPv2-MIB::sysLocation.0 = STRING: Laboratorio 301
+
+7)
+a)ifInOctets
+b)(ifInOctets / ifSpeed) * sysUpTime
+
+
+a)for each ifEntry in interfaces.ifTable: sum = sum + ifEntry.ifInOctets
+b)
+Input = (ifInOctets * 8 * 100) / (sysUpTime * ifSpeed)
+Output = (ifOutOctets * 8 * 100) / (sysUpTime * ifSpeed)
+c)ifInOctets/ipInReceives * 100%
+d)ifOutOctets/snmpOutPkts * 100%
