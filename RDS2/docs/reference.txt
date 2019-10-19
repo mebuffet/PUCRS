@@ -1,0 +1,13 @@
+```
+http://www.techrepublic.com/article/tcp-hijacking/
+* [C] https://github.com/rot0xd/tcp-hijack
+* [ETTERCAP] https://www.exploit-db.com/papers/13587/
+* http://ce.sharif.edu/courses/79-80/2/ce443/projects/delivered/6/index.html
+http://ettercap.github.io/ettercap/
+https://datenterrorist.wordpress.com/2007/07/06/programming-tcp-hijacking-tools-in-perl/
+http://cecs.wright.edu/~pmateti/InternetSecurity/Lectures/TCPexploits/
+* [MININET] [ETTERCAP] [PYTHON] https://github.com/yo2seol/mininet_tcp_hijacking
+* [C] https://github.com/NickStephens/WRATH
+https://github.com/r00t-3xp10it/morpheus
+http://www.securiteam.com/tools/5QP0P0K40M.html
+```
